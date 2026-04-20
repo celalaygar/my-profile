@@ -17,8 +17,8 @@ RUN npm run build
 
 
 # Uygulamanın çalışacağı portu belirle
-ENV PORT=5103
-EXPOSE 5103
+ENV PORT=5105
+EXPOSE 5105
 
 # Uygulamayı başlat
 CMD ["npm", "run", "start"]

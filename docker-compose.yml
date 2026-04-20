@@ -2,7 +2,7 @@ services:
   nextjs:
     build: .
     ports:
-      - "5103:5103"
+      - "5105:5105"
     environment:
       - NODE_ENV=production
     command: ["npm", "run", "start"]
