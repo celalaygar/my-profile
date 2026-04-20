@@ -1,0 +1,754 @@
+import { Project, Experience, Certificate, Technology, TechnologyGroup, Article, InterviewQuestion, Game, Book, Hobby, ContactLink, ServicesData } from '@/types';
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    name: 'WixBook: Language Box',
+    short_description: 'Coming Soon',
+    long_description: 'A language learning app with interactive exercises and quizzes.',
+    type: 'Mobile App',
+    technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://celalaygar.github.io/main/project/language-box/',
+  },
+  {
+    id: '2',
+    name: 'WixBook Domain Track',
+    short_description: 'Coming Soon',
+    long_description: 'Find Your Perfect Domain With Ease',
+    type: 'Mobile App',
+    technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://celalaygar.github.io/main/project/wixbook-domain-track/',
+  },
+  {
+    id: '3',
+    name: 'Domain Track',
+    short_description: 'Domain Intelligence Tool',
+    long_description: 'Check domain availability and view WHOIS registration information.',
+    type: 'Mobile App',
+    technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://celalaygar.github.io/main/project/domain-track/',
+  },
+  {
+    id: '4',
+    name: 'Job Tracking System V2',
+    short_description: 'Job Tracking System',
+    long_description: 'Full-stack platform for managing projects, tasks, sprints, and work hours.',
+    type: 'Web Application',
+    technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://celalaygar.github.io/main/project/job-tracking-system-v2/',
+  },
+  {
+    id: '5',
+    name: 'Lingua Bubble',
+    short_description: 'Make Language Learning Fun',
+    long_description: 'Learn languages by playing games at your own level in 9 different languages with Lingua Bubble.',
+    type: 'Mobile App',
+    technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://celalaygar.github.io/main/project/lingua-bubble/',
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    id: '1',
+    company: 'Tech Company Inc',
+    position: 'Senior Full-Stack Developer',
+    description: 'Led development of multiple full-stack applications, mentored junior developers, and improved system performance by 40%.',
+    startDate: '2022-01',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'Docker'],
+  },
+  {
+    id: '2',
+    company: 'Digital Solutions Ltd',
+    position: 'Full-Stack Developer',
+    description: 'Developed and maintained web applications, implemented new features, and fixed critical bugs.',
+    startDate: '2020-06',
+    endDate: '2021-12',
+    technologies: ['React', 'Express', 'MongoDB', 'AWS'],
+  },
+  {
+    id: '3',
+    company: 'Startup Hub',
+    position: 'Junior Developer',
+    description: 'Built responsive web interfaces and API integrations for various projects.',
+    startDate: '2019-03',
+    endDate: '2020-05',
+    technologies: ['JavaScript', 'HTML/CSS', 'Node.js', 'MySQL'],
+  },
+];
+
+export const certificates: Certificate[] = [
+  {
+    id: '1',
+    title: 'Database Design and Programming with SQL',
+    organization: 'ORACLE ACADEMY',
+    date: '26 June 2016',
+    url: 'https://raw.githubusercontent.com/celalaygar/pdfs/main/sertifikalar/Database_Design_and_Programming_with_SQL.pdf',
+  },
+  {
+    id: '2',
+    title: 'REACT ile Web Programcılığı',
+    organization: 'BTK AKADEMİ',
+    date: 'May 2025',
+    url: 'https://raw.githubusercontent.com/celalaygar/pdfs/main/sertifikalar/REACT_ile_Web_Programcılığı.pdf',
+  },
+  {
+    id: '3',
+    title: 'Elasticsearch v8',
+    organization: 'BTK AKADEMİ',
+    date: 'June 2025',
+    url: 'https://raw.githubusercontent.com/celalaygar/pdfs/main/sertifikalar/Elasticsearch_v8_Sertifika.pdf',
+  },
+  {
+    id: '4',
+    title: 'Apache Kafka',
+    organization: 'BTK AKADEMİ',
+    date: 'May 2025',
+    url: 'https://raw.githubusercontent.com/celalaygar/pdfs/main/sertifikalar/Apache_Kafka.pdf',
+  },
+  {
+    id: '5',
+    title: 'NoSQL - Doküman Veritabanları',
+    organization: 'BTK AKADEMİ',
+    date: 'May 2025',
+    url: 'https://raw.githubusercontent.com/celalaygar/pdfs/main/sertifikalar/NoSQL_Doküman_Veritabanları.pdf',
+  },
+  {
+    id: '6',
+    title: 'JAVA ile Programlamaya Giriş',
+    organization: 'BTK AKADEMİ',
+    date: 'May 2025',
+    url: 'https://raw.githubusercontent.com/celalaygar/pdfs/main/sertifikalar/JAVA_ile_Programlamaya_Giriş_Sertifika.pdf',
+  },
+  {
+    id: '7',
+    title: 'İleri Seviye Java',
+    organization: 'BTK AKADEMİ',
+    date: 'May 2025',
+    url: 'https://raw.githubusercontent.com/celalaygar/pdfs/main/sertifikalar/%C4%B0leri_Seviye_Java_Sertifika.pdf',
+  },
+];
+
+export const technologyGroups: TechnologyGroup[] = [
+  {
+    group: 'Backend',
+    technologies: [
+      { id: '1', name: 'Java', level: 85 },
+      { id: '2', name: 'Spring Boot', level: 85 },
+      { id: '3', name: 'Spring Security', level: 75 },
+      { id: '4', name: 'Spring Data', level: 85 },
+      { id: '5', name: 'Spring MVC', level: 85 },
+      { id: '6', name: 'JPA', level: 75 },
+      { id: '7', name: 'Hibernate', level: 80 },
+      { id: '8', name: 'Node.js', level: 70 },
+      { id: '9', name: 'Python', level: 65 },
+      { id: '10', name: 'FastAPI', level: 60 },
+      { id: '11', name: 'Flask API', level: 60 },
+    ],
+  },
+  {
+    group: 'Frontend',
+    technologies: [
+      { id: '12', name: 'JavaScript', level: 85 },
+      { id: '13', name: 'TypeScript', level: 70 },
+      { id: '14', name: 'Next.js', level: 75 },
+      { id: '15', name: 'React.js', level: 75 },
+      { id: '16', name: 'Angular', level: 65 },
+      { id: '17', name: 'HTML5', level: 96 },
+      { id: '18', name: 'CSS3', level: 80 },
+      { id: '19', name: 'Bootstrap', level: 80 },
+      { id: '20', name: 'Tailwind CSS', level: 65 },
+    ],
+  },
+  {
+    group: 'Mobile Development',
+    technologies: [
+      { id: '21', name: 'Flutter', level: 60 },
+      { id: '22', name: 'Dart', level: 60 },
+    ],
+  },
+  {
+    group: 'Databases',
+    technologies: [
+      { id: '23', name: 'PostgreSQL', level: 70 },
+      { id: '24', name: 'Oracle DB', level: 67 },
+      { id: '25', name: 'MongoDB', level: 55 },
+    ],
+  },
+  {
+    group: 'DevOps & Infrastructure',
+    technologies: [
+      { id: '26', name: 'Docker', level: 65 },
+      { id: '27', name: 'Kubernetes', level: 65 },
+      { id: '28', name: 'OpenShift', level: 55 },
+      { id: '29', name: 'Nginx', level: 55 },
+    ],
+  },
+  {
+    group: 'Tools & Messaging',
+    technologies: [
+      { id: '30', name: 'Git', level: 75 },
+      { id: '31', name: 'Apache Kafka', level: 65 },
+      { id: '32', name: 'Redis', level: 65 },
+    ],
+  },
+];
+
+export const technologies: Technology[] = [
+  { id: '1', name: 'React', level: 85 },
+  { id: '2', name: 'TypeScript', level: 70 },
+  { id: '3', name: 'Node.js', level: 70 },
+  { id: '4', name: 'PostgreSQL', level: 70 },
+  { id: '5', name: 'Next.js', level: 75 },
+  { id: '6', name: 'Tailwind CSS', level: 65 },
+  { id: '7', name: 'Docker', level: 65 },
+  { id: '8', name: 'AWS', level: 60 },
+];
+
+export const articles: Article[] = [
+  {
+    id: '1',
+    title: 'Mikroservislerde Yarış Koşulu (Race Condition)',
+    short_description: 'Monolitik sistemlerde, synchronized veya ReentrantLock ile JVM seviyesinde kaynakları koruyabiliriz. Ancak mikroservislerde, uygulamanızın...',
+    link: 'https://medium.com/@celalaygar/mikroservislerde-yarış-koşulu-race-condition-cbe487450fea',
+  },
+  {
+    id: '2',
+    title: 'Kafka ile "Transactional Outbox Pattern" ve Veri Tutarlılığı',
+    short_description: 'Transactional Outbox Pattern ve Debezium ile Veri Tutarlılığı',
+    link: 'https://medium.com/@celalaygar/kafka-ile-transactional-outbox-pattern-ve-veri-tutarlılığı-1011f2eed084',
+  },
+  {
+    id: '3',
+    title: 'Virtual Threads ve Spring Boot\'ta Kullanımı',
+    short_description: 'Geleneksel olarak Java\'da eşzamanlı (concurrent) programlama, her bir java.lang.Thread\'in işletim sistemi (OS) düzeyinde bir iş parçacığına...',
+    link: 'https://medium.com/@celalaygar/virtual-threads-sanal-i̇ş-parçacıkları-ve-spring-bootta-kullanımı-d06be37de8f5',
+  },
+  {
+    id: '4',
+    title: 'Dinamik İstek Gövdeleri (Dynamic Request Bodies) Spring Boot',
+    short_description: 'Bu makalede, Spring Boot uygulamasında tek bir REST endpoint üzerinden, gelen requestin içeriğine göre farklı Java sınıflarına (objelere)...',
+    link: 'https://medium.com/@celalaygar/dinamik-i̇stek-gövdeleri-dynamic-request-bodies-spring-boot-7f2a13f2710b',
+  },
+  {
+    id: '5',
+    title: 'Spring Boot: Spring MVC ve WebFlux Arasındaki Farklar',
+    short_description: 'Geleneksel Spring MVC ve imperative (emir kipi) programlama yaklaşımıdır. WebFlux ise reactive (tepkisel) programlama modelini kullanır. Bu...',
+    link: 'https://medium.com/@celalaygar/spring-boot-spring-mvc-ve-webflux-arasındaki-farklar-158d1fb1b5a8',
+  },
+  {
+    id: '6',
+    title: 'Spring Boot ve Hystrix kullanımı',
+    short_description: 'Spring Boot ve Hystrix kullanımını detaylı bir şekilde açıklamak için, önce Hystrix\'in ne olduğunu ve neden kullanıldığını anlamak...',
+    link: 'https://medium.com/@celalaygar/spring-boot-ve-hystrix-kullanımı-0bbe9a3a48f7',
+  },
+  {
+    id: '7',
+    title: 'MongoDB\'de normalizasyon ve denormalizasyon',
+    short_description: 'MongoDB\'de veritabanı tasarımı iki temel yaklaşıma dayanır: normalizasyon ve denormalizasyon. Bu yaklaşımları ve aralarındaki farkları...',
+    link: 'https://medium.com/@celalaygar/mongodbde-normalizasyon-ve-denormalizasyon-d9d0ad46c3a1',
+  },
+  {
+    id: '8',
+    title: 'SQL\'de normalizasyon nedir?',
+    short_description: 'SQL veritabanlarında normalizasyon, veritabanı tasarımında veri fazlalığını ve tutarsızlıkları azaltmak amacıyla veritabanı tablolarının...',
+    link: 'https://medium.com/@celalaygar/sqlde-normalizasyon-nedir-5a2b177e9e10',
+  },
+  {
+    id: '9',
+    title: 'PostgreSql de UNION ve UNION ALL kullanımı ve arasındaki farklar',
+    short_description: 'PostgreSQL\'de UNION ve UNION ALL ifadeleri, iki veya daha fazla sorgunun sonuçlarını birleştirmek için kullanılır. Aralarındaki temel fark...',
+    link: 'https://medium.com/@celalaygar/postgresql-de-union-ve-union-all-kullanımı-ve-arasındaki-farklar-17b233b188a1',
+  },
+  {
+    id: '10',
+    title: 'Spring Boot ile Resilience4j',
+    short_description: 'Resilience4j, mikroservislerin hata toleransını ve dayanıklılığını artırmak için kullanılan bir kütüphanedir. Temel olarak, devre kesici...',
+    link: 'https://medium.com/@celalaygar/spring-boot-ileresilience4j-9219294fe684',
+  },
+  {
+    id: '11',
+    title: 'Postgresql de index tipleri',
+    short_description: '1. B-Tree Indeksler',
+    link: 'https://medium.com/@celalaygar/postgresql-de-index-tipleri-f1315cfb06a5',
+  },
+  {
+    id: '12',
+    title: 'Spring Boot üzerinde cron job\'ları kullanmak',
+    short_description: 'Spring Boot üzerinde cron job\'ları kullanmak oldukça basittir. Cron job\'lar, belirli zaman aralıklarında veya belirli zamanlarda...',
+    link: 'https://medium.com/@celalaygar/spring-boot-üzerinde-cron-jobları-kullanmak-5edd336279cd',
+  },
+  {
+    id: '13',
+    title: 'MongoDB\'de indeksleme',
+    short_description: 'MongoDB\'de indeksleme, sorgu performansını artırmak ve veri tabanı operasyonlarını hızlandırmak için önemli bir işlemdir. MongoDB\'de...',
+    link: 'https://medium.com/@celalaygar/mongodbde-indeksleme-3f00143a1a59',
+  },
+  {
+    id: '14',
+    title: 'MongoDB ve SQL veritabanları arasında temel farklar',
+    short_description: 'MongoDB ve SQL veritabanları arasında temel farklar, veri yapıları, sorgulama dilleri, esneklik ve ölçeklenebilirlik gibi çeşitli konularda...',
+    link: 'https://medium.com/@celalaygar/mongodb-ve-sql-veritabanları-arasında-temel-farklar-dbec9aad4f7f',
+  },
+  {
+    id: '15',
+    title: 'Spring Boot Security Örneği',
+    short_description: 'Security işlemi için daha önce yaptığım bir örnek üzerinden gitmek istiyorum. Link …',
+    link: 'https://medium.com/@celalaygar/spring-boot-security-örneği-62f344124f7d',
+  },
+  {
+    id: '16',
+    title: 'Spring Boot, Spring MVC Anotasyon',
+    short_description: 'Spring Boot üzerinde Spring mvc ile kullanılan bazı annotasyonlar anlatılacaktır.',
+    link: 'https://medium.com/@celalaygar/spring-boot-ile-spring-mvc-1-478ebcce3756',
+  },
+];
+
+export const interviewQuestions: InterviewQuestion[] = [
+  {
+    id: '1',
+    title: 'Interview Questions',
+    short_description: 'Interview Questions',
+    long_description: 'General interview questions for software developers.',
+    tags: ['Java', 'JavaScript'],
+    url: 'https://celalaygar.github.io/main/interview_q-1/',
+  },
+  {
+    id: '2',
+    title: 'ELK, Docker and K8S',
+    short_description: 'ELK, Docker and K8S Interview Questions',
+    long_description: 'Interview questions for containerization and logging technologies.',
+    tags: ['Docker', 'Kubernetes'],
+    url: 'https://celalaygar.github.io/main/interview_q-2/',
+  },
+  {
+    id: '3',
+    title: 'Spring & Microservices',
+    short_description: 'Spring & Microservices Interview Questions',
+    long_description: 'Interview questions for Spring framework and microservices architecture.',
+    tags: ['Spring Boot', 'Microservices'],
+    url: 'https://celalaygar.github.io/main/interview_q-3/',
+  },
+  {
+    id: '4',
+    title: 'Kafka and RabbitMQ',
+    short_description: 'Kafka and RabbitMQ Interview Questions',
+    long_description: 'Interview questions for message brokers and event streaming.',
+    tags: ['Kafka', 'RabbitMQ'],
+    url: 'https://celalaygar.github.io/main/interview_q-4/',
+  },
+  {
+    id: '5',
+    title: 'ELK Stack',
+    short_description: 'ELK Stack Interview Questions',
+    long_description: 'Interview questions for Elasticsearch, Logstash, and Kibana.',
+    tags: ['Elasticsearch', 'Logstash'],
+    url: 'https://celalaygar.github.io/main/interview_q-5/',
+  },
+  {
+    id: '6',
+    title: 'Senior Level Kubernetes',
+    short_description: 'Senior Level Kubernetes Interview Questions',
+    long_description: 'Advanced interview questions for senior Kubernetes engineers.',
+    tags: ['Kubernetes', 'Senior Level'],
+    url: 'https://celalaygar.github.io/main/interview_q-6/',
+  },
+  {
+    id: '7',
+    title: 'Redis Senior Level',
+    short_description: 'Redis Senior Level Interview Questions',
+    long_description: 'Advanced interview questions for Redis database administrators.',
+    tags: ['Redis', 'Senior Level'],
+    url: 'https://celalaygar.github.io/main/interview_q-7/',
+  },
+];
+
+export const games: Game[] = [
+  {
+    id: '1',
+    name: 'Snake Game',
+    short_description: 'Snake Game',
+    long_description: 'Classic snake game with modern graphics and smooth controls.',
+    url: 'https://celalaygar.github.io/main/game/snake-game/',
+  },
+  {
+    id: '2',
+    name: 'Flappy Bird',
+    short_description: 'Flappy Bird',
+    long_description: 'Navigate through obstacles in this addictive flying game.',
+    url: 'https://celalaygar.github.io/main/game/flappy-bird-game/',
+  },
+  {
+    id: '3',
+    name: 'Tetris',
+    short_description: 'Tetris',
+    long_description: 'Classic block-stacking puzzle game with modern twist.',
+    url: 'https://celalaygar.github.io/main/game/tetris-game/',
+  },
+  {
+    id: '4',
+    name: 'Pac Man',
+    short_description: 'Pac Man',
+    long_description: 'Navigate the maze, eat dots, and avoid ghosts in this classic.',
+    url: 'https://celalaygar.github.io/main/game/pac-man/',
+  },
+  {
+    id: '5',
+    name: 'Break Out',
+    short_description: 'Break Out',
+    long_description: 'Break blocks and score high points.',
+    url: 'https://celalaygar.github.io/main/game/breakout-game/',
+  },
+  {
+    id: '6',
+    name: 'Scrambled Word Game',
+    short_description: 'Scrambled Word Game',
+    long_description: 'Form correct words from mixed letters.',
+    url: 'https://celalaygar.github.io/main/game/scrambled-word-game/',
+  },
+  {
+    id: '7',
+    name: '2048 Game',
+    short_description: '2048 Game',
+    long_description: 'Try to reach 2048 by combining numbers.',
+    url: 'https://celalaygar.github.io/main/game/2048-game/',
+  },
+  {
+    id: '8',
+    name: 'Simon Says',
+    short_description: 'Simon Says',
+    long_description: 'Test your memory and repeat the color sequence.',
+    url: 'https://celalaygar.github.io/main/game/simon-says-game/',
+  },
+  {
+    id: '9',
+    name: 'Endless Runner',
+    short_description: 'Endless Runner',
+    long_description: 'Keep running by avoiding obstacles.',
+    url: 'https://celalaygar.github.io/main/game/endless-runne-game/',
+  },
+  {
+    id: '10',
+    name: 'Missing Word Game in Sentence',
+    short_description: 'Missing Word Game in Sentence',
+    long_description: 'Improve your language skills by finding the missing word in the sentence.',
+    url: 'https://celalaygar.github.io/main/game/missing-word-game-in-sentence/',
+  },
+  {
+    id: '11',
+    name: 'Sentence Builder Game',
+    short_description: 'Sentence Builder Game',
+    long_description: 'Create meaningful sentences by putting words in the correct order.',
+    url: 'https://celalaygar.github.io/main/game/sentence-builder-game/',
+  },
+  {
+    id: '12',
+    name: 'Tic Tac Toe',
+    short_description: 'X-O Game',
+    long_description: 'Beat your opponent in the classic X-O game.',
+    url: 'https://celalaygar.github.io/main/game/tic-tac-toe-game/',
+  },
+  {
+    id: '13',
+    name: 'Asteroids',
+    short_description: 'Asteroids',
+    long_description: 'Survive in space by destroying asteroids.',
+    url: 'https://celalaygar.github.io/main/game/asteroids-game/',
+  },
+  {
+    id: '14',
+    name: 'Space Invaders',
+    short_description: 'Space Invaders',
+    long_description: 'Fight to protect Earth from aliens.',
+    url: 'https://celalaygar.github.io/main/game/space-invaders-game/',
+  },
+  {
+    id: '15',
+    name: 'Helicopter',
+    short_description: 'Helicopter Game',
+    long_description: 'Control the helicopter and avoid obstacles.',
+    url: 'https://celalaygar.github.io/main/game/helicopter-game/',
+  },
+  {
+    id: '16',
+    name: 'Platform Jumper Game',
+    short_description: 'Platform Jumper Game',
+    long_description: 'Try to rise by jumping between platforms.',
+    url: 'https://celalaygar.github.io/main/game/platform-jumper-game/',
+  },
+  {
+    id: '17',
+    name: 'Tower Blocks Game',
+    short_description: 'Tower Blocks Game',
+    long_description: 'Build the highest tower by stacking blocks.',
+    url: 'https://celalaygar.github.io/main/game/tower-blocks-game/',
+  },
+  {
+    id: '18',
+    name: 'Word Search Game',
+    short_description: 'Word Search Game',
+    long_description: 'Find hidden words in the letter grid.',
+    url: 'https://celalaygar.github.io/main/game/word-search-game/',
+  },
+];
+
+export const books: Book[] = [
+  {
+    id: '1',
+    title: 'Borsa 101',
+    author: 'Aysel Gündoğdu',
+    publisher: 'SCALA Yayıncılık',
+  },
+  {
+    id: '2',
+    title: 'Assassin\'s Creed - Shao Jun\'un Kılıcı',
+    author: 'Senpai',
+    publisher: '',
+  },
+  {
+    id: '3',
+    title: 'Yönetim Becerileri',
+    author: 'Harvard Business Review Press',
+    publisher: 'OPTMİSİT',
+  },
+  {
+    id: '4',
+    title: 'Gerçekten Bilmeniz Gereken 50 Ekonomi Fikri',
+    author: 'Edmund Conways',
+    publisher: 'Domingo Yayınevi',
+  },
+  {
+    id: '5',
+    title: 'Siber Araçlar Ansiklopedisi',
+    author: 'Mustafa Atakan Kasacı',
+    publisher: 'ABAKÜS KİTAP',
+  },
+  {
+    id: '6',
+    title: 'Bilişimin Karanlık Yüzü',
+    author: 'Kamil Burlu',
+    publisher: 'Nirvana Yayınları',
+  },
+  {
+    id: '7',
+    title: 'Ethical Hacking',
+    author: 'Ömer Çıtak',
+    publisher: 'ABAKÜS KİTAP',
+  },
+  {
+    id: '8',
+    title: 'Spring Framework',
+    author: 'Mimar Aslan',
+    publisher: 'LEVEL',
+  },
+];
+
+export const hobbies: Hobby[] = [
+  {
+    id: '1',
+    en: 'Playing Chess',
+    tr: 'Satranç Oynamak',
+  },
+  {
+    id: '2',
+    en: 'Watching movies, Series, Anime',
+    tr: 'Film, Dizi, Anime İzlemek',
+  },
+  {
+    id: '3',
+    en: 'Following Technological Channels',
+    tr: 'Teknolojik Kanalları Takip Etmek',
+  },
+  {
+    id: '4',
+    en: 'Learning New Technologies',
+    tr: 'Yeni Teknolojiler Öğrenmek',
+  },
+  {
+    id: '5',
+    en: 'Solving puzzles (Sudoku, Word games, Logic problems)',
+    tr: 'Bulmaca Çözmek (Sudoku, Kelime oyunları, Mantık problemleri)',
+  },
+  {
+    id: '6',
+    en: 'Running / Gym',
+    tr: 'Koşu / Spor Salonu',
+  },
+  {
+    id: '7',
+    en: 'Attending meetups and conferences',
+    tr: 'Toplantılara ve Konferanslara Katılmak',
+  },
+];
+
+export const contactLinks: ContactLink[] = [
+  {
+    title: 'Call us on',
+    url: 'tel:+905448358401',
+  },
+  {
+    title: 'Email',
+    url: 'mailto:celal.aygar@gmail.com',
+  },
+  {
+    title: 'Website',
+    url: 'https://celalaygar.github.io/',
+  },
+  {
+    title: 'Linkedin',
+    url: 'https://www.linkedin.com/in/celalaygar/',
+  },
+  {
+    title: 'GitHub',
+    url: 'https://github.com/celalaygar',
+  },
+  {
+    title: 'Medium',
+    url: 'https://medium.com/@celalaygar',
+  },
+  {
+    title: 'Youtube',
+    url: 'https://www.youtube.com/@celalaygar',
+  },
+  {
+    title: 'HackerRank',
+    url: 'https://hackerrank.com/celalaygar',
+  },
+  {
+    title: 'StackOverflow',
+    url: 'https://stackoverflow.com/users/12014524',
+  },
+  {
+    title: 'TikTok',
+    url: 'https://www.tiktok.com/@openick.io',
+  },
+];
+
+export const servicesData: ServicesData = {
+  pricing: [
+    {
+      id: 'starter',
+      title: {
+        en: 'Starter',
+        tr: 'Başlangıç',
+        de: 'Starter',
+      },
+      price: 17000,
+      currency: 'TRY',
+      duration: '4–5 days',
+      revisions: '1 revision round',
+      features: [
+        '6-page industry-specific design',
+        'WhatsApp integration',
+        'Social media links',
+        'Basic SEO optimization',
+        'Fully responsive design',
+      ],
+      popular: false,
+    },
+    {
+      id: 'growth',
+      title: {
+        en: 'Growth',
+        tr: 'Gelişim',
+        de: 'Wachstum',
+      },
+      price: 22000,
+      currency: 'TRY',
+      duration: '6–8 days',
+      revisions: '2 revision rounds',
+      features: [
+        '10-page advanced design',
+        'Modern UI with latest technologies',
+        'Social media, WhatsApp, email integration',
+        'Advanced SEO + Core Web Vitals optimization',
+        'Industry-specific content blocks',
+      ],
+      popular: true,
+    },
+    {
+      id: 'enterprise',
+      title: {
+        en: 'Enterprise',
+        tr: 'Kurumsal',
+        de: 'Unternehmen',
+      },
+      price: 35000,
+      currency: 'TRY',
+      duration: '8–12 days',
+      revisions: '3 revision rounds',
+      features: [
+        'Fully custom design tailored to the industry',
+        'Unlimited pages',
+        'Multi-language support (TR / EN)',
+        'Dark mode + advanced theme system',
+        'Fully responsive modern design',
+        'WhatsApp, social media, email integration',
+        'Supabase authentication system',
+        'Deployment support (Netlify / GoDaddy)',
+        'External backend integrations',
+      ],
+      popular: false,
+    },
+  ],
+  enterpriseSolutions: [
+    {
+      id: 'ecommerce',
+      title: {
+        en: 'Minimal E-Commerce',
+        tr: 'Minimal E-Ticaret',
+        de: 'Minimaler E-Commerce',
+      },
+      price: 50000,
+      features: [
+        'Product catalog & admin panel',
+        'Cart and payment system',
+        'Stock & order management',
+        'SEO-friendly and responsive design',
+      ],
+    },
+    {
+      id: 'custom-app',
+      title: {
+        en: 'Custom Application',
+        tr: 'Kişiye Özel Uygulama',
+        de: 'Individuelle Anwendung',
+      },
+      price: 100000,
+      extra: '+₺100,000 per additional month',
+      features: [
+        'Custom backend architecture',
+        'Scalable and secure infrastructure',
+        'User management and authorization',
+        '1-month development included',
+      ],
+    },
+    {
+      id: 'engineering',
+      title: {
+        en: 'Engineering Solutions',
+        tr: 'Mühendislik Çözümleri',
+        de: 'Ingenieurlösungen',
+      },
+      price: 150000,
+      priceType: 'monthly',
+      features: [
+        'Embedded systems & IoT integration',
+        'Full project lifecycle management',
+        'Testing, validation, field deployment',
+        'Example: Agricultural drone system',
+      ],
+    },
+  ],
+  process: [
+    'Discovery meeting + goal definition',
+    'Information architecture & wireframes',
+    'UI implementation & optimization',
+    'Testing & deployment',
+  ],
+  revisionPolicy: {
+    en: 'Each package includes limited revision rounds. Custom projects follow sprint-based delivery.',
+    tr: 'Her paket belirli sayıda revizyon içerir. Özel projelerde sprint bazlı ilerlenir.',
+    de: 'Jedes Paket enthält begrenzte Überarbeitungen. Individuelle Projekte folgen Sprint-Methodik.',
+  },
+};

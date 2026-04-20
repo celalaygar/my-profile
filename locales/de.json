@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "experience": "Erfahrung",
+    "services": "Dienstleistungen",
+    "certificates": "Zertifikate",
+    "technologies": "Technologien",
+    "articles": "Artikel",
+    "interview": "Interviewfragen",
+    "games": "Webspiele",
+    "books": "Bücher & Hobbys",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "github": "GitHub",
+    "portfolio": "Portfolio",
+    "viewMore": "Mehr anzeigen",
+    "learnMore": "Mehr erfahren",
+    "date": "Datum",
+    "description": "Beschreibung",
+    "technologies": "Technologien",
+    "language": "Sprache"
+  },
+  "home": {
+    "title": "Willkommen",
+    "subtitle": "Full-Stack-Entwickler & Tech-Enthusiast",
+    "about": "Ich erstelle schöne und funktionale Webanwendungen mit modernen Technologien.",
+    "cta": "Meine Arbeiten erkunden",
+    "openToOpportunities": "Offen für Möglichkeiten",
+    "developer": "Entwickler",
+    "aboutMe": "Über mich",
+    "aboutMeP1": "Ich bin ein leidenschaftlicher Full-Stack-Entwickler mit über 5 Jahren Erfahrung in der Entwicklung skalierbarer Anwendungen mit modernen Technologien. Meine Expertise umfasst Backend-Entwicklung mit Java und Spring Boot, Frontend-Entwicklung mit React und Next.js sowie DevOps-Praktiken mit Docker und Kubernetes.",
+    "aboutMeP2": "Ich bin bestrebt, sauberen, wartbaren Code zu schreiben und über die neuesten Branchentrends auf dem Laufenden zu bleiben. Wenn ich nicht programmiere, lese ich gerne, spiele Schach und trage zur Entwickler-Community bei.",
+    "featuredProjects": "Ausgewählte Projekte",
+    "featuredProjectsSubtitle": "Aktuelle Arbeiten und Erfolge",
+    "viewAll": "Alle anzeigen",
+    "viewAllProjects": "Alle Projekte anzeigen",
+    "techSkills": "Technologien & Fähigkeiten",
+    "techSkillsSubtitle": "Meine Kernkompetenzen und Fähigkeitsstufen",
+    "viewAllTech": "Alle Technologien anzeigen",
+    "experience": "Erfahrung",
+    "experienceSubtitle": "Beruflicher Werdegang und Positionen",
+    "viewFullHistory": "Vollständige Historie anzeigen",
+    "letsWork": "Zusammenarbeiten",
+    "letsWorkSubtitle": "Ich bin immer offen für interessante Projekte und Kooperationsmöglichkeiten. Kontaktieren Sie mich gerne!",
+    "getInTouch": "Kontakt aufnehmen",
+    "stats": {
+      "projects": "Projekte",
+      "yearsExp": "Jahre Erfahrung",
+      "technologies": "Technologien"
+    },
+    "allProjects": "Alle Projekte",
+    "allProjectsSubtitle": "Durchsuchen Sie alle meine Arbeiten",
+    "servicesSection": "Dienstleistungen & Preise",
+    "servicesSubtitle": "Professionelle Webentwicklungslösungen",
+    "viewServices": "Alle Dienstleistungen anzeigen",
+    "contactSection": "Kontakt aufnehmen",
+    "contactSubtitle": "Lassen Sie uns Ihr nächstes Projekt besprechen"
+  },
+  "projects": {
+    "title": "Projekte",
+    "empty": "Noch keine Projekte",
+    "subtitle": "Eine Sammlung von Projekten, die ich mit modernen Technologien und bewährten Praktiken erstellt habe.",
+    "allProjects": "Alle Projekte"
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "subtitle": "Beruflicher Werdegang und Karrieremeilensteine bei verschiedenen Unternehmen und Projekten.",
+    "company": "Unternehmen",
+    "position": "Position",
+    "duration": "Dauer",
+    "responsibilities": "Verantwortlichkeiten",
+    "technologies": "Technologien",
+    "present": "Heute",
+    "stats": {
+      "totalExperience": "Gesamterfahrung",
+      "years": "Jahre",
+      "companies": "Unternehmen",
+      "projects": "Projekte"
+    }
+  },
+  "certificates": {
+    "title": "Zertifikate",
+    "issuer": "Aussteller",
+    "issued": "Ausgestellt am"
+  },
+  "technologies": {
+    "title": "Technologien",
+    "category": "Kategorie"
+  },
+  "articles": {
+    "title": "Artikel",
+    "readTime": "Lesezeit"
+  },
+  "interview": {
+    "title": "Interviewfragen",
+    "question": "Frage",
+    "answer": "Antwort"
+  },
+  "games": {
+    "title": "Webspiele",
+    "play": "Spielen"
+  },
+  "books": {
+    "title": "Bücher & Hobbys",
+    "author": "Autor",
+    "rating": "Bewertung"
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Nachricht konnte nicht gesendet werden",
+    "subtitle": "Kontaktieren Sie mich gerne! Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert.",
+    "quickLinks": "Schnelllinks",
+    "sendMessage": "Nachricht senden",
+    "name": "Name",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "ihre@email.com",
+    "messagePlaceholder": "Ihre Nachricht...",
+    "stats": {
+      "contactMethods": "Kontaktmethoden",
+      "alwaysAvailable": "Immer erreichbar",
+      "quickResponse": "Schnelle Antwort",
+      "fast": "Schnell"
+    }
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "subtitle": "Von fertigen Website-Vorlagen bis hin zu vollständig maßgeschneiderter Unternehmenssoftware: kaufen Sie eine Website oder erstellen Sie ein individuelles Projekt — skalierbare, SEO-optimierte Lieferung für jedes Niveau.",
+    "pricing": "Preise",
+    "popular": "Beliebt",
+    "getStarted": "Starten",
+    "contact": "Kontakt",
+    "process": "Prozess",
+    "revisionPolicy": "Überarbeitungspolitik",
+    "duration": "Dauer",
+    "revisions": "Überarbeitungen",
+    "perMonth": "/ Monat",
+    "largeScale": "Großprojekte",
+    "largeScaleSubtitle": "Unternehmensgerechte Lösungen für komplexe Geschäftsanforderungen",
+    "readyToStart": "Bereit loszulegen?",
+    "readyToStartSubtitle": "Lassen Sie uns Ihr Projekt besprechen und die perfekte Lösung für Ihre Bedürfnisse finden.",
+    "step": "Schritt",
+    "enterprise": "Unternehmen",
+    "plans": {
+      "starter": "Starter",
+      "growth": "Wachstum",
+      "enterprise": "Unternehmen"
+    },
+    "features": {
+      "starter1": "6-seitiges branchenspezifisches Design",
+      "starter2": "WhatsApp-Integration",
+      "starter3": "Social-Media-Links",
+      "starter4": "Basis-SEO-Optimierung",
+      "starter5": "Vollständig responsives Design",
+      "growth1": "10-seitiges erweitertes Design",
+      "growth2": "Moderne UI mit neuesten Technologien",
+      "growth3": "Social Media, WhatsApp, E-Mail-Integration",
+      "growth4": "Erweiterte SEO + Core Web Vitals Optimierung",
+      "growth5": "Branchenspezifische Inhaltsblöcke",
+      "enterprise1": "Vollständig individuelles Design für die Branche",
+      "enterprise2": "Unbegrenzte Seiten",
+      "enterprise3": "Mehrsprachige Unterstützung (TR / EN)",
+      "enterprise4": "Dark Mode + erweitertes Theme-System",
+      "enterprise5": "Vollständig responsives modernes Design",
+      "enterprise6": "WhatsApp, Social Media, E-Mail-Integration",
+      "enterprise7": "Supabase-Authentifizierungssystem",
+      "enterprise8": "Deployment-Unterstützung (Netlify / GoDaddy)",
+      "enterprise9": "Externe Backend-Integrationen"
+    },
+    "durations": {
+      "starter": "4–5 Tage",
+      "growth": "6–8 Tage",
+      "enterprise": "8–12 Tage"
+    },
+    "revisionRounds": {
+      "starter": "1 Überarbeitungsrunde",
+      "growth": "2 Überarbeitungsrunden",
+      "enterprise": "3 Überarbeitungsrunden"
+    },
+    "enterpriseSolutions": {
+      "ecommerce": "Minimaler E-Commerce",
+      "customApp": "Individuelle Anwendung",
+      "engineering": "Ingenieurlösungen"
+    },
+    "enterpriseFeatures": {
+      "ecommerce1": "Produktkatalog & Admin-Panel",
+      "ecommerce2": "Warenkorb- und Zahlungssystem",
+      "ecommerce3": "Bestands- & Auftragsverwaltung",
+      "ecommerce4": "SEO-freundliches und responsives Design",
+      "customApp1": "Individuelle Backend-Architektur",
+      "customApp2": "Skalierbare und sichere Infrastruktur",
+      "customApp3": "Benutzerverwaltung und Autorisierung",
+      "customApp4": "1 Monat Entwicklung inklusive",
+      "customAppExtra": "+₺100.000 pro zusätzlichen Monat",
+      "engineering1": "Embedded Systems & IoT-Integration",
+      "engineering2": "Vollständiges Projektlebenszyklusmanagement",
+      "engineering3": "Tests, Validierung, Feldbereitstellung",
+      "engineering4": "Beispiel: Landwirtschaftliches Drohnensystem"
+    },
+    "processSteps": {
+      "step1": "Entdeckungstreffen + Zieldefinition",
+      "step2": "Informationsarchitektur & Wireframes",
+      "step3": "UI-Implementierung & Optimierung",
+      "step4": "Tests & Bereitstellung"
+    },
+    "revisionPolicyText": "Jedes Paket enthält begrenzte Überarbeitungsrunden. Individuelle Projekte folgen Sprint-basierter Lieferung."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Finden Sie Antworten auf häufig gestellte Fragen zu unseren Dienstleistungen und dem Webentwicklungsprozess.",
+    "questions": {
+      "q1": "Wie funktioniert der Website-Erstellungsprozess?",
+      "a1": "Zunächst klären wir Ihre Anforderungen (vorgefertigte Vorlage oder benutzerdefiniertes Design), erstellen dann Seiten basierend auf Ihrem Inhalt und Ihren Branding-Materialien und stellen diese schließlich mit technischen SEO-Prüfungen (Meta-Tags, Geschwindigkeit, Mobiloptimierung) bereit.",
+      "q2": "Sollte ich eine vorgefertigte Website kaufen oder eine individuelle erstellen lassen?",
+      "a2": "Wenn Ihr Budget und Ihre Zeit begrenzt sind, sind vorgefertigte Template-Pakete die beste Option. Unsere branchenspezifischen Vorlagen bieten SEO-Compliance und schnelle Bereitstellung. Für umfassendere Anforderungen sind individuelle Design-Projekte ideal.",
+      "q3": "Erstellen Sie Websites für Nischensektoren wie Frisörsalons, Restaurants oder Kliniken?",
+      "a3": "Ja. Wir haben branchenspezifische vorgefertigte Website-Vorlagen. Wir passen den Text und die visuellen Inhalte an Ihr Geschäft an und starten schnell. Wir haben Erfahrung mit Frisörsalons, Salons, Restaurants, Kliniken, Logistik, Energie und vielen anderen Branchen.",
+      "q4": "Wie viel kosten Website-Pakete?",
+      "a4": "Unsere vorgefertigten Template-Pakete beginnen ab ₺5.000, und Unternehmens- und benutzerdefinierte Projekte werden je nach Umfang bewertet. Schauen Sie auf unsere Dienstleistungsseite für die aktuellsten Preise.",
+      "q5": "Ist die Lieferzeit für Template-Pakete wirklich 2-5 Tage?",
+      "a5": "Ja. Wenn der Großteil des Inhalts bereit ist, stellen wir innerhalb von 2-5 Tagen bereit. Bei benutzerdefinierten Designs hängt der Zeitrahmen vom Projektumfang ab.",
+      "q6": "Ist SEO (Suchmaschinen-Optimierung) enthalten?",
+      "a6": "Ja. Alle unsere Projekte enthalten technische SEO-Infrastruktur als Standard (Meta-Tags, Open Graph, strukturierte Daten, Sitemap, Geschwindigkeitsoptimierung, Mobil-Responsivität).",
+      "q7": "Wie funktioniert der Prozess der benutzerdefinierten Softwareentwicklung?",
+      "a7": "Wir unterteilen den Umfang in Sprints und liefern funktionierende Funktionen am Ende jedes Sprints. E-Commerce-, Unternehmens- oder benutzerdefinierte Integrationsprojekte folgen diesem Ansatz.",
+      "q8": "Bieten Sie nach dem Start Support und Wartung an?",
+      "a8": "Ja. Wir bieten monatliche Support-Pläne für Wartung, Updates und Verbesserungen. Dies umfasst Sicherheitspatches, Inhaltsaktualisierungen und Leistungsüberwachung."
+    }
+  }
+}

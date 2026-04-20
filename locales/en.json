@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "services": "Services",
+    "certificates": "Certificates",
+    "technologies": "Technologies",
+    "articles": "Articles",
+    "interview": "Interview Questions",
+    "games": "Web Games",
+    "books": "Books & Hobbies",
+    "contact": "Contact"
+  },
+  "common": {
+    "github": "GitHub",
+    "portfolio": "Portfolio",
+    "viewMore": "View More",
+    "learnMore": "Learn More",
+    "date": "Date",
+    "description": "Description",
+    "technologies": "Technologies",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Welcome",
+    "subtitle": "Full-Stack Developer & Tech Enthusiast",
+    "about": "I build beautiful and functional web applications with modern technologies.",
+    "cta": "Explore My Work",
+    "openToOpportunities": "Open to opportunities",
+    "developer": "Developer",
+    "aboutMe": "About Me",
+    "aboutMeP1": "I'm a passionate full-stack developer with 5+ years of experience building scalable applications using modern technologies. My expertise spans backend development with Java and Spring Boot, frontend development with React and Next.js, and DevOps practices with Docker and Kubernetes.",
+    "aboutMeP2": "I'm committed to writing clean, maintainable code and staying updated with the latest industry trends. When I'm not coding, I enjoy reading, playing chess, and contributing to the developer community.",
+    "featuredProjects": "Featured Projects",
+    "featuredProjectsSubtitle": "Recent work and accomplishments",
+    "viewAll": "View All",
+    "viewAllProjects": "View All Projects",
+    "techSkills": "Technologies & Skills",
+    "techSkillsSubtitle": "My core competencies and proficiency levels",
+    "viewAllTech": "View All Technologies",
+    "experience": "Experience",
+    "experienceSubtitle": "Professional journey and roles",
+    "viewFullHistory": "View Full History",
+    "letsWork": "Let's Work Together",
+    "letsWorkSubtitle": "I'm always open to interesting projects and collaboration opportunities. Feel free to reach out!",
+    "getInTouch": "Get In Touch",
+    "stats": {
+      "projects": "Projects",
+      "yearsExp": "Years Experience",
+      "technologies": "Technologies"
+    },
+    "allProjects": "All Projects",
+    "allProjectsSubtitle": "Browse through all my work",
+    "servicesSection": "Services & Pricing",
+    "servicesSubtitle": "Professional web development solutions",
+    "viewServices": "View All Services",
+    "contactSection": "Get In Touch",
+    "contactSubtitle": "Let's discuss your next project"
+  },
+  "projects": {
+    "title": "Projects",
+    "empty": "No projects yet",
+    "subtitle": "A collection of projects I've built using modern technologies and best practices.",
+    "allProjects": "All Projects"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Professional journey and career milestones across various companies and projects.",
+    "company": "Company",
+    "position": "Position",
+    "duration": "Duration",
+    "responsibilities": "Responsibilities",
+    "technologies": "Technologies",
+    "present": "Present",
+    "stats": {
+      "totalExperience": "Total Experience",
+      "years": "Years",
+      "companies": "Companies",
+      "projects": "Projects"
+    }
+  },
+  "certificates": {
+    "title": "Certificates",
+    "issuer": "Issuer",
+    "issued": "Issued"
+  },
+  "technologies": {
+    "title": "Technologies",
+    "category": "Category"
+  },
+  "articles": {
+    "title": "Articles",
+    "readTime": "Read time"
+  },
+  "interview": {
+    "title": "Interview Questions",
+    "question": "Question",
+    "answer": "Answer"
+  },
+  "games": {
+    "title": "Web Games",
+    "play": "Play"
+  },
+  "books": {
+    "title": "Books & Hobbies",
+    "author": "Author",
+    "rating": "Rating"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message",
+    "subtitle": "Feel free to reach out! I'm always interested in new opportunities and collaborations.",
+    "quickLinks": "Quick Links",
+    "sendMessage": "Send a Message",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message...",
+    "stats": {
+      "contactMethods": "Contact Methods",
+      "alwaysAvailable": "Always Available",
+      "quickResponse": "Quick Response",
+      "fast": "Fast"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "From ready-made website templates to fully custom enterprise software: buy a website or build a custom project — scalable, SEO-optimized delivery for every level.",
+    "pricing": "Pricing",
+    "popular": "Most Popular",
+    "getStarted": "Get Started",
+    "contact": "Contact Us",
+    "process": "Process",
+    "revisionPolicy": "Revision Policy",
+    "duration": "Duration",
+    "revisions": "Revisions",
+    "perMonth": "/ month",
+    "largeScale": "Large Scale Projects",
+    "largeScaleSubtitle": "Enterprise-grade solutions for complex business needs",
+    "readyToStart": "Ready to Start?",
+    "readyToStartSubtitle": "Let's discuss your project and find the perfect solution for your needs.",
+    "step": "Step",
+    "enterprise": "Enterprise",
+    "plans": {
+      "starter": "Starter",
+      "growth": "Growth",
+      "enterprise": "Enterprise"
+    },
+    "features": {
+      "starter1": "6-page industry-specific design",
+      "starter2": "WhatsApp integration",
+      "starter3": "Social media links",
+      "starter4": "Basic SEO optimization",
+      "starter5": "Fully responsive design",
+      "growth1": "10-page advanced design",
+      "growth2": "Modern UI with latest technologies",
+      "growth3": "Social media, WhatsApp, email integration",
+      "growth4": "Advanced SEO + Core Web Vitals optimization",
+      "growth5": "Industry-specific content blocks",
+      "enterprise1": "Fully custom design tailored to the industry",
+      "enterprise2": "Unlimited pages",
+      "enterprise3": "Multi-language support (TR / EN)",
+      "enterprise4": "Dark mode + advanced theme system",
+      "enterprise5": "Fully responsive modern design",
+      "enterprise6": "WhatsApp, social media, email integration",
+      "enterprise7": "Supabase authentication system",
+      "enterprise8": "Deployment support (Netlify / GoDaddy)",
+      "enterprise9": "External backend integrations"
+    },
+    "durations": {
+      "starter": "4–5 days",
+      "growth": "6–8 days",
+      "enterprise": "8–12 days"
+    },
+    "revisionRounds": {
+      "starter": "1 revision round",
+      "growth": "2 revision rounds",
+      "enterprise": "3 revision rounds"
+    },
+    "enterpriseSolutions": {
+      "ecommerce": "Minimal E-Commerce",
+      "customApp": "Custom Application",
+      "engineering": "Engineering Solutions"
+    },
+    "enterpriseFeatures": {
+      "ecommerce1": "Product catalog & admin panel",
+      "ecommerce2": "Cart and payment system",
+      "ecommerce3": "Stock & order management",
+      "ecommerce4": "SEO-friendly and responsive design",
+      "customApp1": "Custom backend architecture",
+      "customApp2": "Scalable and secure infrastructure",
+      "customApp3": "User management and authorization",
+      "customApp4": "1-month development included",
+      "customAppExtra": "+₺100,000 per additional month",
+      "engineering1": "Embedded systems & IoT integration",
+      "engineering2": "Full project lifecycle management",
+      "engineering3": "Testing, validation, field deployment",
+      "engineering4": "Example: Agricultural drone system"
+    },
+    "processSteps": {
+      "step1": "Discovery meeting + goal definition",
+      "step2": "Information architecture & wireframes",
+      "step3": "UI implementation & optimization",
+      "step4": "Testing & deployment"
+    },
+    "revisionPolicyText": "Each package includes limited revision rounds. Custom projects follow sprint-based delivery."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our services and web development process.",
+    "questions": {
+      "q1": "How does the website creation process work?",
+      "a1": "We start by clarifying your needs (ready-made template or custom design), then build pages based on your content and branding materials, and finally deploy with technical SEO checks (meta tags, speed, mobile optimization).",
+      "q2": "Should I buy a ready-made website or have one custom built?",
+      "a2": "If your budget and time are limited, ready-made template packages are the best option. Our industry-specific templates come with SEO compliance and fast delivery. For more comprehensive needs, custom design projects are ideal.",
+      "q3": "Do you create websites for niche sectors like barbershops, restaurants, or clinics?",
+      "a3": "Yes. We have industry-specific ready-made website templates. We adapt the text and visuals for your business and launch quickly. We have experience with barbershops, salons, restaurants, clinics, logistics, energy, and many other sectors.",
+      "q4": "How much do website packages cost?",
+      "a4": "Our ready-made template packages start from ₺5,000, and corporate and custom projects are priced based on scope. Check our services page for the most current pricing.",
+      "q5": "Is the delivery time really 2-5 days for template packages?",
+      "a5": "Yes. If most of the content is ready, we launch within 2-5 days. For custom designs, the timeframe depends on the project scope.",
+      "q6": "Is SEO (search engine optimization) included?",
+      "a6": "Yes. All our projects include technical SEO infrastructure as standard (meta tags, Open Graph, structured data, sitemap, speed optimization, mobile responsiveness).",
+      "q7": "How does the custom software development process work?",
+      "a7": "We break down the scope into sprints and deliver working features at the end of each sprint. E-commerce, corporate applications, or custom integration projects follow this approach.",
+      "q8": "Do you provide support and maintenance after launch?",
+      "a8": "Yes. We offer monthly support plans for maintenance, updates, and improvements. This includes security patches, content updates, and performance monitoring."
+    }
+  }
+}

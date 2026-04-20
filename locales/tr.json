@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "projects": "Projeler",
+    "experience": "Deneyim",
+    "services": "Hizmetler",
+    "certificates": "Sertifikalar",
+    "technologies": "Teknolojiler",
+    "articles": "Makaleler",
+    "interview": "Mülakat Soruları",
+    "games": "Web Oyunları",
+    "books": "Kitaplar & Hobiler",
+    "contact": "İletişim"
+  },
+  "common": {
+    "github": "GitHub",
+    "portfolio": "Portföy",
+    "viewMore": "Daha Fazla Gör",
+    "learnMore": "Daha Fazla Öğren",
+    "date": "Tarih",
+    "description": "Açıklama",
+    "technologies": "Teknolojiler",
+    "language": "Dil"
+  },
+  "home": {
+    "title": "Hoşgeldiniz",
+    "subtitle": "Full-Stack Geliştirici & Teknoloji Meraklısı",
+    "about": "Modern teknolojilerle güzel ve işlevsel web uygulamaları geliştiririm.",
+    "cta": "Çalışmalarımı Keşfedin",
+    "openToOpportunities": "Fırsatlara açığım",
+    "developer": "Geliştirici",
+    "aboutMe": "Hakkımda",
+    "aboutMeP1": "Modern teknolojiler kullanarak ölçeklenebilir uygulamalar geliştiren 5+ yıllık deneyime sahip tutkulu bir full-stack geliştiriciyim. Uzmanlık alanlarım Java ve Spring Boot ile backend geliştirme, React ve Next.js ile frontend geliştirme ve Docker ve Kubernetes ile DevOps pratiklerini kapsar.",
+    "aboutMeP2": "Temiz, bakımı kolay kod yazmaya ve sektördeki en son trendleri takip etmeye kararlıyım. Kod yazmadığım zamanlarda kitap okumaktan, satranç oynamaktan ve geliştirici topluluğuna katkıda bulunmaktan keyif alıyorum.",
+    "featuredProjects": "Öne Çıkan Projeler",
+    "featuredProjectsSubtitle": "Son çalışmalar ve başarılar",
+    "viewAll": "Tümünü Gör",
+    "viewAllProjects": "Tüm Projeleri Gör",
+    "techSkills": "Teknolojiler & Yetenekler",
+    "techSkillsSubtitle": "Temel yetkinliklerim ve uzmanlık seviyeleri",
+    "viewAllTech": "Tüm Teknolojileri Gör",
+    "experience": "Deneyim",
+    "experienceSubtitle": "Profesyonel yolculuk ve roller",
+    "viewFullHistory": "Tam Geçmişi Gör",
+    "letsWork": "Birlikte Çalışalım",
+    "letsWorkSubtitle": "İlginç projelere ve işbirliği fırsatlarına her zaman açığım. İletişime geçmekten çekinmeyin!",
+    "getInTouch": "İletişime Geç",
+    "stats": {
+      "projects": "Projeler",
+      "yearsExp": "Yıl Deneyim",
+      "technologies": "Teknolojiler"
+    },
+    "allProjects": "Tüm Projeler",
+    "allProjectsSubtitle": "Tüm çalışmalarıma göz atın",
+    "servicesSection": "Hizmetler & Fiyatlandırma",
+    "servicesSubtitle": "Profesyonel web geliştirme çözümleri",
+    "viewServices": "Tüm Hizmetleri Gör",
+    "contactSection": "İletişime Geçin",
+    "contactSubtitle": "Bir sonraki projenizi tartışalım"
+  },
+  "projects": {
+    "title": "Projeler",
+    "empty": "Henüz proje yok",
+    "subtitle": "Modern teknolojiler ve en iyi uygulamalar kullanarak geliştirdiğim proje koleksiyonu.",
+    "allProjects": "Tüm Projeler"
+  },
+  "experience": {
+    "title": "Deneyim",
+    "subtitle": "Çeşitli şirketler ve projelerdeki profesyonel yolculuk ve kariyer dönüm noktaları.",
+    "company": "Şirket",
+    "position": "Pozisyon",
+    "duration": "Süre",
+    "responsibilities": "Sorumluluklar",
+    "technologies": "Teknolojiler",
+    "present": "Günümüz",
+    "stats": {
+      "totalExperience": "Toplam Deneyim",
+      "years": "Yıl",
+      "companies": "Şirket",
+      "projects": "Proje"
+    }
+  },
+  "certificates": {
+    "title": "Sertifikalar",
+    "issuer": "Veren Kurum",
+    "issued": "Verilme Tarihi"
+  },
+  "technologies": {
+    "title": "Teknolojiler",
+    "category": "Kategori"
+  },
+  "articles": {
+    "title": "Makaleler",
+    "readTime": "Okuma Süresi"
+  },
+  "interview": {
+    "title": "Mülakat Soruları",
+    "question": "Soru",
+    "answer": "Cevap"
+  },
+  "games": {
+    "title": "Web Oyunları",
+    "play": "Oyna"
+  },
+  "books": {
+    "title": "Kitaplar & Hobiler",
+    "author": "Yazar",
+    "rating": "Puan"
+  },
+  "contact": {
+    "title": "İletişime Geç",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "send": "Mesaj Gönder",
+    "success": "Mesaj başarıyla gönderildi!",
+    "error": "Mesaj gönderilemedi",
+    "subtitle": "İletişime geçmekten çekinmeyin! Yeni fırsatlar ve işbirlikleriyle her zaman ilgileniyorum.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "sendMessage": "Mesaj Gönder",
+    "name": "İsim",
+    "namePlaceholder": "Adınız",
+    "emailPlaceholder": "eposta@adresiniz.com",
+    "messagePlaceholder": "Mesajınız...",
+    "stats": {
+      "contactMethods": "İletişim Yöntemleri",
+      "alwaysAvailable": "Her Zaman Ulaşılabilir",
+      "quickResponse": "Hızlı Yanıt",
+      "fast": "Hızlı"
+    }
+  },
+  "services": {
+    "title": "Hizmetler",
+    "subtitle": "Hazır web sitesi şablonlarından tamamen özel kurumsal yazılımlara: bir web sitesi satın alın veya özel bir proje oluşturun — her seviye için ölçeklenebilir, SEO optimizasyonlu teslimat.",
+    "pricing": "Fiyatlandırma",
+    "popular": "Popüler",
+    "getStarted": "Başla",
+    "contact": "İletişime Geç",
+    "process": "Süreç",
+    "revisionPolicy": "Revizyon Politikası",
+    "duration": "Süre",
+    "revisions": "Revizyonlar",
+    "perMonth": "/ ay",
+    "largeScale": "Büyük Ölçekli Projeler",
+    "largeScaleSubtitle": "Karmaşık iş ihtiyaçları için kurumsal çözümler",
+    "readyToStart": "Başlamaya Hazır mısınız?",
+    "readyToStartSubtitle": "Projenizi tartışalım ve ihtiyaçlarınız için mükemmel çözümü bulalım.",
+    "step": "Adım",
+    "enterprise": "Kurumsal",
+    "plans": {
+      "starter": "Başlangıç",
+      "growth": "Gelişim",
+      "enterprise": "Kurumsal"
+    },
+    "features": {
+      "starter1": "6 sayfalık sektöre özel tasarım",
+      "starter2": "WhatsApp entegrasyonu",
+      "starter3": "Sosyal medya bağlantıları",
+      "starter4": "Temel SEO optimizasyonu",
+      "starter5": "Tam responsive tasarım",
+      "growth1": "10 sayfalık gelişmiş tasarım",
+      "growth2": "En son teknolojilerle modern UI",
+      "growth3": "Sosyal medya, WhatsApp, e-posta entegrasyonu",
+      "growth4": "Gelişmiş SEO + Core Web Vitals optimizasyonu",
+      "growth5": "Sektöre özel içerik blokları",
+      "enterprise1": "Sektöre özel tamamen özel tasarım",
+      "enterprise2": "Sınırsız sayfa",
+      "enterprise3": "Çoklu dil desteği (TR / EN)",
+      "enterprise4": "Karanlık mod + gelişmiş tema sistemi",
+      "enterprise5": "Tam responsive modern tasarım",
+      "enterprise6": "WhatsApp, sosyal medya, e-posta entegrasyonu",
+      "enterprise7": "Supabase kimlik doğrulama sistemi",
+      "enterprise8": "Deployment desteği (Netlify / GoDaddy)",
+      "enterprise9": "Harici backend entegrasyonları"
+    },
+    "durations": {
+      "starter": "4–5 gün",
+      "growth": "6–8 gün",
+      "enterprise": "8–12 gün"
+    },
+    "revisionRounds": {
+      "starter": "1 revizyon turu",
+      "growth": "2 revizyon turu",
+      "enterprise": "3 revizyon turu"
+    },
+    "enterpriseSolutions": {
+      "ecommerce": "Minimal E-Ticaret",
+      "customApp": "Kişiye Özel Uygulama",
+      "engineering": "Mühendislik Çözümleri"
+    },
+    "enterpriseFeatures": {
+      "ecommerce1": "Ürün kataloğu & yönetici paneli",
+      "ecommerce2": "Sepet ve ödeme sistemi",
+      "ecommerce3": "Stok & sipariş yönetimi",
+      "ecommerce4": "SEO dostu ve responsive tasarım",
+      "customApp1": "Özel backend mimarisi",
+      "customApp2": "Ölçeklenebilir ve güvenli altyapı",
+      "customApp3": "Kullanıcı yönetimi ve yetkilendirme",
+      "customApp4": "1 aylık geliştirme dahil",
+      "customAppExtra": "+₺100.000 ek ay başına",
+      "engineering1": "Gömülü sistemler & IoT entegrasyonu",
+      "engineering2": "Tam proje yaşam döngüsü yönetimi",
+      "engineering3": "Test, doğrulama, saha dağıtımı",
+      "engineering4": "Örnek: Tarımsal drone sistemi"
+    },
+    "processSteps": {
+      "step1": "Keşif toplantısı + hedef belirleme",
+      "step2": "Bilgi mimarisi & wireframe'ler",
+      "step3": "UI implementasyonu & optimizasyonu",
+      "step4": "Test & deployment"
+    },
+    "revisionPolicyText": "Her paket belirli sayıda revizyon içerir. Özel projelerde sprint bazlı ilerlenir."
+  },
+  "faq": {
+    "title": "Sık Sorulan Sorular",
+    "subtitle": "Hizmetlerimiz ve web geliştirme süreci hakkında sık sorulan soruların cevaplarını bulun.",
+    "questions": {
+      "q1": "Web sitesi yaptırma süreci nasıl işliyor?",
+      "a1": "Önce ihtiyacınızı (hazır şablon mu, özel tasarım mı) netleştiriyoruz; ardından içerik ve marka materyallerinize göre sayfaları kurup teknik SEO (meta, hız, mobil) kontrolleriyle yayına alıyoruz.",
+      "q2": "Hazır web sitesi satın almak mı, yoksa sıfırdan mı yaptırmalıyım?",
+      "a2": "Bütçeniz ve zamanınız kısıtlıysa hazır şablon paketleri en uygun seçenektir; sektöre özel hazır şablonlarımız SEO uyumlu ve hızlı teslimat ile gelir. Daha kapsamlı ihtiyaçlarınız varsa özel tasarım projeleri uygundur.",
+      "q3": "Berber, kuaför, restoran veya klinik gibi niş sektörler için web sitesi yapıyor musunuz?",
+      "a3": "Evet. Sektöre özel hazır web sitesi şablonlarımız var; metin ve görselleri işletmenize göre uyarlayıp kısa sürede yayına alıyoruz. Berber, kuaför, restoran, klinik, lojistik, enerji ve daha pek çok sektörde deneyimimiz bulunuyor.",
+      "q4": "Web sitesi fiyatları ne kadar?",
+      "a4": "Hazır şablon paketlerimiz ₺5.000'den başlıyor, kurumsal ve özel projeler kapsama göre fiyatlandırılıyor. En güncel fiyatlar için hizmetler sayfamıza göz atabilirsiniz.",
+      "q5": "Şablon paketlerde teslim süresi gerçekten 2-5 gün mü?",
+      "a5": "Evet. İçeriklerin büyük kısmı hazırsa 2-5 gün aralığında yayına alıyoruz. Özel tasarımlarda süre projenin kapsamına göre belirlenir.",
+      "q6": "SEO (arama motoru optimizasyonu) dahil mi?",
+      "a6": "Evet. Tüm projelerimizde teknik SEO altyapısı (meta etiketler, Open Graph, yapısal veri, sitemap, hız optimizasyonu, mobil uyum) standart olarak dahildir.",
+      "q7": "Özel yazılım projelerinde süreç nasıl ilerliyor?",
+      "a7": "Kapsamı sprintlere bölüp her sprint sonunda çalışan teslim yapıyoruz. E-ticaret, kurumsal uygulama veya özel entegrasyon projeleri bu şekilde yürütülür.",
+      "q8": "Yayın sonrası destek ve bakım veriyor musunuz?",
+      "a8": "Evet. Bakım, güncelleme ve iyileştirme için aylık destek planları sunuyoruz. Güvenlik yamaları, içerik güncellemeleri ve performans takibi bu kapsamdadır."
+    }
+  }
+}
