@@ -2,17 +2,13 @@
 
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
-import { TechnologyCard } from '@/components/cards/technology-card';
 import { useI18n } from '@/lib/i18n';
-import { projects, technologies, experiences, servicesData } from '@/data';
+import { projects, servicesData, templates } from '@/data';
 import Link from 'next/link';
-import { ChevronRight, Briefcase, ArrowRight, ExternalLink, Check, Mail, MessageSquare, Sparkles } from 'lucide-react';
+import { ChevronRight, ArrowRight, ExternalLink, Check, Mail, MessageSquare, Sparkles, Database, Code2, Zap, Shield, Layout } from 'lucide-react';
 
 export default function Home() {
   const { t, language } = useI18n();
-
-  // Get first experience for preview
-  const featuredExperience = experiences.slice(0, 1);
 
   // Get first 3 pricing plans for services preview
   const pricingPlans = servicesData.pricing;
@@ -20,7 +16,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
-
+      
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-20 pb-32 sm:pt-32 sm:pb-40">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
@@ -80,21 +76,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 sm:py-32 border-t border-border/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">{t('home.aboutMe')}</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              {t('home.aboutMeP1')}
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              {t('home.aboutMeP2')}
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* All Projects Section - Small Cards */}
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -111,41 +92,62 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {projects.map((project) => (
               <Link
                 key={project.id}
-                href="/projects"
-                className="group relative bg-card border border-border/50 rounded-lg p-4 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300"
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-card border border-border/50 rounded-lg p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300 flex flex-col h-full"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#7cff92]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                <div className="relative">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs px-2 py-0.5 bg-[#7cff92]/10 text-[#7cff92] rounded-full font-medium truncate">
+                <div className="relative flex flex-col h-full">
+                  {/* Type Badge */}
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs px-2.5 py-1 bg-[#7cff92]/10 text-[#7cff92] rounded-full font-medium truncate">
                       {project.type}
                     </span>
-                    <ExternalLink size={14} className="text-muted-foreground group-hover:text-[#7cff92] transition-colors flex-shrink-0" />
+                    <ExternalLink size={16} className="text-muted-foreground group-hover:text-[#7cff92] transition-colors flex-shrink-0" />
                   </div>
-                  <h3 className="font-semibold text-foreground text-sm group-hover:text-[#7cff92] transition-colors line-clamp-2">
+
+                  {/* Title */}
+                  <h3 className="font-semibold text-foreground text-base group-hover:text-[#7cff92] transition-colors line-clamp-2 mb-2">
                     {project.name}
                   </h3>
-                  <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
+
+                  {/* Short Description */}
+                  <p className="text-xs text-[#7cff92]/80 font-medium mb-2 uppercase tracking-wider">
                     {project.short_description}
                   </p>
-                  <div className="flex flex-wrap gap-1 mt-2">
-                    {project.technologies.slice(0, 2).map((tech, idx) => (
+
+                  {/* Long Description */}
+                  <p className="text-sm text-muted-foreground line-clamp-2 mb-4 flex-grow">
+                    {project.long_description}
+                  </p>
+
+                  {/* Technologies */}
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {project.technologies.slice(0, 3).map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-1.5 py-0.5 text-[10px] font-medium bg-[#7cff92]/10 text-[#7cff92]/80 rounded"
+                        className="px-2 py-0.5 text-xs font-medium bg-[#7cff92]/10 text-[#7cff92]/80 rounded"
                       >
                         {tech}
                       </span>
                     ))}
-                    {project.technologies.length > 2 && (
-                      <span className="px-1.5 py-0.5 text-[10px] font-medium bg-muted text-muted-foreground rounded">
-                        +{project.technologies.length - 2}
+                    {project.technologies.length > 3 && (
+                      <span className="px-2 py-0.5 text-xs font-medium bg-muted text-muted-foreground rounded">
+                        +{project.technologies.length - 3}
                       </span>
                     )}
+                  </div>
+
+                  {/* Footer with hover effect */}
+                  <div className="pt-3 border-t border-border/30 group-hover:border-[#7cff92]/30 transition-colors">
+                    <div className="text-xs text-muted-foreground group-hover:text-[#7cff92] transition-colors flex items-center gap-1">
+                      View Project <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -186,10 +188,11 @@ export default function Home() {
               <Link
                 key={plan.id}
                 href="/services"
-                className={`group relative bg-card border rounded-xl p-6 transition-all duration-300 hover:shadow-xl ${plan.popular
+                className={`group relative bg-card border rounded-xl p-6 transition-all duration-300 hover:shadow-xl ${
+                  plan.popular
                     ? 'border-[#7cff92] shadow-lg shadow-[#7cff92]/20'
                     : 'border-border/50 hover:border-[#7cff92]/50 hover:shadow-[#7cff92]/10'
-                  }`}
+                }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -198,14 +201,14 @@ export default function Home() {
                     </span>
                   </div>
                 )}
-
+                
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">
                     {t(`services.plans.${plan.id}`)}
                   </h3>
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-3xl font-bold text-[#7cff92]">
-                      {plan.currency === 'TRY' ? '₺' : '$'}{plan.price}
+                      {plan.currency === 'TRY' ? '₺' : '$'}{plan.price.toLocaleString()}
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
@@ -226,10 +229,11 @@ export default function Home() {
 
                 <div className="mt-auto">
                   <span
-                    className={`w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-semibold transition-all ${plan.popular
+                    className={`w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-semibold transition-all ${
+                      plan.popular
                         ? 'bg-[#7cff92] text-background group-hover:bg-[#7cff92]/90'
                         : 'border border-[#7cff92]/30 text-[#7cff92] group-hover:bg-[#7cff92]/10'
-                      }`}
+                    }`}
                   >
                     {t('services.getStarted')}
                     <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -248,97 +252,180 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technologies Section */}
+      {/* Templates Preview Section */}
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">{t('home.techSkills')}</h2>
-              <p className="text-muted-foreground mt-2">{t('home.techSkillsSubtitle')}</p>
+              <div className="inline-flex items-center gap-2 mb-4">
+                <Layout className="w-5 h-5 text-[#7cff92]" />
+                <span className="text-sm font-medium text-[#7cff92]">{t('templates.badge')}</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">{t('templates.featuredTitle')}</h2>
+              <p className="text-muted-foreground mt-2">{t('templates.featuredSubtitle')}</p>
             </div>
             <Link
-              href="/technologies"
+              href="/templates"
               className="hidden sm:flex items-center gap-2 px-4 py-2 text-[#7cff92] hover:text-[#7cff92]/80 transition-colors"
             >
-              {t('home.viewAll')} <ArrowRight size={18} />
+              {t('templates.viewAll')} <ArrowRight size={18} />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {technologies.map((tech) => (
-              <TechnologyCard key={tech.id} technology={tech} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {templates.slice(0, 3).map((template) => (
+              <Link
+                key={template.id}
+                href={template.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-card border border-border/50 rounded-lg overflow-hidden hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#7cff92]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                
+                {/* Image placeholder */}
+                <div className="relative h-32 bg-gradient-to-br from-[#7cff92]/20 to-[#7cff92]/5 overflow-hidden">
+                  <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Layout className="w-10 h-10 text-[#7cff92]/40" />
+                  </div>
+                  <div className="absolute top-3 right-3 px-2 py-1 text-xs font-semibold uppercase tracking-wide bg-[#7cff92]/90 text-background rounded">
+                    {template.type}
+                  </div>
+                </div>
+
+                <div className="relative p-5">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs px-2 py-0.5 bg-[#7cff92]/10 text-[#7cff92] rounded-full font-medium">
+                      {template.type}
+                    </span>
+                    <ExternalLink size={14} className="text-muted-foreground group-hover:text-[#7cff92] transition-colors" />
+                  </div>
+
+                  <h3 className="font-semibold text-foreground text-base group-hover:text-[#7cff92] transition-colors mb-2">
+                    {template.title}
+                  </h3>
+
+                  <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
+                    {template.description}
+                  </p>
+
+                  <div className="pt-3 border-t border-border/30 group-hover:border-[#7cff92]/30 transition-colors">
+                    <div className="text-xs text-muted-foreground group-hover:text-[#7cff92] transition-colors flex items-center gap-1">
+                      View Template <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
 
           <Link
-            href="/technologies"
+            href="/templates"
             className="sm:hidden flex items-center justify-center gap-2 px-6 py-3 mt-8 text-[#7cff92] font-semibold hover:text-[#7cff92]/80 transition-colors"
           >
-            {t('home.viewAllTech')} <ArrowRight size={18} />
+            {t('templates.viewAll')} <ArrowRight size={18} />
           </Link>
         </div>
       </section>
 
-      {/* Experience Preview Section */}
-      <section className="py-20 sm:py-32 border-t border-border/50">
+      {/* Large Scale Projects Detail Section */}
+      <section className="py-20 sm:py-32 border-t border-border/50 bg-gradient-to-b from-[#7cff92]/5 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-12">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">{t('home.experience')}</h2>
-              <p className="text-muted-foreground mt-2">{t('home.experienceSubtitle')}</p>
-            </div>
-            <Link
-              href="/experience"
-              className="hidden sm:flex items-center gap-2 px-4 py-2 text-[#7cff92] hover:text-[#7cff92]/80 transition-colors"
-            >
-              {t('home.viewFullHistory')} <ArrowRight size={18} />
-            </Link>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">{t('services.largeScale')}</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t('services.largeScaleSubtitle')}</p>
           </div>
 
-          <div className="space-y-4">
-            {featuredExperience.map((exp) => (
-              <div
-                key={exp.id}
-                className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 p-6"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#7cff92]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                <div className="relative flex items-start gap-4">
-                  <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
-                    <Briefcase className="w-6 h-6 text-[#7cff92]" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-foreground group-hover:text-[#7cff92] transition-colors duration-200">
-                      {exp.position}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mt-1">{exp.company}</p>
-                    <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                      {exp.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-3">
-                      {exp.technologies.map((tech, idx) => (
-                        <span
-                          key={idx}
-                          className="px-2.5 py-1 text-xs font-semibold bg-[#7cff92]/15 text-[#7cff92] rounded-full border border-[#7cff92]/20"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-[#7cff92] to-transparent group-hover:w-full transition-all duration-300" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* E-Commerce Solution */}
+            <div className="group bg-card border border-border/50 rounded-2xl p-8 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-foreground mb-2">{t('services.enterpriseSolutions.ecommerce')}</h3>
+                <p className="text-3xl font-bold text-[#7cff92]">₺50,000</p>
               </div>
-            ))}
-          </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.ecommerce1')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.ecommerce2')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.ecommerce3')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.ecommerce4')}</span>
+                </li>
+              </ul>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-[#7cff92]/10 text-[#7cff92] rounded-lg font-semibold border border-[#7cff92]/30 hover:bg-[#7cff92]/20 hover:border-[#7cff92]/60 transition-all w-full justify-center">
+                {t('services.getStarted')} <ArrowRight size={16} />
+              </Link>
+            </div>
 
-          <Link
-            href="/experience"
-            className="sm:hidden flex items-center justify-center gap-2 px-6 py-3 mt-8 text-[#7cff92] font-semibold hover:text-[#7cff92]/80 transition-colors"
-          >
-            {t('home.viewFullHistory')} <ArrowRight size={18} />
-          </Link>
+            {/* Custom Application */}
+            <div className="group bg-card border border-[#7cff92] rounded-2xl p-8 hover:shadow-lg hover:shadow-[#7cff92]/20 transition-all duration-300 scale-105">
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-foreground mb-2">{t('services.enterpriseSolutions.customApp')}</h3>
+                <p className="text-3xl font-bold text-[#7cff92]">₺100,000</p>
+                <p className="text-sm text-muted-foreground mt-2">{t('services.enterpriseFeatures.customAppExtra')}</p>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.customApp1')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.customApp2')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.customApp3')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.customApp4')}</span>
+                </li>
+              </ul>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-[#7cff92] text-background rounded-lg font-semibold hover:bg-[#7cff92]/90 transition-all w-full justify-center">
+                {t('services.getStarted')} <ArrowRight size={16} />
+              </Link>
+            </div>
+
+            {/* Engineering Solutions */}
+            <div className="group bg-card border border-border/50 rounded-2xl p-8 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-foreground mb-2">{t('services.enterpriseSolutions.engineering')}</h3>
+                <p className="text-3xl font-bold text-[#7cff92]">₺150,000<span className="text-sm text-muted-foreground ml-2">{t('services.perMonth')}</span></p>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.engineering1')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.engineering2')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.engineering3')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#7cff92] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{t('services.enterpriseFeatures.engineering4')}</span>
+                </li>
+              </ul>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-[#7cff92]/10 text-[#7cff92] rounded-lg font-semibold border border-[#7cff92]/30 hover:bg-[#7cff92]/20 hover:border-[#7cff92]/60 transition-all w-full justify-center">
+                {t('services.getStarted')} <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -351,7 +438,7 @@ export default function Home() {
               <p className="text-lg text-muted-foreground mb-8">
                 {t('home.contactSubtitle')}
               </p>
-
+              
               <div className="space-y-4">
                 <div className="flex items-center gap-4 p-4 bg-card border border-border/50 rounded-lg hover:border-[#7cff92]/50 transition-colors">
                   <div className="p-3 bg-[#7cff92]/10 rounded-lg">
@@ -362,7 +449,7 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground">{t('contact.stats.quickResponse')}</p>
                   </div>
                 </div>
-
+                
                 <div className="flex items-center gap-4 p-4 bg-card border border-border/50 rounded-lg hover:border-[#7cff92]/50 transition-colors">
                   <div className="p-3 bg-[#7cff92]/10 rounded-lg">
                     <MessageSquare className="w-5 h-5 text-[#7cff92]" />
@@ -388,6 +475,125 @@ export default function Home() {
                 <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section - Moved to Bottom */}
+      <section className="py-20 sm:py-32 border-t border-border/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* About Header */}
+          <div className="mb-16">
+            <p className="text-lg font-semibold text-[#7cff92] mb-2">
+              {t('home.aboutExperience')}
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+              {t('home.aboutIntro')}
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mb-6">
+              {t('home.aboutDescription')}
+            </p>
+            <p className="text-base font-semibold text-foreground">
+              {t('home.aboutStats')}
+            </p>
+          </div>
+
+          {/* Expertise Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {/* Backend */}
+            <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
+                  <Database className="w-6 h-6 text-[#7cff92]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
+                    {t('home.aboutExpertise.backendTitle')}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t('home.aboutExpertise.backendDesc')}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Frontend */}
+            <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
+                  <Code2 className="w-6 h-6 text-[#7cff92]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
+                    {t('home.aboutExpertise.frontendTitle')}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t('home.aboutExpertise.frontendDesc')}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Microservices */}
+            <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
+                  <Zap className="w-6 h-6 text-[#7cff92]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
+                    {t('home.aboutExpertise.microservicesTitle')}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t('home.aboutExpertise.microservicesDesc')}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Performance */}
+            <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
+                  <Shield className="w-6 h-6 text-[#7cff92]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
+                    {t('home.aboutExpertise.performanceTitle')}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t('home.aboutExpertise.performanceDesc')}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Consultation CTA */}
+          <div className="bg-card border border-border/50 rounded-xl p-8 hover:border-[#7cff92]/30 transition-colors text-center">
+            <h3 className="text-xl font-bold text-foreground mb-3">
+              {t('home.aboutExpertise.consultationTitle')}
+            </h3>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              {t('home.aboutExpertise.consultationDesc')}
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-[#7cff92]/10 text-[#7cff92] rounded-lg font-semibold border border-[#7cff92]/30 hover:bg-[#7cff92]/20 hover:border-[#7cff92]/60 transition-all"
+            >
+              {t('home.getInTouch')}
+              <ArrowRight size={18} />
+            </Link>
+          </div>
+
+          {/* View Full About Page Link */}
+          <div className="text-center mt-12">
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 px-6 py-3 text-[#7cff92] font-semibold hover:text-[#7cff92]/80 transition-colors"
+            >
+              View Full About Page <ArrowRight size={18} />
+            </Link>
           </div>
         </div>
       </section>

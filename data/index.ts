@@ -1,4 +1,4 @@
-import { Project, Experience, Certificate, Technology, TechnologyGroup, Article, InterviewQuestion, Game, Book, Hobby, ContactLink, ServicesData } from '@/types';
+import { Project, Experience, Certificate, Technology, TechnologyGroup, Article, InterviewQuestion, Game, Book, Hobby, ContactLink, ServicesData, Template } from '@/types';
 
 export const projects: Project[] = [
   {
@@ -752,3 +752,76 @@ export const servicesData: ServicesData = {
     de: 'Jedes Paket enthält begrenzte Überarbeitungen. Individuelle Projekte folgen Sprint-Methodik.',
   },
 };
+
+export const templates: Template[] = [
+  {
+    id: '1',
+    title: 'Restaurant Pro',
+    type: 'Restaurant',
+    description: 'Modern restaurant template with menu showcase, online reservations, and gallery sections.',
+    url: 'https://example.com/templates/restaurant-pro',
+  },
+  {
+    id: '2',
+    title: 'Salon Beauty',
+    type: 'Salon & Beauty',
+    description: 'Elegant salon template featuring services, pricing tables, and appointment booking.',
+    url: 'https://example.com/templates/salon-beauty',
+  },
+  {
+    id: '3',
+    title: 'Real Estate Hub',
+    type: 'Real Estate',
+    description: 'Professional real estate template with property listings, search filters, and agent profiles.',
+    url: 'https://example.com/templates/real-estate-hub',
+  },
+  {
+    id: '4',
+    title: 'Medical Clinic',
+    type: 'Healthcare',
+    description: 'Clean medical template with doctor profiles, services, and patient appointment system.',
+    url: 'https://example.com/templates/medical-clinic',
+  },
+  {
+    id: '5',
+    title: 'Fitness Studio',
+    type: 'Fitness',
+    description: 'Dynamic fitness template with class schedules, trainer profiles, and membership plans.',
+    url: 'https://example.com/templates/fitness-studio',
+  },
+  {
+    id: '6',
+    title: 'Law Firm',
+    type: 'Legal',
+    description: 'Professional law firm template with practice areas, attorney profiles, and case studies.',
+    url: 'https://example.com/templates/law-firm',
+  },
+  {
+    id: '7',
+    title: 'Tech Startup',
+    type: 'Technology',
+    description: 'Modern startup template with product showcase, team section, and investor relations.',
+    url: 'https://example.com/templates/tech-startup',
+  },
+  {
+    id: '8',
+    title: 'E-Commerce Store',
+    type: 'E-Commerce',
+    description: 'Full-featured e-commerce template with product catalog, cart, and checkout system.',
+    url: 'https://example.com/templates/ecommerce-store',
+  },
+  {
+    id: '9',
+    title: 'Education Portal',
+    type: 'Education',
+    description: 'Educational template with course listings, instructor profiles, and student portal.',
+    url: 'https://example.com/templates/education-portal',
+  },
+  {
+    id: '10',
+    title: 'Hotel Booking',
+    type: 'Hospitality',
+    description: 'Luxury hotel template with room listings, amenities showcase, and booking system.',
+    url: 'https://example.com/templates/hotel-booking',
+  },
+];

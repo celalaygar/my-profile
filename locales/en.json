@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
+    "templates": "Templates",
     "experience": "Experience",
     "services": "Services",
     "certificates": "Certificates",
@@ -45,6 +46,23 @@
     "letsWork": "Let's Work Together",
     "letsWorkSubtitle": "I'm always open to interesting projects and collaboration opportunities. Feel free to reach out!",
     "getInTouch": "Get In Touch",
+    "aboutPageTitle": "About Me",
+    "aboutExperience": "6+ Years Experience • Full-Stack Engineering",
+    "aboutIntro": "Hello, I'm Hacı Celal Aygar.",
+    "aboutDescription": "For 6+ years, I have been developing web and software projects. I build robust services on the backend with Java and Python, and develop modern interfaces on the frontend with React, TypeScript, and Next.js. My goal: fast delivery, trust, and measurable results.",
+    "aboutStats": "6+ years experience • 40+ products/services published",
+    "aboutExpertise": {
+      "backendTitle": "Backend (Java / Python)",
+      "backendDesc": "I develop APIs, business logic, and integration layers with Java and Python.",
+      "frontendTitle": "Frontend (React / TypeScript / Next.js)",
+      "frontendDesc": "I develop fast, modern, and conversion-focused interfaces with React, TypeScript, and Next.js.",
+      "microservicesTitle": "Microservices and DevOps",
+      "microservicesDesc": "Sustainable and scalable deployment processes with Docker and CI/CD.",
+      "performanceTitle": "Performance and Security",
+      "performanceDesc": "I deliver SEO, Core Web Vitals, and secure infrastructure standards together.",
+      "consultationTitle": "Website creation or ready package: which is right for you?",
+      "consultationDesc": "In a 15-minute conversation, let's clarify your needs (corporate website, template, custom software) and establish the best delivery plan."
+    },
     "stats": {
       "projects": "Projects",
       "yearsExp": "Years Experience",
@@ -110,6 +128,8 @@
   "contact": {
     "title": "Get In Touch",
     "email": "Email",
+    "phone": "Phone",
+    "phonePlaceholder": "+1 xxx xxx xxxx",
     "message": "Message",
     "send": "Send Message",
     "success": "Message sent successfully!",
@@ -121,6 +141,21 @@
     "namePlaceholder": "Your name",
     "emailPlaceholder": "your@email.com",
     "messagePlaceholder": "Your message...",
+    "sector": "Industry",
+    "sectorPlaceholder": "Select Industry",
+    "sectors": {
+      "real-estate": "Real Estate",
+      "salon": "Salon & Beauty",
+      "restaurant": "Restaurant",
+      "clinic": "Clinic",
+      "logistics": "Logistics",
+      "energy": "Energy",
+      "technology": "Technology",
+      "finance": "Finance",
+      "retail": "Retail",
+      "education": "Education",
+      "other": "Other"
+    },
     "stats": {
       "contactMethods": "Contact Methods",
       "alwaysAvailable": "Always Available",
@@ -140,8 +175,8 @@
     "duration": "Duration",
     "revisions": "Revisions",
     "perMonth": "/ month",
-    "largeScale": "Large Scale Projects",
-    "largeScaleSubtitle": "Enterprise-grade solutions for complex business needs",
+    "largeScale": "Larger Projects",
+    "largeScaleSubtitle": "Beyond website creation: end-to-end development and turnkey solutions for e-commerce, enterprise applications, and custom engineering projects.",
     "readyToStart": "Ready to Start?",
     "readyToStartSubtitle": "Let's discuss your project and find the perfect solution for your needs.",
     "step": "Step",
@@ -209,6 +244,19 @@
       "step4": "Testing & deployment"
     },
     "revisionPolicyText": "Each package includes limited revision rounds. Custom projects follow sprint-based delivery."
+  },
+  "templates": {
+    "title": "Website Templates",
+    "subtitle": "Browse our collection of professionally designed website templates for various industries. Each template is fully responsive and SEO-optimized.",
+    "badge": "Ready-Made Templates",
+    "totalTemplates": "Templates",
+    "industries": "Industries",
+    "ctaTitle": "Need a Custom Template?",
+    "ctaSubtitle": "Contact us to discuss your specific requirements. We can customize any template or create a completely unique design for your business.",
+    "ctaButton": "Contact Us",
+    "viewAll": "View All Templates",
+    "featuredTitle": "Featured Templates",
+    "featuredSubtitle": "Popular website templates ready for your business"
   },
   "faq": {
     "title": "Frequently Asked Questions",

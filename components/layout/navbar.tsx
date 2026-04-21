@@ -19,19 +19,16 @@ import { useState } from 'react';
 const primaryNavItems = [
   { key: 'home', href: '/' },
   { key: 'projects', href: '/projects' },
-  { key: 'experience', href: '/experience' },
+  { key: 'templates', href: '/templates' },
   { key: 'services', href: '/services' },
-  { key: 'contact', href: '/contact' },
 ];
 
 // Secondary navigation items (in dropdown menu)
 const secondaryNavItems = [
-  { key: 'certificates', href: '/certificates' },
-  { key: 'technologies', href: '/technologies' },
+  { key: 'experience', href: '/experience' },
   { key: 'articles', href: '/articles' },
   { key: 'interview', href: '/interview' },
   { key: 'games', href: '/games' },
-  { key: 'books', href: '/books' },
 ];
 
 const allNavItems = [...primaryNavItems, ...secondaryNavItems];
@@ -87,8 +84,15 @@ export function Navbar() {
             </DropdownMenu>
           </div>
 
-          {/* Right Section - Language Switcher & Mobile Menu */}
+          {/* Right Section - Contact, Language Switcher & Mobile Menu */}
           <div className="flex items-center gap-2 ml-auto">
+            {/* Contact Link - Desktop */}
+            <Link
+              href="/contact"
+              className="hidden sm:inline-flex px-4 py-2 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-accent/50 rounded-md transition-all duration-200 hover:shadow-sm"
+            >
+              {t('nav.contact')}
+            </Link>
             {/* Language Switcher Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-md text-foreground/70 hover:text-foreground hover:bg-accent/50 transition-all duration-200 hover:shadow-sm">
@@ -138,6 +142,13 @@ export function Navbar() {
                 {t(`nav.${item.key}`)}
               </Link>
             ))}
+            <Link
+              href="/contact"
+              onClick={() => setMobileOpen(false)}
+              className="block px-4 py-2.5 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-accent/50 rounded-md transition-all duration-200 sm:hidden"
+            >
+              {t('nav.contact')}
+            </Link>
           </div>
         )}
       </div>

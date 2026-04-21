@@ -1,11 +1,17 @@
 'use client';
 
 import { useI18n } from '@/lib/i18n';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, Globe } from 'lucide-react';
 import Link from 'next/link';
 
+const languages = [
+  { code: 'tr', label: 'TR' },
+  { code: 'en', label: 'EN' },
+  { code: 'de', label: 'DE' },
+] as const;
+
 export function Footer() {
-  const { t } = useI18n();
+  const { t, locale, setLocale } = useI18n();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -74,10 +80,10 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Social & Language */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Social</h4>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-6">
               <a
                 href="https://github.com"
                 target="_blank"
@@ -105,6 +111,29 @@ export function Footer() {
               >
                 <Twitter size={20} />
               </a>
+            </div>
+
+            {/* Language Switcher */}
+            <div>
+              <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                <Globe size={16} />
+                {t('common.language')}
+              </h4>
+              <div className="flex gap-2">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => setLocale(lang.code)}
+                    className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-all ${
+                      locale === lang.code
+                        ? 'bg-[#7cff92] text-black'
+                        : 'bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground'
+                    }`}
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>

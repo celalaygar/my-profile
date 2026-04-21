@@ -2,6 +2,7 @@
   "nav": {
     "home": "Startseite",
     "projects": "Projekte",
+    "templates": "Vorlagen",
     "experience": "Erfahrung",
     "services": "Dienstleistungen",
     "certificates": "Zertifikate",
@@ -44,192 +45,240 @@
     "viewFullHistory": "Vollständige Historie anzeigen",
     "letsWork": "Zusammenarbeiten",
     "letsWorkSubtitle": "Ich bin immer offen für interessante Projekte und Kooperationsmöglichkeiten. Kontaktieren Sie mich gerne!",
+    "letsWork": "Lassen Sie uns zusammenarbeiten",
+    "letsWorkSubtitle": "Ich bin immer offen für interessante Projekte und Zusammenarbeitsmöglichkeiten. Nehmen Sie gerne Kontakt auf!",
     "getInTouch": "Kontakt aufnehmen",
-    "stats": {
-      "projects": "Projekte",
-      "yearsExp": "Jahre Erfahrung",
-      "technologies": "Technologien"
+    "aboutPageTitle": "Über mich",
+    "aboutExperience": "6+ Jahre Erfahrung • Full-Stack Engineering",
+    "aboutIntro": "Hallo, ich bin Hacı Celal Aygar.",
+    "aboutDescription": "Seit 6+ Jahren entwickle ich Web- und Softwareprojekte. Ich baue robuste Services im Backend mit Java und Python auf und entwickle moderne Oberflächen im Frontend mit React, TypeScript und Next.js. Mein Ziel: schnelle Lieferung, Vertrauen und messbare Ergebnisse.",
+    "aboutStats": "6+ Jahre Erfahrung • 40+ Produkte/Services veröffentlicht",
+    "aboutExpertise": {
+      "backendTitle": "Backend (Java / Python)",
+      "backendDesc": "Ich entwickle APIs, Geschäftslogik und Integrationssysteme mit Java und Python.",
+      "frontendTitle": "Frontend (React / TypeScript / Next.js)",
+      "frontendDesc": "Ich entwickle schnelle, moderne und konversionsorientierte Oberflächen mit React, TypeScript und Next.js.",
+      "microservicesTitle": "Microservices und DevOps",
+      "microservicesDesc": "Nachhaltige und skalierbare Bereitstellungsprozesse mit Docker und CI/CD.",
+      "performanceTitle": "Leistung und Sicherheit",
+      "performanceDesc": "Ich biete SEO, Core Web Vitals und sichere Infrastrukturstandards zusammen.",
+      "consultationTitle": "Website-Erstellung oder vorgefertigtes Paket: Was ist das Richtige für Sie?",
+      "consultationDesc": "In einem 15-minütigen Gespräch klären wir Ihre Anforderungen (Unternehmenswebsite, Vorlage, benutzerdefinierte Software) und erstellen den besten Lieferplan."
     },
-    "allProjects": "Alle Projekte",
-    "allProjectsSubtitle": "Durchsuchen Sie alle meine Arbeiten",
-    "servicesSection": "Dienstleistungen & Preise",
-    "servicesSubtitle": "Professionelle Webentwicklungslösungen",
-    "viewServices": "Alle Dienstleistungen anzeigen",
-    "contactSection": "Kontakt aufnehmen",
-    "contactSubtitle": "Lassen Sie uns Ihr nächstes Projekt besprechen"
+    "projects": "Projekte",
+    "yearsExp": "Jahre Erfahrung",
+    "technologies": "Technologien"
   },
-  "projects": {
-    "title": "Projekte",
-    "empty": "Noch keine Projekte",
-    "subtitle": "Eine Sammlung von Projekten, die ich mit modernen Technologien und bewährten Praktiken erstellt habe.",
-    "allProjects": "Alle Projekte"
+  "allProjects": "Alle Projekte",
+  "allProjectsSubtitle": "Durchsuchen Sie alle meine Arbeiten",
+  "servicesSection": "Dienstleistungen & Preise",
+  "servicesSubtitle": "Professionelle Webentwicklungslösungen",
+  "viewServices": "Alle Dienstleistungen anzeigen",
+  "contactSection": "Kontakt aufnehmen",
+  "contactSubtitle": "Lassen Sie uns Ihr nächstes Projekt besprechen"
+},
+"projects": {
+  "title": "Projekte",
+  "empty": "Noch keine Projekte",
+  "subtitle": "Eine Sammlung von Projekten, die ich mit modernen Technologien und bewährten Praktiken erstellt habe.",
+  "allProjects": "Alle Projekte"
+},
+"experience": {
+  "title": "Erfahrung",
+  "subtitle": "Beruflicher Werdegang und Karrieremeilensteine bei verschiedenen Unternehmen und Projekten.",
+  "company": "Unternehmen",
+  "position": "Position",
+  "duration": "Dauer",
+  "responsibilities": "Verantwortlichkeiten",
+  "technologies": "Technologien",
+  "present": "Heute",
+  "stats": {
+    "totalExperience": "Gesamterfahrung",
+    "years": "Jahre",
+    "companies": "Unternehmen",
+    "projects": "Projekte"
+  }
+},
+"certificates": {
+  "title": "Zertifikate",
+  "issuer": "Aussteller",
+  "issued": "Ausgestellt am"
+},
+"technologies": {
+  "title": "Technologien",
+  "category": "Kategorie"
+},
+"articles": {
+  "title": "Artikel",
+  "readTime": "Lesezeit"
+},
+"interview": {
+  "title": "Interviewfragen",
+  "question": "Frage",
+  "answer": "Antwort"
+},
+"games": {
+  "title": "Webspiele",
+  "play": "Spielen"
+},
+"books": {
+  "title": "Bücher & Hobbys",
+  "author": "Autor",
+  "rating": "Bewertung"
+},
+"contact": {
+  "title": "Kontakt aufnehmen",
+  "email": "E-Mail",
+  "phone": "Telefon",
+  "phonePlaceholder": "+49 xxx xxx xxxx",
+  "message": "Nachricht",
+  "send": "Nachricht senden",
+  "success": "Nachricht erfolgreich gesendet!",
+  "error": "Nachricht konnte nicht gesendet werden",
+  "subtitle": "Kontaktieren Sie mich gerne! Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert.",
+  "quickLinks": "Schnelllinks",
+  "sendMessage": "Nachricht senden",
+  "name": "Name",
+  "namePlaceholder": "Ihr Name",
+  "emailPlaceholder": "ihre@email.com",
+  "messagePlaceholder": "Ihre Nachricht...",
+  "sector": "Branche",
+  "sectorPlaceholder": "Branche wählen",
+  "sectors": {
+    "real-estate": "Immobilien",
+    "salon": "Salon & Schönheit",
+    "restaurant": "Restaurant",
+    "clinic": "Klinik",
+    "logistics": "Logistik",
+    "energy": "Energie",
+    "technology": "Technologie",
+    "finance": "Finanzen",
+    "retail": "Einzelhandel",
+    "education": "Bildung",
+    "other": "Sonstiges"
   },
-  "experience": {
-    "title": "Erfahrung",
-    "subtitle": "Beruflicher Werdegang und Karrieremeilensteine bei verschiedenen Unternehmen und Projekten.",
-    "company": "Unternehmen",
-    "position": "Position",
-    "duration": "Dauer",
-    "responsibilities": "Verantwortlichkeiten",
-    "technologies": "Technologien",
-    "present": "Heute",
-    "stats": {
-      "totalExperience": "Gesamterfahrung",
-      "years": "Jahre",
-      "companies": "Unternehmen",
-      "projects": "Projekte"
-    }
+  "stats": {
+    "contactMethods": "Kontaktmethoden",
+    "alwaysAvailable": "Immer erreichbar",
+    "quickResponse": "Schnelle Antwort",
+    "fast": "Schnell"
+  }
+},
+"services": {
+  "title": "Dienstleistungen",
+  "subtitle": "Von fertigen Website-Vorlagen bis hin zu vollständig maßgeschneiderter Unternehmenssoftware: kaufen Sie eine Website oder erstellen Sie ein individuelles Projekt — skalierbare, SEO-optimierte Lieferung für jedes Niveau.",
+  "pricing": "Preise",
+  "popular": "Beliebt",
+  "getStarted": "Starten",
+  "contact": "Kontakt",
+  "process": "Prozess",
+  "revisionPolicy": "Überarbeitungspolitik",
+  "duration": "Dauer",
+  "revisions": "Überarbeitungen",
+  "perMonth": "/ Monat",
+  "largeScale": "Größere Projekte",
+  "largeScaleSubtitle": "Jenseits der Website-Erstellung: End-to-End-Entwicklung und schlüsselfertige Lösungen für E-Commerce, Unternehmensanwendungen und individualisierte Ingenieurprojekte.",
+  "readyToStart": "Bereit loszulegen?",
+  "readyToStartSubtitle": "Lassen Sie uns Ihr Projekt besprechen und die perfekte Lösung für Ihre Bedürfnisse finden.",
+  "step": "Schritt",
+  "enterprise": "Unternehmen",
+  "plans": {
+    "starter": "Starter",
+    "growth": "Wachstum",
+    "enterprise": "Unternehmen"
   },
-  "certificates": {
-    "title": "Zertifikate",
-    "issuer": "Aussteller",
-    "issued": "Ausgestellt am"
+  "features": {
+    "starter1": "6-seitiges branchenspezifisches Design",
+    "starter2": "WhatsApp-Integration",
+    "starter3": "Social-Media-Links",
+    "starter4": "Basis-SEO-Optimierung",
+    "starter5": "Vollständig responsives Design",
+    "growth1": "10-seitiges erweitertes Design",
+    "growth2": "Moderne UI mit neuesten Technologien",
+    "growth3": "Social Media, WhatsApp, E-Mail-Integration",
+    "growth4": "Erweiterte SEO + Core Web Vitals Optimierung",
+    "growth5": "Branchenspezifische Inhaltsblöcke",
+    "enterprise1": "Vollständig individuelles Design für die Branche",
+    "enterprise2": "Unbegrenzte Seiten",
+    "enterprise3": "Mehrsprachige Unterstützung (TR / EN)",
+    "enterprise4": "Dark Mode + erweitertes Theme-System",
+    "enterprise5": "Vollständig responsives modernes Design",
+    "enterprise6": "WhatsApp, Social Media, E-Mail-Integration",
+    "enterprise7": "Supabase-Authentifizierungssystem",
+    "enterprise8": "Deployment-Unterstützung (Netlify / GoDaddy)",
+    "enterprise9": "Externe Backend-Integrationen"
   },
-  "technologies": {
-    "title": "Technologien",
-    "category": "Kategorie"
+  "durations": {
+    "starter": "4–5 Tage",
+    "growth": "6–8 Tage",
+    "enterprise": "8–12 Tage"
   },
-  "articles": {
-    "title": "Artikel",
-    "readTime": "Lesezeit"
+  "revisionRounds": {
+    "starter": "1 Überarbeitungsrunde",
+    "growth": "2 Überarbeitungsrunden",
+    "enterprise": "3 Überarbeitungsrunden"
   },
-  "interview": {
-    "title": "Interviewfragen",
-    "question": "Frage",
-    "answer": "Antwort"
+  "enterpriseSolutions": {
+    "ecommerce": "Minimaler E-Commerce",
+    "customApp": "Individuelle Anwendung",
+    "engineering": "Ingenieurlösungen"
   },
-  "games": {
-    "title": "Webspiele",
-    "play": "Spielen"
+  "enterpriseFeatures": {
+    "ecommerce1": "Produktkatalog & Admin-Panel",
+    "ecommerce2": "Warenkorb- und Zahlungssystem",
+    "ecommerce3": "Bestands- & Auftragsverwaltung",
+    "ecommerce4": "SEO-freundliches und responsives Design",
+    "customApp1": "Individuelle Backend-Architektur",
+    "customApp2": "Skalierbare und sichere Infrastruktur",
+    "customApp3": "Benutzerverwaltung und Autorisierung",
+    "customApp4": "1 Monat Entwicklung inklusive",
+    "customAppExtra": "+₺100.000 pro zusätzlichen Monat",
+    "engineering1": "Embedded Systems & IoT-Integration",
+    "engineering2": "Vollständiges Projektlebenszyklusmanagement",
+    "engineering3": "Tests, Validierung, Feldbereitstellung",
+    "engineering4": "Beispiel: Landwirtschaftliches Drohnensystem"
   },
-  "books": {
-    "title": "Bücher & Hobbys",
-    "author": "Autor",
-    "rating": "Bewertung"
+  "processSteps": {
+    "step1": "Entdeckungstreffen + Zieldefinition",
+    "step2": "Informationsarchitektur & Wireframes",
+    "step3": "UI-Implementierung & Optimierung",
+    "step4": "Tests & Bereitstellung"
   },
-  "contact": {
-    "title": "Kontakt aufnehmen",
-    "email": "E-Mail",
-    "message": "Nachricht",
-    "send": "Nachricht senden",
-    "success": "Nachricht erfolgreich gesendet!",
-    "error": "Nachricht konnte nicht gesendet werden",
-    "subtitle": "Kontaktieren Sie mich gerne! Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert.",
-    "quickLinks": "Schnelllinks",
-    "sendMessage": "Nachricht senden",
-    "name": "Name",
-    "namePlaceholder": "Ihr Name",
-    "emailPlaceholder": "ihre@email.com",
-    "messagePlaceholder": "Ihre Nachricht...",
-    "stats": {
-      "contactMethods": "Kontaktmethoden",
-      "alwaysAvailable": "Immer erreichbar",
-      "quickResponse": "Schnelle Antwort",
-      "fast": "Schnell"
-    }
-  },
-  "services": {
-    "title": "Dienstleistungen",
-    "subtitle": "Von fertigen Website-Vorlagen bis hin zu vollständig maßgeschneiderter Unternehmenssoftware: kaufen Sie eine Website oder erstellen Sie ein individuelles Projekt — skalierbare, SEO-optimierte Lieferung für jedes Niveau.",
-    "pricing": "Preise",
-    "popular": "Beliebt",
-    "getStarted": "Starten",
-    "contact": "Kontakt",
-    "process": "Prozess",
-    "revisionPolicy": "Überarbeitungspolitik",
-    "duration": "Dauer",
-    "revisions": "Überarbeitungen",
-    "perMonth": "/ Monat",
-    "largeScale": "Großprojekte",
-    "largeScaleSubtitle": "Unternehmensgerechte Lösungen für komplexe Geschäftsanforderungen",
-    "readyToStart": "Bereit loszulegen?",
-    "readyToStartSubtitle": "Lassen Sie uns Ihr Projekt besprechen und die perfekte Lösung für Ihre Bedürfnisse finden.",
-    "step": "Schritt",
-    "enterprise": "Unternehmen",
-    "plans": {
-      "starter": "Starter",
-      "growth": "Wachstum",
-      "enterprise": "Unternehmen"
-    },
-    "features": {
-      "starter1": "6-seitiges branchenspezifisches Design",
-      "starter2": "WhatsApp-Integration",
-      "starter3": "Social-Media-Links",
-      "starter4": "Basis-SEO-Optimierung",
-      "starter5": "Vollständig responsives Design",
-      "growth1": "10-seitiges erweitertes Design",
-      "growth2": "Moderne UI mit neuesten Technologien",
-      "growth3": "Social Media, WhatsApp, E-Mail-Integration",
-      "growth4": "Erweiterte SEO + Core Web Vitals Optimierung",
-      "growth5": "Branchenspezifische Inhaltsblöcke",
-      "enterprise1": "Vollständig individuelles Design für die Branche",
-      "enterprise2": "Unbegrenzte Seiten",
-      "enterprise3": "Mehrsprachige Unterstützung (TR / EN)",
-      "enterprise4": "Dark Mode + erweitertes Theme-System",
-      "enterprise5": "Vollständig responsives modernes Design",
-      "enterprise6": "WhatsApp, Social Media, E-Mail-Integration",
-      "enterprise7": "Supabase-Authentifizierungssystem",
-      "enterprise8": "Deployment-Unterstützung (Netlify / GoDaddy)",
-      "enterprise9": "Externe Backend-Integrationen"
-    },
-    "durations": {
-      "starter": "4–5 Tage",
-      "growth": "6–8 Tage",
-      "enterprise": "8–12 Tage"
-    },
-    "revisionRounds": {
-      "starter": "1 Überarbeitungsrunde",
-      "growth": "2 Überarbeitungsrunden",
-      "enterprise": "3 Überarbeitungsrunden"
-    },
-    "enterpriseSolutions": {
-      "ecommerce": "Minimaler E-Commerce",
-      "customApp": "Individuelle Anwendung",
-      "engineering": "Ingenieurlösungen"
-    },
-    "enterpriseFeatures": {
-      "ecommerce1": "Produktkatalog & Admin-Panel",
-      "ecommerce2": "Warenkorb- und Zahlungssystem",
-      "ecommerce3": "Bestands- & Auftragsverwaltung",
-      "ecommerce4": "SEO-freundliches und responsives Design",
-      "customApp1": "Individuelle Backend-Architektur",
-      "customApp2": "Skalierbare und sichere Infrastruktur",
-      "customApp3": "Benutzerverwaltung und Autorisierung",
-      "customApp4": "1 Monat Entwicklung inklusive",
-      "customAppExtra": "+₺100.000 pro zusätzlichen Monat",
-      "engineering1": "Embedded Systems & IoT-Integration",
-      "engineering2": "Vollständiges Projektlebenszyklusmanagement",
-      "engineering3": "Tests, Validierung, Feldbereitstellung",
-      "engineering4": "Beispiel: Landwirtschaftliches Drohnensystem"
-    },
-    "processSteps": {
-      "step1": "Entdeckungstreffen + Zieldefinition",
-      "step2": "Informationsarchitektur & Wireframes",
-      "step3": "UI-Implementierung & Optimierung",
-      "step4": "Tests & Bereitstellung"
-    },
-    "revisionPolicyText": "Jedes Paket enthält begrenzte Überarbeitungsrunden. Individuelle Projekte folgen Sprint-basierter Lieferung."
+  "revisionPolicyText": "Jedes Paket enthält begrenzte Überarbeitungsrunden. Individuelle Projekte folgen Sprint-basierter Lieferung."
+},
+"templates": {
+    "title": "Website-Vorlagen",
+    "subtitle": "Durchsuchen Sie unsere Sammlung professionell gestalteter Website-Vorlagen für verschiedene Branchen. Jede Vorlage ist vollständig responsiv und SEO-optimiert.",
+    "badge": "Fertige Vorlagen",
+    "totalTemplates": "Vorlagen",
+    "industries": "Branchen",
+    "ctaTitle": "Benötigen Sie eine individuelle Vorlage?",
+    "ctaSubtitle": "Kontaktieren Sie uns, um Ihre spezifischen Anforderungen zu besprechen. Wir können jede Vorlage anpassen oder ein völlig einzigartiges Design für Ihr Unternehmen erstellen.",
+    "ctaButton": "Kontaktieren Sie uns",
+    "viewAll": "Alle Vorlagen anzeigen",
+    "featuredTitle": "Ausgewählte Vorlagen",
+    "featuredSubtitle": "Beliebte Website-Vorlagen für Ihr Unternehmen"
   },
   "faq": {
-    "title": "Häufig gestellte Fragen",
-    "subtitle": "Finden Sie Antworten auf häufig gestellte Fragen zu unseren Dienstleistungen und dem Webentwicklungsprozess.",
-    "questions": {
-      "q1": "Wie funktioniert der Website-Erstellungsprozess?",
-      "a1": "Zunächst klären wir Ihre Anforderungen (vorgefertigte Vorlage oder benutzerdefiniertes Design), erstellen dann Seiten basierend auf Ihrem Inhalt und Ihren Branding-Materialien und stellen diese schließlich mit technischen SEO-Prüfungen (Meta-Tags, Geschwindigkeit, Mobiloptimierung) bereit.",
-      "q2": "Sollte ich eine vorgefertigte Website kaufen oder eine individuelle erstellen lassen?",
-      "a2": "Wenn Ihr Budget und Ihre Zeit begrenzt sind, sind vorgefertigte Template-Pakete die beste Option. Unsere branchenspezifischen Vorlagen bieten SEO-Compliance und schnelle Bereitstellung. Für umfassendere Anforderungen sind individuelle Design-Projekte ideal.",
-      "q3": "Erstellen Sie Websites für Nischensektoren wie Frisörsalons, Restaurants oder Kliniken?",
-      "a3": "Ja. Wir haben branchenspezifische vorgefertigte Website-Vorlagen. Wir passen den Text und die visuellen Inhalte an Ihr Geschäft an und starten schnell. Wir haben Erfahrung mit Frisörsalons, Salons, Restaurants, Kliniken, Logistik, Energie und vielen anderen Branchen.",
-      "q4": "Wie viel kosten Website-Pakete?",
-      "a4": "Unsere vorgefertigten Template-Pakete beginnen ab ₺5.000, und Unternehmens- und benutzerdefinierte Projekte werden je nach Umfang bewertet. Schauen Sie auf unsere Dienstleistungsseite für die aktuellsten Preise.",
-      "q5": "Ist die Lieferzeit für Template-Pakete wirklich 2-5 Tage?",
-      "a5": "Ja. Wenn der Großteil des Inhalts bereit ist, stellen wir innerhalb von 2-5 Tagen bereit. Bei benutzerdefinierten Designs hängt der Zeitrahmen vom Projektumfang ab.",
-      "q6": "Ist SEO (Suchmaschinen-Optimierung) enthalten?",
-      "a6": "Ja. Alle unsere Projekte enthalten technische SEO-Infrastruktur als Standard (Meta-Tags, Open Graph, strukturierte Daten, Sitemap, Geschwindigkeitsoptimierung, Mobil-Responsivität).",
-      "q7": "Wie funktioniert der Prozess der benutzerdefinierten Softwareentwicklung?",
-      "a7": "Wir unterteilen den Umfang in Sprints und liefern funktionierende Funktionen am Ende jedes Sprints. E-Commerce-, Unternehmens- oder benutzerdefinierte Integrationsprojekte folgen diesem Ansatz.",
-      "q8": "Bieten Sie nach dem Start Support und Wartung an?",
-      "a8": "Ja. Wir bieten monatliche Support-Pläne für Wartung, Updates und Verbesserungen. Dies umfasst Sicherheitspatches, Inhaltsaktualisierungen und Leistungsüberwachung."
-    }
+  "title": "Häufig gestellte Fragen",
+  "subtitle": "Finden Sie Antworten auf häufig gestellte Fragen zu unseren Dienstleistungen und dem Webentwicklungsprozess.",
+  "questions": {
+    "q1": "Wie funktioniert der Website-Erstellungsprozess?",
+    "a1": "Zunächst klären wir Ihre Anforderungen (vorgefertigte Vorlage oder benutzerdefiniertes Design), erstellen dann Seiten basierend auf Ihrem Inhalt und Ihren Branding-Materialien und stellen diese schließlich mit technischen SEO-Prüfungen (Meta-Tags, Geschwindigkeit, Mobiloptimierung) bereit.",
+    "q2": "Sollte ich eine vorgefertigte Website kaufen oder eine individuelle erstellen lassen?",
+    "a2": "Wenn Ihr Budget und Ihre Zeit begrenzt sind, sind vorgefertigte Template-Pakete die beste Option. Unsere branchenspezifischen Vorlagen bieten SEO-Compliance und schnelle Bereitstellung. Für umfassendere Anforderungen sind individuelle Design-Projekte ideal.",
+    "q3": "Erstellen Sie Websites für Nischensektoren wie Frisörsalons, Restaurants oder Kliniken?",
+    "a3": "Ja. Wir haben branchenspezifische vorgefertigte Website-Vorlagen. Wir passen den Text und die visuellen Inhalte an Ihr Geschäft an und starten schnell. Wir haben Erfahrung mit Frisörsalons, Salons, Restaurants, Kliniken, Logistik, Energie und vielen anderen Branchen.",
+    "q4": "Wie viel kosten Website-Pakete?",
+    "a4": "Unsere vorgefertigten Template-Pakete beginnen ab ₺5.000, und Unternehmens- und benutzerdefinierte Projekte werden je nach Umfang bewertet. Schauen Sie auf unsere Dienstleistungsseite für die aktuellsten Preise.",
+    "q5": "Ist die Lieferzeit für Template-Pakete wirklich 2-5 Tage?",
+    "a5": "Ja. Wenn der Großteil des Inhalts bereit ist, stellen wir innerhalb von 2-5 Tagen bereit. Bei benutzerdefinierten Designs hängt der Zeitrahmen vom Projektumfang ab.",
+    "q6": "Ist SEO (Suchmaschinen-Optimierung) enthalten?",
+    "a6": "Ja. Alle unsere Projekte enthalten technische SEO-Infrastruktur als Standard (Meta-Tags, Open Graph, strukturierte Daten, Sitemap, Geschwindigkeitsoptimierung, Mobil-Responsivität).",
+    "q7": "Wie funktioniert der Prozess der benutzerdefinierten Softwareentwicklung?",
+    "a7": "Wir unterteilen den Umfang in Sprints und liefern funktionierende Funktionen am Ende jedes Sprints. E-Commerce-, Unternehmens- oder benutzerdefinierte Integrationsprojekte folgen diesem Ansatz.",
+    "q8": "Bieten Sie nach dem Start Support und Wartung an?",
+    "a8": "Ja. Wir bieten monatliche Support-Pläne für Wartung, Updates und Verbesserungen. Dies umfasst Sicherheitspatches, Inhaltsaktualisierungen und Leistungsüberwachung."
   }
+}
 }

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Anasayfa",
     "projects": "Projeler",
+    "templates": "Şablonlar",
     "experience": "Deneyim",
     "services": "Hizmetler",
     "certificates": "Sertifikalar",
@@ -45,6 +46,23 @@
     "letsWork": "Birlikte Çalışalım",
     "letsWorkSubtitle": "İlginç projelere ve işbirliği fırsatlarına her zaman açığım. İletişime geçmekten çekinmeyin!",
     "getInTouch": "İletişime Geç",
+    "aboutPageTitle": "Hakkımda",
+    "aboutExperience": "6+ Yıl Deneyim • Full-Stack Mühendislik",
+    "aboutIntro": "Merhaba, ben Hacı Celal Aygar.",
+    "aboutDescription": "6+ yıldır web ve yazılım projeleri geliştiriyorum. Backend tarafında Java ve Python ile sağlam servisler kuruyor, frontend tarafında React, TypeScript ve Next.js ile modern arayüzler geliştiriyorum. Hedefim: hızlı teslim, güven ve ölçülebilir sonuç.",
+    "aboutStats": "6+ yıl deneyim • 40+ ürün/servis yayını",
+    "aboutExpertise": {
+      "backendTitle": "Backend (Java / Python)",
+      "backendDesc": "Java ve Python ile API, iş kuralları ve entegrasyon katmanları geliştiriyorum.",
+      "frontendTitle": "Frontend (React / TypeScript / Next.js)",
+      "frontendDesc": "React, TypeScript ve Next.js ile hızlı, modern ve dönüşüm odaklı arayüzler geliştiriyorum.",
+      "microservicesTitle": "Mikroservis ve DevOps",
+      "microservicesDesc": "Docker ve CI/CD ile sürdürülebilir, ölçeklenebilir dağıtım süreçleri.",
+      "performanceTitle": "Performans ve Güvenlik",
+      "performanceDesc": "SEO, Core Web Vitals ve güvenli altyapı standartlarını birlikte sunarım.",
+      "consultationTitle": "Web sitesi yaptırma veya hazır paket: hangisi sizin için doğru?",
+      "consultationDesc": "15 dakikalık görüşmede ihtiyacınızı netleştirip (kurumsal web sitesi, şablon, özel yazılım) en doğru teslim planını çıkaralım."
+    },
     "stats": {
       "projects": "Projeler",
       "yearsExp": "Yıl Deneyim",
@@ -110,6 +128,8 @@
   "contact": {
     "title": "İletişime Geç",
     "email": "E-posta",
+    "phone": "Telefon",
+    "phonePlaceholder": "+90 5xx xxx xx xx",
     "message": "Mesaj",
     "send": "Mesaj Gönder",
     "success": "Mesaj başarıyla gönderildi!",
@@ -121,6 +141,21 @@
     "namePlaceholder": "Adınız",
     "emailPlaceholder": "eposta@adresiniz.com",
     "messagePlaceholder": "Mesajınız...",
+    "sector": "Sektör",
+    "sectorPlaceholder": "Sektör Seçin",
+    "sectors": {
+      "real-estate": "Emlak",
+      "salon": "Kuaför & Güzellik",
+      "restaurant": "Restoran",
+      "clinic": "Klinik",
+      "logistics": "Lojistik",
+      "energy": "Enerji",
+      "technology": "Teknoloji",
+      "finance": "Finans",
+      "retail": "Perakende",
+      "education": "Eğitim",
+      "other": "Diğer"
+    },
     "stats": {
       "contactMethods": "İletişim Yöntemleri",
       "alwaysAvailable": "Her Zaman Ulaşılabilir",
@@ -140,8 +175,8 @@
     "duration": "Süre",
     "revisions": "Revizyonlar",
     "perMonth": "/ ay",
-    "largeScale": "Büyük Ölçekli Projeler",
-    "largeScaleSubtitle": "Karmaşık iş ihtiyaçları için kurumsal çözümler",
+    "largeScale": "Daha Büyük İşler",
+    "largeScaleSubtitle": "Web sitesi yaptırma kapsamının ötesinde: e-ticaret, kurumsal uygulama ve özel mühendislik projelerinde uçtan uca geliştirme ve anahtar teslim.",
     "readyToStart": "Başlamaya Hazır mısınız?",
     "readyToStartSubtitle": "Projenizi tartışalım ve ihtiyaçlarınız için mükemmel çözümü bulalım.",
     "step": "Adım",
@@ -209,6 +244,19 @@
       "step4": "Test & deployment"
     },
     "revisionPolicyText": "Her paket belirli sayıda revizyon içerir. Özel projelerde sprint bazlı ilerlenir."
+  },
+  "templates": {
+    "title": "Web Sitesi Şablonları",
+    "subtitle": "Çeşitli sektörler için profesyonelce tasarlanmış web sitesi şablonlarımıza göz atın. Her şablon tam responsive ve SEO optimizasyonludur.",
+    "badge": "Hazır Şablonlar",
+    "totalTemplates": "Şablon",
+    "industries": "Sektör",
+    "ctaTitle": "Özel Bir Şablona mı İhtiyacınız Var?",
+    "ctaSubtitle": "Özel gereksinimlerinizi görüşmek için bizimle iletişime geçin. Herhangi bir şablonu özelleştirebilir veya işletmeniz için tamamen özgün bir tasarım oluşturabiliriz.",
+    "ctaButton": "İletişime Geçin",
+    "viewAll": "Tüm Şablonları Gör",
+    "featuredTitle": "Öne Çıkan Şablonlar",
+    "featuredSubtitle": "İşletmeniz için hazır popüler web sitesi şablonları"
   },
   "faq": {
     "title": "Sık Sorulan Sorular",

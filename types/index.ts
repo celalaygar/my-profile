@@ -108,3 +108,12 @@ export interface ServicesData {
   process: string[];
   revisionPolicy: Record<string, string>;
 }
+
+export interface Template {
+  id: string;
+  title: string;
+  type: string;
+  description: string;
+  url: string;
+  image?: string;
+}
