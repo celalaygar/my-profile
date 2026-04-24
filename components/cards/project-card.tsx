@@ -28,6 +28,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <img
               src={project.image_url}
               alt={`${project.name} screenshot`}
+              style={{ filter: 'brightness(0.9)', mixBlendMode: 'multiply', height: '100%' }}
               className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
             />
           ) : (
