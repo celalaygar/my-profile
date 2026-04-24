@@ -46,6 +46,15 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
     url: 'https://celalaygar.github.io/main/project/lingua-bubble/',
   },
+  {
+    id: '6',
+    name: 'Job Ts',
+    short_description: 'Job-Task Tracking System',
+    long_description: 'Managing projects, tasks, sprints, and work hours.',
+    type: 'Web Application',
+    technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://jobts.probablythebestever.info/',
+  },
 ];
 
 export const experiences: Experience[] = [
