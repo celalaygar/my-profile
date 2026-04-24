@@ -4,11 +4,12 @@ export const projects: Project[] = [
   {
     id: '1',
     name: 'WixBook: Language Box',
-    short_description: 'Coming Soon',
+    short_description: 'Published on Play Store',
     long_description: 'A language learning app with interactive exercises and quizzes.',
     type: 'Mobile App',
     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
     url: 'https://celalaygar.github.io/main/project/language-box/',
+    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
   },
   {
     id: '2',
@@ -21,6 +22,25 @@ export const projects: Project[] = [
   },
   {
     id: '3',
+    name: 'Wixtory Software Development',
+    short_description: 'Published on Website',
+    long_description: 'Check domain availability and view WHOIS registration information.',
+    type: 'Mobile App',
+    technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://wixtory.com/',
+  },
+  {
+    id: '6',
+    name: 'Job Ts',
+    short_description: 'Published on Website',
+    long_description: 'Managing projects, tasks, sprints, and work hours.',
+    type: 'Web Application',
+    technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://jobts.probablythebestever.info/',
+    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
+  },
+  {
+    id: '8',
     name: 'Domain Track',
     short_description: 'Domain Intelligence Tool',
     long_description: 'Check domain availability and view WHOIS registration information.',
@@ -29,7 +49,7 @@ export const projects: Project[] = [
     url: 'https://celalaygar.github.io/main/project/domain-track/',
   },
   {
-    id: '4',
+    id: '10',
     name: 'Job Tracking System V2',
     short_description: 'Job Tracking System',
     long_description: 'Full-stack platform for managing projects, tasks, sprints, and work hours.',
@@ -38,7 +58,7 @@ export const projects: Project[] = [
     url: 'https://celalaygar.github.io/main/project/job-tracking-system-v2/',
   },
   {
-    id: '5',
+    id: '22',
     name: 'Lingua Bubble',
     short_description: 'Make Language Learning Fun',
     long_description: 'Learn languages by playing games at your own level in 9 different languages with Lingua Bubble.',
@@ -46,17 +66,8 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
     url: 'https://celalaygar.github.io/main/project/lingua-bubble/',
   },
-  {
-    id: '6',
-    name: 'Job Ts',
-    short_description: 'Job-Task Tracking System',
-    long_description: 'Managing projects, tasks, sprints, and work hours.',
-    type: 'Web Application',
-    technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
-    url: 'https://jobts.probablythebestever.info/',
-    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
-  },
 ];
+
 
 export const experiences: Experience[] = [
   {
