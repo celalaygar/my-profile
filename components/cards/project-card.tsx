@@ -21,8 +21,21 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="relative h-40 bg-gradient-to-br from-primary/20 to-primary/5 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
 
+  
         {/* Hover shine effect */}
-        <div className="absolute inset-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        {
+          project.image_url ? (
+            <img
+              src={project.image_url}
+              alt={`${project.name} screenshot`}
+              className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            />
+          ) : (
+            <div className="absolute inset-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+          )
+        }
+        
 
         {/* Type badge */}
         <div className="absolute top-4 right-4 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide bg-[#7cff92]/90 text-background rounded-md backdrop-blur-sm">
