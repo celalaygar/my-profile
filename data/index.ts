@@ -54,7 +54,7 @@ export const projects: Project[] = [
     type: 'Web Application',
     technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
     url: 'https://jobts.probablythebestever.info/',
-    "image_url": "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
+    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
   },
 ];
 
