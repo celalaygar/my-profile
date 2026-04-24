@@ -9,7 +9,7 @@ export const projects: Project[] = [
     type: 'Mobile App',
     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
     url: 'https://celalaygar.github.io/main/project/language-box/',
-    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
+    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/language-box/Language-Box-Logo.png",
   },
   {
     id: '2',
