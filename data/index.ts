@@ -25,7 +25,7 @@ export const projects: Project[] = [
     name: 'Wixtory Software Development',
     short_description: 'Published on Website',
     long_description: 'Check domain availability and view WHOIS registration information.',
-    type: 'Mobile App',
+    type: 'Web Application',
     technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
     url: 'https://wixtory.com/',
   },
