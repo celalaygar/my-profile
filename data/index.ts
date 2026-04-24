@@ -19,6 +19,7 @@ export const projects: Project[] = [
     type: 'Mobile App',
     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
     url: 'https://celalaygar.github.io/main/project/wixbook-domain-track/',
+    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/wixbook-domain-track/0-logo.png",
   },
   {
     id: '3',
