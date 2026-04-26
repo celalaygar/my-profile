@@ -65,7 +65,7 @@ export function GameCard({ game }: GameCardProps) {
           </p>
 
           {/* CTA Link */}
-          <div className="flex items-center gap-2 text-sm font-semibold text-[#7cff92] group-hover:text-[#7cff92]/90 transition-colors duration-200">
+          <div className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-lg font-semibold bg-[#7cff92]/10 text-[#7cff92] border border-[#7cff92]/30 group-hover:bg-[#7cff92]/20 group-hover:border-[#7cff92]/60 transition-all duration-200">
             <span>Play Game</span>
             <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform duration-200" />
           </div>

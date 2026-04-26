@@ -1,5 +1,6 @@
 import { Project, Experience, Certificate, Technology, TechnologyGroup, Article, InterviewQuestion, Game, Book, Hobby, ContactLink, ServicesData, Template } from '@/types';
 
+
 export const projects: Project[] = [
   {
     id: '1',
@@ -70,6 +71,10 @@ export const projects: Project[] = [
 ];
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ae9704e885b21fd9591c3a434ae2d597adcc1a4
 export const experiences: Experience[] = [
   {
     id: '1',

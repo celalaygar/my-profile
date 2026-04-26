@@ -56,7 +56,7 @@ export function TemplateCard({ template }: TemplateCardProps) {
             href={template.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-background bg-[#7cff92] rounded-lg hover:bg-[#7cff92]/90 hover:shadow-lg hover:shadow-[#7cff92]/30 transition-all duration-200 group/link"
+            className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-lg font-semibold bg-[#7cff92]/10 text-[#7cff92] border border-[#7cff92]/30 hover:bg-[#7cff92]/20 hover:border-[#7cff92]/60 transition-all duration-200 group/link"
           >
             <span>View Template</span>
             <ExternalLink size={16} className="group-hover/link:translate-x-1 transition-transform duration-200" />
