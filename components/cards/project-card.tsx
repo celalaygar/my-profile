@@ -21,7 +21,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="relative h-40 bg-gradient-to-br from-primary/20 to-primary/5 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
 
-  
         {/* Hover shine effect */}
         {
           project.image_url ? (
@@ -36,10 +35,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
           )
         }
-<<<<<<< HEAD
-        
-=======
->>>>>>> 6ae9704e885b21fd9591c3a434ae2d597adcc1a4
 
         {/* Type badge */}
         <div className="absolute top-4 right-4 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide bg-[#7cff92]/90 text-background rounded-md backdrop-blur-sm">
