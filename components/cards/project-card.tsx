@@ -22,7 +22,19 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
 
         {/* Hover shine effect */}
-        <div className="absolute inset-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        {
+          project.image_url ? (
+            <img
+              src={project.image_url}
+              alt={`${project.name} screenshot`}
+              style={{ width: project.type === 'Mobile App' ? '150px' : '270px' }}
+              className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            />
+          ) : (
+            <div className="absolute inset-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+          )
+        }
 
         {/* Type badge */}
         <div className="absolute top-4 right-4 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide bg-[#7cff92]/90 text-background rounded-md backdrop-blur-sm">
@@ -74,7 +86,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-background bg-[#7cff92] rounded-lg hover:bg-[#7cff92]/90 hover:shadow-lg hover:shadow-[#7cff92]/30 transition-all duration-200 group/link"
+            className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-lg font-semibold bg-[#7cff92]/10 text-[#7cff92] border border-[#7cff92]/30 hover:bg-[#7cff92]/20 hover:border-[#7cff92]/60 transition-all duration-200 group/link"
           >
             <span>View Project</span>
             <ExternalLink size={16} className="group-hover/link:translate-x-1 transition-transform duration-200" />
