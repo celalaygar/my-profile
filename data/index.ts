@@ -3,7 +3,7 @@ import { Project, Experience, Certificate, Technology, TechnologyGroup, Article,
 export const projects: Project[] = [
   {
     id: '1',
-    name: 'WixBook: Language Box',
+    name: 'Wixtory: Language Box',
     short_description: 'Published on Play Store',
     long_description: 'A language learning app with interactive exercises and quizzes.',
     type: 'Mobile App',
@@ -13,7 +13,7 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    name: 'WixBook Domain Track',
+    name: 'Wixtory Domain Track',
     short_description: 'Coming Soon',
     long_description: 'Find Your Perfect Domain With Ease',
     type: 'Mobile App',
