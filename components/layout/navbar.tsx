@@ -18,10 +18,10 @@ import { useState } from 'react';
 // Primary navigation items (always visible on desktop)
 const primaryNavItems = [
   { key: 'home', href: '/' },
-  { key: 'about', href: '/about' },
   { key: 'projects', href: '/projects' },
   { key: 'templates', href: '/templates' },
   { key: 'services', href: '/services' },
+  { key: 'about', href: '/about' },
 ];
 
 // Secondary navigation items (in dropdown menu)
