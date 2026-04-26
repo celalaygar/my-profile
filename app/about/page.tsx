@@ -1,3 +1,5 @@
+'use client';
+
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { useI18n } from '@/lib/i18n';
