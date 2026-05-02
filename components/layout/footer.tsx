@@ -13,7 +13,13 @@ const languages = [
 export function Footer() {
   const { t, locale, setLocale } = useI18n();
   const currentYear = new Date().getFullYear();
-
+  // Secondary navigation items (in dropdown menu)
+  const secondaryNavItems = [
+    { key: 'experience', href: '/experience' },
+    { key: 'articles', href: '/articles' },
+    { key: 'interview', href: '/interview' },
+    { key: 'games', href: '/games' },
+  ];
   return (
     <footer className="border-t border-border bg-background/80 backdrop-blur-sm mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -57,26 +63,13 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Resources</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition">
-                  Contact
-                </a>
-              </li>
+              {secondaryNavItems.map((item) => (
+                <li key={item.key}>
+                  <Link href={item.href} className="text-sm text-muted-foreground hover:text-foreground transition">
+                    {t(`nav.${item.key}`)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -124,11 +117,10 @@ export function Footer() {
                   <button
                     key={lang.code}
                     onClick={() => setLocale(lang.code)}
-                    className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-all ${
-                      locale === lang.code
-                        ? 'bg-[#7cff92] text-black'
-                        : 'bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground'
-                    }`}
+                    className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-all ${locale === lang.code
+                      ? 'bg-[#7cff92] text-black'
+                      : 'bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground'
+                      }`}
                   >
                     {lang.label}
                   </button>
