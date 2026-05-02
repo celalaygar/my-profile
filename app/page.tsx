@@ -526,10 +526,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
-                    {t('home.aboutExpertise.customTitle')}
+                    {t('home.aboutExpertise.customSolutionsTitle')}
                   </h3>
                   <p className="text-muted-foreground">
-                    {t('home.aboutExpertise.customDesc')}
+                    {t('home.aboutExpertise.customSolutionsDesc')}
                   </p>
                 </div>
               </div>
