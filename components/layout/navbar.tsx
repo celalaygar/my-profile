@@ -48,7 +48,7 @@ export function Navbar() {
             className="flex items-center gap-2 font-bold text-lg bg-gradient-to-r from-[#7cff92] to-[#7cff92]/60 bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-200 shrink-0"
           >
             <Code2 className="w-5 h-5 text-[#7cff92]" />
-            <span>Dev</span>
+            <span>Wixtory</span>
           </Link>
 
           {/* Desktop Navigation - Primary */}
