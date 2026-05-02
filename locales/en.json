@@ -26,7 +26,7 @@
   },
   "home": {
     "title": "Welcome",
-    "subtitle": "Full-Stack Developer & Tech Enthusiast",
+    "subtitle": "Full-Stack & Tech Enthusiast",
     "about": "I build beautiful and functional web applications with modern technologies.",
     "cta": "Explore My Work",
     "openToOpportunities": "Open to opportunities",
@@ -62,7 +62,13 @@
       "performanceTitle": "Performance and Security",
       "performanceDesc": "I deliver SEO, Core Web Vitals, and secure infrastructure standards together.",
       "consultationTitle": "Website creation or ready package: which is right for you?",
-      "consultationDesc": "In a 15-minute conversation, let's clarify your needs (corporate website, template, custom software) and establish the best delivery plan."
+      "consultationDesc": "In a 15-minute conversation, let's clarify your needs (corporate website, template, custom software) and establish the best delivery plan.",
+      "customSolutionsTitle": "Custom software development: how does it work?",
+      "customSolutionsDesc": "We break down the scope into sprints and deliver working features at the end of each sprint. E-commerce, corporate applications, or custom integration projects follow this approach.",
+      "aiTitle": "AI and Automation",
+      "aiDesc": "I leverage AI tools and automation to optimize development workflows and enhance project outcomes.",
+      "devOpsTitle": "DevOps and Cloud",
+      "devOpsDesc": "I implement CI/CD pipelines and manage cloud infrastructure for scalable and reliable deployments."
     },
     "stats": {
       "projects": "Projects",

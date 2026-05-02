@@ -26,7 +26,7 @@
   },
   "home": {
     "title": "Hoşgeldiniz",
-    "subtitle": "Full-Stack Geliştirici & Teknoloji Meraklısı",
+    "subtitle": "Full-Stack & Teknoloji Meraklısı",
     "about": "Modern teknolojilerle güzel ve işlevsel web uygulamaları geliştiririm.",
     "cta": "Çalışmalarımı Keşfedin",
     "openToOpportunities": "Fırsatlara açığım",
@@ -62,7 +62,13 @@
       "performanceTitle": "Performans ve Güvenlik",
       "performanceDesc": "SEO, Core Web Vitals ve güvenli altyapı standartlarını birlikte sunarım.",
       "consultationTitle": "Web sitesi yaptırma veya hazır paket: hangisi sizin için doğru?",
-      "consultationDesc": "15 dakikalık görüşmede ihtiyacınızı netleştirip (kurumsal web sitesi, şablon, özel yazılım) en doğru teslim planını çıkaralım."
+      "consultationDesc": "15 dakikalık görüşmede ihtiyacınızı netleştirip (kurumsal web sitesi, şablon, özel yazılım) en doğru teslim planını çıkaralım.",
+      "customSolutionsTitle": "Özel yazılım geliştirme: nasıl işliyor?",
+      "customSolutionsDesc": "Kapsamı sprintlere bölüp her sprint sonunda çalışan teslim yapıyoruz. E-ticaret, kurumsal uygulama veya özel entegrasyon projeleri bu şekilde yürütülür.",
+      "aiTitle": "Yapay Zeka ve Otomasyon",
+      "aiDesc": "Geliştirme iş akışlarını optimize etmek ve proje sonuçlarını artırmak için yapay zeka araçları ve otomasyonu kullanıyorum.",
+      "devOpsTitle": "DevOps ve Bulut",
+      "devOpsDesc": "Sürdürülebilir ve ölçeklenebilir dağıtımlar için CI/CD boru hatları uyguluyor ve bulut altyapısını yönetiyorum."
     },
     "stats": {
       "projects": "Projeler",

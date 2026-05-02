@@ -4,16 +4,23 @@ import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { useI18n } from '@/lib/i18n';
 import Link from 'next/link';
-import { ArrowRight, Code2, Database, Zap, Shield, MessageSquare } from 'lucide-react';
+import {
+  ArrowRight, Code2, Database, Zap, Shield, MessageSquare,
+  Server, Cloud, Cpu, Settings,
+} from 'lucide-react';
 
 export default function AboutPage() {
   const { t, language } = useI18n();
 
   const expertiseItems = [
+    { icon: Cpu, titleKey: 'aiTitle', descKey: 'aiDesc' },
+    { icon: Settings, titleKey: 'customSolutionsTitle', descKey: 'customSolutionsDesc' },
     { icon: Database, titleKey: 'backendTitle', descKey: 'backendDesc' },
     { icon: Code2, titleKey: 'frontendTitle', descKey: 'frontendDesc' },
     { icon: Zap, titleKey: 'microservicesTitle', descKey: 'microservicesDesc' },
     { icon: Shield, titleKey: 'performanceTitle', descKey: 'performanceDesc' },
+    { icon: MessageSquare, titleKey: 'consultationTitle', descKey: 'consultationDesc' },
+    { icon: Server, titleKey: 'devOpsTitle', descKey: 'devOpsDesc' },
   ];
 
   return (

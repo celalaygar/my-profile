@@ -64,7 +64,13 @@
       "performanceTitle": "Leistung und Sicherheit",
       "performanceDesc": "Ich biete SEO, Core Web Vitals und sichere Infrastrukturstandards zusammen.",
       "consultationTitle": "Website-Erstellung oder vorgefertigtes Paket: Was ist das Richtige für Sie?",
-      "consultationDesc": "In einem 15-minütigen Gespräch klären wir Ihre Anforderungen (Unternehmenswebsite, Vorlage, benutzerdefinierte Software) und erstellen den besten Lieferplan."
+      "consultationDesc": "In einem 15-minütigen Gespräch klären wir Ihre Anforderungen (Unternehmenswebsite, Vorlage, benutzerdefinierte Software) und erstellen den besten Lieferplan.",
+      "customSolutionsTitle": "Benutzerdefinierte Softwareentwicklung: Wie funktioniert das?",
+      "customSolutionsDesc": "Wir unterteilen den Umfang in Sprints und liefern am Ende jedes Sprints funktionierende Funktionen. E-Commerce-, Unternehmensanwendungen oder benutzerdefinierte Integrationsprojekte folgen diesem Ansatz.",
+      "aiTitle": "KI und Automatisierung",
+      "aiDesc": "Ich nutze KI-Tools und Automatisierung, um Entwicklungsarbeitsabläufe zu optimieren und Projektergebnisse zu verbessern.",
+      "devOpsTitle": "DevOps und Cloud",
+      "devOpsDesc": "Ich implementiere CI/CD-Pipelines und verwalte Cloud-Infrastruktur für skalierbare und zuverlässige Bereitstellungen."
     },
     "projects": "Projekte",
     "yearsExp": "Jahre Erfahrung",
@@ -248,19 +254,19 @@
   "revisionPolicyText": "Jedes Paket enthält begrenzte Überarbeitungsrunden. Individuelle Projekte folgen Sprint-basierter Lieferung."
 },
 "templates": {
-    "title": "Website-Vorlagen",
-    "subtitle": "Durchsuchen Sie unsere Sammlung professionell gestalteter Website-Vorlagen für verschiedene Branchen. Jede Vorlage ist vollständig responsiv und SEO-optimiert.",
-    "badge": "Fertige Vorlagen",
-    "totalTemplates": "Vorlagen",
-    "industries": "Branchen",
-    "ctaTitle": "Benötigen Sie eine individuelle Vorlage?",
-    "ctaSubtitle": "Kontaktieren Sie uns, um Ihre spezifischen Anforderungen zu besprechen. Wir können jede Vorlage anpassen oder ein völlig einzigartiges Design für Ihr Unternehmen erstellen.",
-    "ctaButton": "Kontaktieren Sie uns",
-    "viewAll": "Alle Vorlagen anzeigen",
-    "featuredTitle": "Ausgewählte Vorlagen",
-    "featuredSubtitle": "Beliebte Website-Vorlagen für Ihr Unternehmen"
-  },
-  "faq": {
+  "title": "Website-Vorlagen",
+  "subtitle": "Durchsuchen Sie unsere Sammlung professionell gestalteter Website-Vorlagen für verschiedene Branchen. Jede Vorlage ist vollständig responsiv und SEO-optimiert.",
+  "badge": "Fertige Vorlagen",
+  "totalTemplates": "Vorlagen",
+  "industries": "Branchen",
+  "ctaTitle": "Benötigen Sie eine individuelle Vorlage?",
+  "ctaSubtitle": "Kontaktieren Sie uns, um Ihre spezifischen Anforderungen zu besprechen. Wir können jede Vorlage anpassen oder ein völlig einzigartiges Design für Ihr Unternehmen erstellen.",
+  "ctaButton": "Kontaktieren Sie uns",
+  "viewAll": "Alle Vorlagen anzeigen",
+  "featuredTitle": "Ausgewählte Vorlagen",
+  "featuredSubtitle": "Beliebte Website-Vorlagen für Ihr Unternehmen"
+},
+"faq": {
   "title": "Häufig gestellte Fragen",
   "subtitle": "Finden Sie Antworten auf häufig gestellte Fragen zu unseren Dienstleistungen und dem Webentwicklungsprozess.",
   "questions": {

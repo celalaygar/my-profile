@@ -5,7 +5,10 @@ import { Footer } from '@/components/layout/footer';
 import { useI18n } from '@/lib/i18n';
 import { projects, servicesData, templates } from '@/data';
 import Link from 'next/link';
-import { ChevronRight, ArrowRight, ExternalLink, Check, Mail, MessageSquare, Sparkles, Database, Code2, Zap, Shield, Layout } from 'lucide-react';
+import {
+  ChevronRight, ArrowRight, ExternalLink, Check, Mail, MessageSquare, Sparkles, Database, Code2, Zap, Shield, Layout,
+  Server, Cloud, Cpu, Settings,
+} from 'lucide-react';
 
 export default function Home() {
   const { t, language } = useI18n();
@@ -16,7 +19,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-20 pb-32 sm:pt-32 sm:pb-40">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
@@ -29,7 +32,7 @@ export default function Home() {
 
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-tight">
-                {t('home.title')}, {t('home.subtitle').split('&')[0].trim()} <span className="bg-gradient-to-r from-[#7cff92] to-[#7cff92]/60 bg-clip-text text-transparent">{t('home.developer')}</span>
+                {t('home.title')}, {t('home.subtitle').split('&')[0].trim()} <br /><span className="bg-gradient-to-r from-[#7cff92] to-[#7cff92]/60 bg-clip-text text-transparent">{t('home.developer')}</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
                 {t('home.subtitle')}
@@ -188,11 +191,10 @@ export default function Home() {
               <Link
                 key={plan.id}
                 href="/services"
-                className={`group relative bg-card border rounded-xl p-6 transition-all duration-300 hover:shadow-xl ${
-                  plan.popular
-                    ? 'border-[#7cff92] shadow-lg shadow-[#7cff92]/20'
-                    : 'border-border/50 hover:border-[#7cff92]/50 hover:shadow-[#7cff92]/10'
-                }`}
+                className={`group relative bg-card border rounded-xl p-6 transition-all duration-300 hover:shadow-xl ${plan.popular
+                  ? 'border-[#7cff92] shadow-lg shadow-[#7cff92]/20'
+                  : 'border-border/50 hover:border-[#7cff92]/50 hover:shadow-[#7cff92]/10'
+                  }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -201,7 +203,7 @@ export default function Home() {
                     </span>
                   </div>
                 )}
-                
+
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">
                     {t(`services.plans.${plan.id}`)}
@@ -229,11 +231,10 @@ export default function Home() {
 
                 <div className="mt-auto">
                   <span
-                    className={`w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-semibold transition-all ${
-                      plan.popular
-                        ? 'bg-[#7cff92] text-background group-hover:bg-[#7cff92]/90'
-                        : 'border border-[#7cff92]/30 text-[#7cff92] group-hover:bg-[#7cff92]/10'
-                    }`}
+                    className={`w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-semibold transition-all ${plan.popular
+                      ? 'bg-[#7cff92] text-background group-hover:bg-[#7cff92]/90'
+                      : 'border border-[#7cff92]/30 text-[#7cff92] group-hover:bg-[#7cff92]/10'
+                      }`}
                   >
                     {t('services.getStarted')}
                     <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -282,7 +283,7 @@ export default function Home() {
                 className="group relative bg-card border border-border/50 rounded-lg overflow-hidden hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#7cff92]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 {/* Image placeholder */}
                 <div className="relative h-32 bg-gradient-to-br from-[#7cff92]/20 to-[#7cff92]/5 overflow-hidden">
                   <div className="absolute inset-0 bg-grid-pattern opacity-10" />
@@ -438,7 +439,7 @@ export default function Home() {
               <p className="text-lg text-muted-foreground mb-8">
                 {t('home.contactSubtitle')}
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center gap-4 p-4 bg-card border border-border/50 rounded-lg hover:border-[#7cff92]/50 transition-colors">
                   <div className="p-3 bg-[#7cff92]/10 rounded-lg">
@@ -449,7 +450,7 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground">{t('contact.stats.quickResponse')}</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 p-4 bg-card border border-border/50 rounded-lg hover:border-[#7cff92]/50 transition-colors">
                   <div className="p-3 bg-[#7cff92]/10 rounded-lg">
                     <MessageSquare className="w-5 h-5 text-[#7cff92]" />
@@ -500,6 +501,40 @@ export default function Home() {
 
           {/* Expertise Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {/* AI */}
+            <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
+                  <Cpu className="w-6 h-6 text-[#7cff92]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
+                    {t('home.aboutExpertise.aiTitle')}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t('home.aboutExpertise.aiDesc')}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Custom Solutions */}
+            <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
+                  <Settings className="w-6 h-6 text-[#7cff92]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
+                    {t('home.aboutExpertise.customTitle')}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t('home.aboutExpertise.customDesc')}
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Backend */}
             <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
               <div className="flex items-start gap-4">
@@ -567,24 +602,47 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+
+            {/* Consultation CTA */}
+            <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
+                  <MessageSquare className="w-6 h-6 text-[#7cff92]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
+                    {t('home.aboutExpertise.consultationTitle')}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t('home.aboutExpertise.consultationDesc')}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            {/* Dev Ops */}
+            <div className="group bg-card border border-border/50 rounded-xl p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
+                  <Server className="w-6 h-6 text-[#7cff92]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors">
+                    {t('home.aboutExpertise.devOpsTitle')}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t('home.aboutExpertise.devOpsDesc')}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
-          {/* Consultation CTA */}
-          <div className="bg-card border border-border/50 rounded-xl p-8 hover:border-[#7cff92]/30 transition-colors text-center">
-            <h3 className="text-xl font-bold text-foreground mb-3">
-              {t('home.aboutExpertise.consultationTitle')}
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              {t('home.aboutExpertise.consultationDesc')}
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-[#7cff92]/10 text-[#7cff92] rounded-lg font-semibold border border-[#7cff92]/30 hover:bg-[#7cff92]/20 hover:border-[#7cff92]/60 transition-all"
-            >
-              {t('home.getInTouch')}
-              <ArrowRight size={18} />
-            </Link>
-          </div>
+
 
           {/* View Full About Page Link */}
           <div className="text-center mt-12">
