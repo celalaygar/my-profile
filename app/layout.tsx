@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Full-Stack Developer Portfolio',
+  title: 'Wixtory - Full-Stack Developer Projects & Templates',
+  description: 'Wixtory is a portfolio showcasing full-stack development projects and templates built with Next.js, React, Tailwind CSS, and more. Explore innovative web solutions and open-source contributions.',
   generator: 'v0.app',
   icons: {
     icon: [
