@@ -644,7 +644,7 @@ export const contactLinks: ContactLink[] = [
   },
   {
     title: 'TikTok',
-    url: 'https://www.tiktok.com/@openick.io',
+    url: 'https://www.tiktok.com/@wixtory.com',
   },
 ];
 
