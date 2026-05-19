@@ -9,7 +9,7 @@ export const projects: Project[] = [
     long_description: 'A language learning app with interactive exercises and quizzes.',
     type: 'Mobile App',
     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
-    url: 'https://celalaygar.github.io/main/project/language-box/',
+    url: 'https://language-box.wixtory.com/',
     image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/language-box/Language-Box-Logo.png",
   },
   {
@@ -19,7 +19,7 @@ export const projects: Project[] = [
     long_description: 'Find Your Perfect Domain With Ease',
     type: 'Mobile App',
     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
-    url: 'https://celalaygar.github.io/main/project/wixbook-domain-track/',
+    url: 'https://domain-track.wixtory.com/',
     image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/wixbook-domain-track/0-logo.png",
   },
   {
