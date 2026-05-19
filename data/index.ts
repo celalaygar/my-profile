@@ -41,6 +41,16 @@ export const projects: Project[] = [
     url: 'https://jobts.probablythebestever.info/',
     image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
   },
+  {
+    id: '7',
+    name: 'Personel Web Page',
+    short_description: 'Published on Website',
+    long_description: 'Managing projects, tasks, sprints, and work hours.',
+    type: 'Web Application',
+    technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
+    url: 'https://celalaygar.com/',
+    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
+  },
   /* {
      id: '8',
      name: 'Domain Track',
