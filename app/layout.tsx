@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { I18nProvider } from '@/lib/i18n'
+import { InteractiveBackground } from '@/components/interactive-background'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Wixtory - Full-Stack Developer Projects & Templates',
-  description: 'Wixtory is a portfolio showcasing full-stack development projects and templates built with Next.js, React, Tailwind CSS, and more. Explore innovative web solutions and open-source contributions.',
+  title: 'Portfolio',
+  description: 'Full-Stack Developer Portfolio',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -37,10 +38,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className="font-sans antialiased bg-background text-foreground">
-        <I18nProvider>
-          {children}
-        </I18nProvider>
+      <body className="font-sans antialiased bg-background text-foreground relative">
+        <InteractiveBackground />
+        <div className="relative z-10">
+          <I18nProvider>
+            {children}
+          </I18nProvider>
+        </div>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

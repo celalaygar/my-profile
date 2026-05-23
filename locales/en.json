@@ -14,6 +14,19 @@
     "books": "Books & Hobbies",
     "contact": "Contact"
   },
+  "cards": {
+    "pages": "Pages / Routes",
+    "language": "Language",
+    "motion": "3D / Motion",
+    "yes": "Yes",
+    "no": "No",
+    "legal": "Legal / GDPR",
+    "included": "Included",
+    "techSeo": "Technical SEO",
+    "projectDetail": "Project Details",
+    "templateDetail": "Template Details",
+    "liveDemo": "Live Demo"
+  },
   "common": {
     "github": "GitHub",
     "portfolio": "Portfolio",
@@ -66,9 +79,7 @@
       "customSolutionsTitle": "Custom software development: how does it work?",
       "customSolutionsDesc": "We break down the scope into sprints and deliver working features at the end of each sprint. E-commerce, corporate applications, or custom integration projects follow this approach.",
       "aiTitle": "AI and Automation",
-      "aiDesc": "I leverage AI tools and automation to optimize development workflows and enhance project outcomes.",
-      "devOpsTitle": "DevOps and Cloud",
-      "devOpsDesc": "I implement CI/CD pipelines and manage cloud infrastructure for scalable and reliable deployments."
+      "aiDesc": "I leverage AI tools and automation to optimize development workflows and enhance project outcomes."
     },
     "stats": {
       "projects": "Projects",
@@ -171,19 +182,19 @@
     }
   },
   "services": {
-    "title": "Services",
-    "subtitle": "From ready-made website templates to fully custom enterprise software: buy a website or build a custom project — scalable, SEO-optimized delivery for every level.",
-    "pricing": "Pricing",
-    "popular": "Most Popular",
+    "title": "Services and Transparent Pricing",
+    "subtitle": "Two lanes: industry-specific websites for fast launch (below) and AI, automation, and custom software projects (bottom). Each package comes with a written contract, fixed price, and transparent revision policy; no hidden items.",
+    "pricing": "Web Packages — 4–12 business days to launch · Prices exclude VAT (+VAT)",
+    "popular": "Popular",
     "getStarted": "Get Started",
     "contact": "Contact Us",
     "process": "Process",
     "revisionPolicy": "Revision Policy",
     "duration": "Duration",
-    "revisions": "Revisions",
+    "revisions": "Revision Rounds",
     "perMonth": "/ month",
-    "largeScale": "Larger Projects",
-    "largeScaleSubtitle": "Beyond website creation: end-to-end development and turnkey solutions for e-commerce, enterprise applications, and custom engineering projects.",
+    "largeScale": "AI, Automation & Custom Software",
+    "largeScaleSubtitle": "Projects where a website is not enough: AI agent, WhatsApp and process automation, e-commerce, enterprise application and custom engineering. Sprint-based, measurable delivery.",
     "readyToStart": "Ready to Start?",
     "readyToStartSubtitle": "Let's discuss your project and find the perfect solution for your needs.",
     "step": "Step",
@@ -194,30 +205,30 @@
       "enterprise": "Enterprise"
     },
     "features": {
-      "starter1": "6-page industry-specific design",
-      "starter2": "WhatsApp integration",
+      "starter1": "Industry-specific 6-page design",
+      "starter2": "WhatsApp Cloud API routing",
       "starter3": "Social media links",
-      "starter4": "Basic SEO optimization",
-      "starter5": "Fully responsive design",
-      "growth1": "10-page advanced design",
-      "growth2": "Modern UI with latest technologies",
-      "growth3": "Social media, WhatsApp, email integration",
-      "growth4": "Advanced SEO + Core Web Vitals optimization",
-      "growth5": "Industry-specific content blocks",
-      "enterprise1": "Fully custom design tailored to the industry",
-      "enterprise2": "Unlimited pages",
-      "enterprise3": "Multi-language support (TR / EN)",
-      "enterprise4": "Dark mode + advanced theme system",
-      "enterprise5": "Fully responsive modern design",
-      "enterprise6": "WhatsApp, social media, email integration",
-      "enterprise7": "Supabase authentication system",
-      "enterprise8": "Deployment support (Netlify / GoDaddy)",
-      "enterprise9": "External backend integrations"
+      "starter4": "Basic technical SEO (meta, sitemap, robots)",
+      "starter5": "Mobile-friendly responsive modern design",
+      "growth1": "Advanced 10-page design",
+      "growth2": "Premium UI components and modern technology stack",
+      "growth3": "Social media, WhatsApp, and email integration",
+      "growth4": "Advanced SEO and Core Web Vitals optimization",
+      "growth5": "Industry-specific content and conversion blocks",
+      "enterprise1": "Fully custom design tailored to your industry",
+      "enterprise2": "Unlimited pages as needed",
+      "enterprise3": "Turkish / English bilingual support",
+      "enterprise4": "Dark theme and advanced theme system",
+      "enterprise5": "Fully mobile-friendly modern interface",
+      "enterprise6": "WhatsApp, social media, and email integration",
+      "enterprise7": "User login system (Supabase auth)",
+      "enterprise8": "Vercel / Netlify deployment support",
+      "enterprise9": "External system and backend service integration"
     },
     "durations": {
-      "starter": "4–5 days",
-      "growth": "6–8 days",
-      "enterprise": "8–12 days"
+      "starter": "4–5 business days",
+      "growth": "6–8 business days",
+      "enterprise": "8–12 business days"
     },
     "revisionRounds": {
       "starter": "1 revision round",
@@ -225,32 +236,53 @@
       "enterprise": "3 revision rounds"
     },
     "enterpriseSolutions": {
-      "ecommerce": "Minimal E-Commerce",
-      "customApp": "Custom Application",
-      "engineering": "Engineering Solutions"
+      "aiAgent": "AI Agent",
+      "automation": "WhatsApp & Process Automation",
+      "ecommerce": "E-Commerce",
+      "customApp": "Custom Enterprise Application",
+      "engineering": "Custom Engineering Projects"
     },
     "enterpriseFeatures": {
-      "ecommerce1": "Product catalog & admin panel",
-      "ecommerce2": "Cart and payment system",
-      "ecommerce3": "Stock & order management",
-      "ecommerce4": "SEO-friendly and responsive design",
-      "customApp1": "Custom backend architecture",
+      "aiAgent1": "Claude / OpenAI · RAG (vector database)",
+      "aiAgent2": "WhatsApp, web widget, Slack or Discord integration",
+      "aiAgent3": "Trained with your company data (PDF, site, Notion, CRM)",
+      "aiAgent4": "Logging, usage dashboard and cost control",
+      "automation1": "Official WhatsApp Cloud API integration",
+      "automation2": "Automatic quote, appointment and order flows",
+      "automation3": "CRM, email, Sheets and invoice integrations",
+      "automation4": "n8n custom server (self-host) or cloud setup",
+      "ecommerce1": "Product catalog and admin panel",
+      "ecommerce2": "Cart, payment and Iyzico/Stripe integration",
+      "ecommerce3": "Stock and order tracking, order notification flow",
+      "ecommerce4": "Mobile-first, fast and SEO-friendly infrastructure",
+      "customApp1": "Custom backend architecture (Java / Python / Node)",
       "customApp2": "Scalable and secure infrastructure",
-      "customApp3": "User management and authorization",
-      "customApp4": "1-month development included",
-      "customAppExtra": "+₺100,000 per additional month",
-      "engineering1": "Embedded systems & IoT integration",
+      "customApp3": "Role-based user management and authorization",
+      "customApp4": "Sprint-based delivery, source code with you",
+      "engineering1": "Embedded systems and IoT integrations",
       "engineering2": "Full project lifecycle management",
-      "engineering3": "Testing, validation, field deployment",
-      "engineering4": "Example: Agricultural drone system"
+      "engineering3": "Testing, validation and field deployment",
+      "engineering4": "Example: Agricultural drone spraying system"
+    },
+    "enterprisePricing": {
+      "aiAgent": "Starting from ₺45,000",
+      "aiAgentNote": "Scope clarified in discovery call based on data source and integration count (+VAT)",
+      "automation": "Starting from ₺25,000",
+      "automationNote": "Varies by flow count and integrated system count (+VAT)",
+      "ecommerce": "Let's discuss",
+      "ecommerceNote": "Detailed quote based on product count, payment provider and integrations",
+      "customApp": "Let's discuss",
+      "customAppNote": "Sprint-based quote based on scope, screen count and integration",
+      "engineering": "Let's discuss",
+      "engineeringNote": "Scope, test requirements and field coverage clarified in discussion"
     },
     "processSteps": {
-      "step1": "Discovery meeting + goal definition",
-      "step2": "Information architecture & wireframes",
-      "step3": "UI implementation & optimization",
-      "step4": "Testing & deployment"
+      "step1": "Short discovery meeting and goal setting",
+      "step2": "Information architecture, content and wireframe",
+      "step3": "Premium UI implementation and performance optimization",
+      "step4": "Testing, revisions and launch"
     },
-    "revisionPolicyText": "Each package includes limited revision rounds. Custom projects follow sprint-based delivery."
+    "revisionPolicyText": "Revision rounds specified in packages include design and content updates. Additional revision requests clarified in discussion. Custom software and AI projects follow sprint-based delivery and transparent change management."
   },
   "templates": {
     "title": "Website Templates",

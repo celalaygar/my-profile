@@ -2,12 +2,14 @@
 
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
+import { ProjectCard } from '@/components/cards/project-card';
+import { TemplateCard } from '@/components/cards/template-card';
 import { useI18n } from '@/lib/i18n';
 import { projects, servicesData, templates } from '@/data';
 import Link from 'next/link';
 import {
-  ChevronRight, ArrowRight, ExternalLink, Check, Mail, MessageSquare, Sparkles, Database, Code2, Zap, Shield, Layout,
-  Server, Cloud, Cpu, Settings,
+  ChevronRight, ArrowRight, ExternalLink, Check, Mail, MessageSquare, Sparkles, Database, Code2, Zap, Shield,
+  Server, Cloud, Cpu, Settings, Layout,
 } from 'lucide-react';
 
 export default function Home() {
@@ -20,71 +22,242 @@ export default function Home() {
     <main className="min-h-screen flex flex-col">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden pt-20 pb-32 sm:pt-32 sm:pb-40">
+      {/* Hero Section - New Design */}
+      <section className="relative overflow-hidden pt-16 pb-24 sm:pt-24 sm:pb-32">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-8 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#7cff92]/10 rounded-full border border-[#7cff92]/30 mx-auto">
+          <div className="space-y-8 text-center flex flex-col items-center">
+            {/* Top Label */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#7cff92]/10 rounded-full border border-[#7cff92]/30">
               <div className="w-2 h-2 bg-[#7cff92] rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-[#7cff92]">{t('home.openToOpportunities')}</span>
+              <span className="text-sm font-medium text-[#7cff92]">{language === 'tr' ? 'Yapay Zeka · Otomasyon · Özel Yazılım' : 'AI · Automation · Custom Software'}</span>
             </div>
 
-            <div className="space-y-4">
+            {/* Main Heading */}
+            <div className="max-w-4xl space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-tight">
-                {t('home.title')}, {t('home.subtitle').split('&')[0].trim()} <br /><span className="bg-gradient-to-r from-[#7cff92] to-[#7cff92]/60 bg-clip-text text-transparent">{t('home.developer')}</span>
+                {language === 'tr' ? 'Markanıza Özel Dijital Çözümler Geliştiriyoruz' : 'We Build Custom Digital Solutions For Your Brand'}
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-                {t('home.subtitle')}
-              </p>
             </div>
 
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              {t('home.about')}
+            {/* Services Categories */}
+            <div className="flex flex-wrap gap-3 justify-center">
+              {['WEB', 'E-TİCARET', 'MOBİL', 'OTOMASYON', 'YAPAY ZEKA'].map((cat, i) => (
+                <span key={i} className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7cff92]">
+                  {cat}
+                  {i < 4 && <span className="ml-3 text-muted-foreground">·</span>}
+                </span>
+              ))}
+            </div>
+
+            {/* Description */}
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl leading-relaxed">
+              {language === 'tr' 
+                ? 'Kurumsal firmalar, KOBİ\'ler ve esnaflar için web sitesi, e-ticaret altyapısı, mobil uygulama, yapay zeka ajanları, otomasyon sistemleri ve özel yazılım projelerini markanıza özel geliştiriyoruz.'
+                : 'For corporate firms, SMEs and entrepreneurs, we develop custom websites, e-commerce infrastructure, mobile applications, AI agents, automation systems and custom software projects tailored to your brand.'
+              }
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-              <Link
-                href="/projects"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#7cff92] text-background rounded-lg font-semibold hover:bg-[#7cff92]/90 hover:shadow-lg hover:shadow-[#7cff92]/30 transition-all group"
-              >
-                {t('home.cta')}
-                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
+            <div className="flex flex-col sm:flex-row items-center gap-4 pt-8">
               <Link
                 href="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#7cff92] text-background rounded-lg font-semibold hover:bg-[#7cff92]/90 hover:shadow-lg hover:shadow-[#7cff92]/30 transition-all group"
+              >
+                <MessageSquare size={18} />
+                {language === 'tr' ? 'WhatsApp\'tan Yazın' : 'Write From WhatsApp'}
+              </Link>
+              <Link
+                href="/services"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-[#7cff92]/30 text-foreground rounded-lg font-semibold hover:border-[#7cff92]/80 hover:bg-[#7cff92]/5 transition-all"
               >
-                {t('nav.contact')}
+                {language === 'tr' ? 'Çözümleri İnceleyin' : 'Explore Solutions'}
+                <ArrowRight size={18} />
               </Link>
             </div>
-          </div>
 
-          {/* Stats */}
-          <div className="mt-20 grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
-            <div className="text-center p-4 rounded-lg border border-[#7cff92]/20 hover:border-[#7cff92]/60 bg-[#7cff92]/5 hover:bg-[#7cff92]/10 transition-all duration-200">
-              <div className="text-2xl sm:text-3xl font-bold text-[#7cff92]">50+</div>
-              <div className="text-xs sm:text-sm text-muted-foreground mt-1">{t('home.stats.projects')}</div>
+            {/* Features Grid */}
+            <div className="mt-16 w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="p-4 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <div className="text-sm font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'Modern Tasarım' : 'Modern Design'}
+                </div>
+              </div>
+              <div className="p-4 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <div className="text-sm font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'Güçlü Altyapı' : 'Powerful Infrastructure'}
+                </div>
+              </div>
+              <div className="p-4 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <div className="text-sm font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'SEO Uyumlu' : 'SEO Optimized'}
+                </div>
+              </div>
+              <div className="p-4 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <div className="text-sm font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'Bakım ve Destek' : 'Support & Maintenance'}
+                </div>
+              </div>
             </div>
-            <div className="text-center p-4 rounded-lg border border-[#7cff92]/20 hover:border-[#7cff92]/60 bg-[#7cff92]/5 hover:bg-[#7cff92]/10 transition-all duration-200">
-              <div className="text-2xl sm:text-3xl font-bold text-[#7cff92]">5+</div>
-              <div className="text-xs sm:text-sm text-muted-foreground mt-1">{t('home.stats.yearsExp')}</div>
-            </div>
-            <div className="text-center p-4 rounded-lg border border-[#7cff92]/20 hover:border-[#7cff92]/60 bg-[#7cff92]/5 hover:bg-[#7cff92]/10 transition-all duration-200">
-              <div className="text-2xl sm:text-3xl font-bold text-[#7cff92]">30+</div>
-              <div className="text-xs sm:text-sm text-muted-foreground mt-1">{t('home.stats.technologies')}</div>
+
+            {/* Service Cards */}
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="p-5 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Shield className="w-6 h-6 text-[#7cff92] mb-3" />
+                <h4 className="font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'Premium Web Sitesi' : 'Premium Website'}
+                </h4>
+                <p className="text-sm text-muted-foreground">{language === 'tr' ? 'Profesyonel ve hızlı yüklenen web siteleri' : 'Professional and fast-loading websites'}</p>
+              </div>
+              <div className="p-5 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Layout className="w-6 h-6 text-[#7cff92] mb-3" />
+                <h4 className="font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'E-Ticaret Altyapısı' : 'E-Commerce Platform'}
+                </h4>
+                <p className="text-sm text-muted-foreground">{language === 'tr' ? 'Satış yapabileceğiniz tamamlanmış altyapı' : 'Complete infrastructure to start selling'}</p>
+              </div>
+              <div className="p-5 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Cpu className="w-6 h-6 text-[#7cff92] mb-3" />
+                <h4 className="font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'Mobil Uygulama' : 'Mobile App'}
+                </h4>
+                <p className="text-sm text-muted-foreground">{language === 'tr' ? 'iOS ve Android için native uygulamalar' : 'Native apps for iOS and Android'}</p>
+              </div>
+              <div className="p-5 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Zap className="w-6 h-6 text-[#7cff92] mb-3" />
+                <h4 className="font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'Süreç Otomasyonu' : 'Process Automation'}
+                </h4>
+                <p className="text-sm text-muted-foreground">{language === 'tr' ? 'Tekrar eden işleri otomatikleştirin' : 'Automate repetitive tasks'}</p>
+              </div>
+              <div className="p-5 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Cloud className="w-6 h-6 text-[#7cff92] mb-3" />
+                <h4 className="font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'Yapay Zeka Entegrasyonu' : 'AI Integration'}
+                </h4>
+                <p className="text-sm text-muted-foreground">{language === 'tr' ? 'Yapay zeka ile işlerinizi dönüştürün' : 'Transform your business with AI'}</p>
+              </div>
+              <div className="p-5 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Settings className="w-6 h-6 text-[#7cff92] mb-3" />
+                <h4 className="font-semibold text-foreground mb-2">
+                  {language === 'tr' ? 'Kişiye Özel Yazılım' : 'Custom Software'}
+                </h4>
+                <p className="text-sm text-muted-foreground">{language === 'tr' ? 'Tam olarak ihtiyacınıza uygun çözümler' : 'Solutions tailored to your needs'}</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* All Projects Section - Small Cards */}
+      {/* AI, Automation & Custom Software Section */}
+      <section className="py-20 sm:py-32 border-t border-border/50 bg-gradient-to-b from-background via-[#7cff92]/5 to-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12">
+            {/* Header */}
+            <div className="text-center space-y-4">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#7cff92]/10 rounded-full border border-[#7cff92]/30">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7cff92]">
+                  {language === 'tr' ? 'YÜKSEK ETKİLİ · STRATEJİK İŞ ORTAKLIĞI' : 'HIGH IMPACT · STRATEGIC PARTNERSHIP'}
+                </span>
+              </div>
+              
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
+                {language === 'tr' ? 'Yapay Zeka, Otomasyon ve Özel Yazılım' : 'AI, Automation & Custom Software'}
+              </h2>
+              
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                {language === 'tr'
+                  ? 'Tek başına web sitesinin yetmediği noktada devreye giriyoruz. Bot değil — sizin diliniz konuşan, sizin verinizi bilen yapay zeka ajanları (AI agent), resmi WhatsApp Cloud API otomasyonu ve özel yazılım ile ekibinizin haftada saatlerce harcadığı tekrar eden işi sırtınızdan alıyoruz. Aşağıdaki rakamlar gerçek kurulumlarımızdan ölçülen metriklerdir.'
+                  : 'We step in where a website alone is not enough. Not bots — AI agents (AI agents) that speak your language and know your data, official WhatsApp Cloud API automation and custom software solutions take recurring tasks off your team\'s shoulders that consume hours weekly. The figures below are metrics measured from our real implementations.'
+                }
+              </p>
+            </div>
+
+            {/* Services Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* AI Agent */}
+              <div className="p-6 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Zap className="w-8 h-8 text-[#7cff92] mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {language === 'tr' ? 'Yapay Zeka Ajanı (AI Agent)' : 'AI Agent'}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {language === 'tr'
+                    ? 'Claude / OpenAI tabanlı, şirket verinizi (PDF, web, CRM, Notion) RAG ile bilen ajan. Örnek: B2B yazılım firmasında satış öncesi tekrar eden sorularda %70 yük azalması; ekip yalnızca sıcak fırsata bakıyor.'
+                    : 'Claude / OpenAI based, agent that knows your company data (PDF, web, CRM, Notion) with RAG. Example: 70% reduction in pre-sales repetitive questions at B2B software firm; team focuses only on hot opportunities.'
+                  }
+                </p>
+              </div>
+
+              {/* WhatsApp Automation */}
+              <div className="p-6 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <MessageSquare className="w-8 h-8 text-[#7cff92] mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {language === 'tr' ? 'WhatsApp Otomasyonu' : 'WhatsApp Automation'}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {language === 'tr'
+                    ? 'Resmi WhatsApp Cloud API üzerinden teklif, randevu ve sipariş akışları — toplu mesaj/spam aracı değil. Örnek: Estetik klinikte yanıt süresi 4 saatten 90 saniyeye, randevu kaçırma oranı yarı yarıya.'
+                    : 'Official WhatsApp Cloud API quote, appointment and order flows — not mass messaging/spam tool. Example: Response time from 4 hours to 90 seconds at beauty clinic; appointment miss rate cut in half.'
+                  }
+                </p>
+              </div>
+
+              {/* Process Automation */}
+              <div className="p-6 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Settings className="w-8 h-8 text-[#7cff92] mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {language === 'tr' ? 'Süreç Otomasyonu (n8n)' : 'Process Automation (n8n)'}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {language === 'tr'
+                    ? 'Form → CRM → e-posta → fatura → WhatsApp gibi tekrar eden zincirleri yapay zeka destekli pipeline\'a dönüştürüyoruz. Örnek: Lojistikte sürücü–müşteri eşleştirme 8 saatten 30 dakikaya indi.'
+                    : 'Convert repetitive chains like Form → CRM → Email → Invoice → WhatsApp into AI-powered pipelines. Example: Driver-customer matching in logistics reduced from 8 hours to 30 minutes.'
+                  }
+                </p>
+              </div>
+
+              {/* Custom Software */}
+              <div className="p-6 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Code2 className="w-8 h-8 text-[#7cff92] mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {language === 'tr' ? 'Özel Yazılım' : 'Custom Software'}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {language === 'tr'
+                    ? 'İç panel, B2B portal, e-ticaret, entegrasyon, SaaS MVP — Java / Python backend + Next.js ile uçtan uca. Sprint bazlı, her sprintte çalışan teslim, ek kalem yok.'
+                    : 'Admin panel, B2B portal, e-commerce, integrations, SaaS MVP — end-to-end with Java / Python backend + Next.js. Sprint-based, working deliverables each sprint, no surprises.'
+                  }
+                </p>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center pt-8">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#7cff92] text-background rounded-lg font-semibold hover:bg-[#7cff92]/90 hover:shadow-lg hover:shadow-[#7cff92]/30 transition-all group"
+              >
+                {language === 'tr' ? 'Ücretsiz Keşif Görüşmesi Ayırın' : 'Schedule Free Discovery Call'}
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-[#7cff92]/30 text-foreground rounded-lg font-semibold hover:border-[#7cff92]/80 hover:bg-[#7cff92]/5 transition-all"
+              >
+                {language === 'tr' ? 'Hizmetler ve Şeffaf Fiyatlar' : 'Services & Pricing'}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Reference Projects Section */}
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">{t('home.allProjects')}</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">{language === 'tr' ? 'Referans Projeler' : 'Reference Projects'}</h2>
               <p className="text-muted-foreground mt-2">{t('home.allProjectsSubtitle')}</p>
             </div>
             <Link
@@ -95,65 +268,9 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {projects.map((project) => (
-              <Link
-                key={project.id}
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative bg-card border border-border/50 rounded-lg p-6 hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300 flex flex-col h-full"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#7cff92]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                <div className="relative flex flex-col h-full">
-                  {/* Type Badge */}
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs px-2.5 py-1 bg-[#7cff92]/10 text-[#7cff92] rounded-full font-medium truncate">
-                      {project.type}
-                    </span>
-                    <ExternalLink size={16} className="text-muted-foreground group-hover:text-[#7cff92] transition-colors flex-shrink-0" />
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="font-semibold text-foreground text-base group-hover:text-[#7cff92] transition-colors line-clamp-2 mb-2">
-                    {project.name}
-                  </h3>
-
-                  {/* Short Description */}
-                  <p className="text-xs text-[#7cff92]/80 font-medium mb-2 uppercase tracking-wider">
-                    {project.short_description}
-                  </p>
-
-                  {/* Long Description */}
-                  <p className="text-sm text-muted-foreground line-clamp-2 mb-4 flex-grow">
-                    {project.long_description}
-                  </p>
-
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-1.5 mb-4">
-                    {project.technologies.slice(0, 3).map((tech, idx) => (
-                      <span
-                        key={idx}
-                        className="px-2 py-0.5 text-xs font-medium bg-[#7cff92]/10 text-[#7cff92]/80 rounded"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <span className="px-2 py-0.5 text-xs font-medium bg-muted text-muted-foreground rounded">
-                        +{project.technologies.length - 3}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Footer with hover effect */}
-                  <div className="pt-3 border-t border-border/30 group-hover:border-[#7cff92]/30 transition-colors">
-                    <div className="text-xs text-muted-foreground group-hover:text-[#7cff92] transition-colors flex items-center gap-1">
-                      View Project <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.slice(0, 8).map((project) => (
+              <ProjectCard key={project.id} project={project} />
             ))}
           </div>
 
@@ -163,6 +280,34 @@ export default function Home() {
           >
             {t('home.viewAllProjects')} <ArrowRight size={18} />
           </Link>
+        </div>
+      </section>
+
+      {/* Ready Templates Section */}
+      <section className="py-20 sm:py-32 border-t border-border/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-12">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+                {language === 'tr' ? 'Sektöre Özel Hazır Web Sitesi Şablonları' : 'Industry-Specific Ready Website Templates'}
+              </h2>
+              <p className="text-muted-foreground mt-2">
+                {language === 'tr' ? 'Hızlıca başlamak için önceden tasarlanmış şablonlar' : 'Pre-designed templates to get started quickly'}
+              </p>
+            </div>
+            <Link
+              href="/templates"
+              className="hidden sm:flex items-center gap-2 px-4 py-2 text-[#7cff92] hover:text-[#7cff92]/80 transition-colors"
+            >
+              {t('home.viewAll')} <ArrowRight size={18} />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {templates.slice(0, 3).map((template) => (
+              <TemplateCard key={template.id} template={template} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -275,49 +420,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {templates.slice(0, 3).map((template) => (
-              <Link
-                key={template.id}
-                href={template.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative bg-card border border-border/50 rounded-lg overflow-hidden hover:border-[#7cff92]/50 hover:shadow-lg hover:shadow-[#7cff92]/10 transition-all duration-300"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#7cff92]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                {/* Image placeholder */}
-                <div className="relative h-32 bg-gradient-to-br from-[#7cff92]/20 to-[#7cff92]/5 overflow-hidden">
-                  <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Layout className="w-10 h-10 text-[#7cff92]/40" />
-                  </div>
-                  <div className="absolute top-3 right-3 px-2 py-1 text-xs font-semibold uppercase tracking-wide bg-[#7cff92]/90 text-background rounded">
-                    {template.type}
-                  </div>
-                </div>
-
-                <div className="relative p-5">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs px-2 py-0.5 bg-[#7cff92]/10 text-[#7cff92] rounded-full font-medium">
-                      {template.type}
-                    </span>
-                    <ExternalLink size={14} className="text-muted-foreground group-hover:text-[#7cff92] transition-colors" />
-                  </div>
-
-                  <h3 className="font-semibold text-foreground text-base group-hover:text-[#7cff92] transition-colors mb-2">
-                    {template.title}
-                  </h3>
-
-                  <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
-                    {template.description}
-                  </p>
-
-                  <div className="pt-3 border-t border-border/30 group-hover:border-[#7cff92]/30 transition-colors">
-                    <div className="text-xs text-muted-foreground group-hover:text-[#7cff92] transition-colors flex items-center gap-1">
-                      View Template <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <TemplateCard key={template.id} template={template} />
             ))}
           </div>
 

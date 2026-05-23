@@ -18,10 +18,9 @@ import { useState } from 'react';
 // Primary navigation items (always visible on desktop)
 const primaryNavItems = [
   { key: 'home', href: '/' },
-  { key: 'about', href: '/about' },
   { key: 'projects', href: '/projects' },
-  { key: 'templates', href: '/templates' },
   { key: 'services', href: '/services' },
+  { key: 'templates', href: '/templates' },
 ];
 
 // Secondary navigation items (in dropdown menu)
@@ -32,7 +31,13 @@ const secondaryNavItems = [
   { key: 'games', href: '/games' },
 ];
 
-const allNavItems = [...primaryNavItems, ...secondaryNavItems];
+// Items after More menu
+const afterMoreNavItems = [
+  { key: 'about', href: '/about' },
+  { key: 'contact', href: '/contact' },
+];
+
+const allNavItems = [...primaryNavItems, ...secondaryNavItems, ...afterMoreNavItems];
 
 export function Navbar() {
   const { t, language, setLanguage } = useI18n();
@@ -41,7 +46,7 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 gap-4">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link
             href="/"
@@ -51,8 +56,8 @@ export function Navbar() {
             <span>Wixtory</span>
           </Link>
 
-          {/* Desktop Navigation - Primary */}
-          <div className="hidden md:flex items-center gap-0.5">
+          {/* Desktop Navigation - Primary (Centered) */}
+          <div className="hidden md:flex items-center gap-0.5 absolute left-1/2 transform -translate-x-1/2">
             {primaryNavItems.map((item) => (
               <Link
                 key={item.key}
@@ -83,17 +88,21 @@ export function Navbar() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* About and Contact - After More Menu */}
+            {afterMoreNavItems.map((item) => (
+              <Link
+                key={item.key}
+                href={item.href}
+                className="px-4 py-2 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-accent/50 rounded-md transition-all duration-200 hover:shadow-sm"
+              >
+                {t(`nav.${item.key}`)}
+              </Link>
+            ))}
           </div>
 
-          {/* Right Section - Contact, Language Switcher & Mobile Menu */}
+          {/* Right Section - Language Switcher & Mobile Menu */}
           <div className="flex items-center gap-2 ml-auto">
-            {/* Contact Link - Desktop */}
-            <Link
-              href="/contact"
-              className="hidden sm:inline-flex px-4 py-2 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-accent/50 rounded-md transition-all duration-200 hover:shadow-sm"
-            >
-              {t('nav.contact')}
-            </Link>
             {/* Language Switcher Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-md text-foreground/70 hover:text-foreground hover:bg-accent/50 transition-all duration-200 hover:shadow-sm">
@@ -143,13 +152,6 @@ export function Navbar() {
                 {t(`nav.${item.key}`)}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="block px-4 py-2.5 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-accent/50 rounded-md transition-all duration-200 sm:hidden"
-            >
-              {t('nav.contact')}
-            </Link>
           </div>
         )}
       </div>

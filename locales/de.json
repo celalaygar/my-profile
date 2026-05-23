@@ -14,6 +14,19 @@
     "books": "Bücher & Hobbys",
     "contact": "Kontakt"
   },
+  "cards": {
+    "pages": "Seiten / Routen",
+    "language": "Sprache",
+    "motion": "3D / Motion",
+    "yes": "Ja",
+    "no": "Nein",
+    "legal": "Recht / DSGVO",
+    "included": "Inklusive",
+    "techSeo": "Technisches SEO",
+    "projectDetail": "Projektdetails",
+    "templateDetail": "Vorlagendetails",
+    "liveDemo": "Live-Demo"
+  },
   "common": {
     "github": "GitHub",
     "portfolio": "Portfolio",
@@ -74,17 +87,21 @@
     },
     "projects": "Projekte",
     "yearsExp": "Jahre Erfahrung",
-    "technologies": "Technologien"
+    "technologies": "Technologien",
+    "stats": {
+      "projects": "Projekte",
+      "yearsExp": "Jahre Erfahrung",
+      "technologies": "Technologien"
+    },
+    "allProjects": "Alle Projekte",
+    "allProjectsSubtitle": "Durchsuchen Sie alle meine Arbeiten",
+    "servicesSection": "Dienstleistungen & Preise",
+    "servicesSubtitle": "Professionelle Webentwicklungslösungen",
+    "viewServices": "Alle Dienstleistungen anzeigen",
+    "contactSection": "Kontakt aufnehmen",
+    "contactSubtitle": "Lassen Sie uns Ihr nächstes Projekt besprechen"
   },
-  "allProjects": "Alle Projekte",
-  "allProjectsSubtitle": "Durchsuchen Sie alle meine Arbeiten",
-  "servicesSection": "Dienstleistungen & Preise",
-  "servicesSubtitle": "Professionelle Webentwicklungslösungen",
-  "viewServices": "Alle Dienstleistungen anzeigen",
-  "contactSection": "Kontakt aufnehmen",
-  "contactSubtitle": "Lassen Sie uns Ihr nächstes Projekt besprechen"
-},
-"projects": {
+  "projects": {
   "title": "Projekte",
   "empty": "Noch keine Projekte",
   "subtitle": "Eine Sammlung von Projekten, die ich mit modernen Technologien und bewährten Praktiken erstellt habe.",

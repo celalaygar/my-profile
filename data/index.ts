@@ -42,42 +42,14 @@ export const projects: Project[] = [
     image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
   },
   {
-    id: '7',
-    name: 'Personel Web Page',
-    short_description: 'Published on Website',
-    long_description: 'Managing projects, tasks, sprints, and work hours.',
+    id: '10',
+    name: 'celalaygar.com',
+    short_description: 'Personel Web Page',
+    long_description: 'My personal website where I share information about my personal details, blog posts, and projects.',
     type: 'Web Application',
     technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
-    url: 'https://celalaygar.com/',
-    image_url: "https://raw.githubusercontent.com/celalaygar/main/refs/heads/main/project/job-tracking-system-v2/job-ts-9.png",
+    url: 'https://celalaygar.com',
   },
-  /* {
-     id: '8',
-     name: 'Domain Track',
-     short_description: 'Domain Intelligence Tool',
-     long_description: 'Check domain availability and view WHOIS registration information.',
-     type: 'Mobile App',
-     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
-     url: 'https://celalaygar.github.io/main/project/domain-track/',
-   },
-   {
-     id: '10',
-     name: 'Job Tracking System V2',
-     short_description: 'Job Tracking System',
-     long_description: 'Full-stack platform for managing projects, tasks, sprints, and work hours.',
-     type: 'Web Application',
-     technologies: ['Next Js', 'Tailwind CSS', 'Radix UI', 'TypeScript', 'Spring Boot', 'Spring Security', 'JWT', 'JPA', 'Hibernate', 'MongoDB'],
-     url: 'https://celalaygar.github.io/main/project/job-tracking-system-v2/',
-   },
-   {
-     id: '22',
-     name: 'Lingua Bubble',
-     short_description: 'Make Language Learning Fun',
-     long_description: 'Learn languages by playing games at your own level in 9 different languages with Lingua Bubble.',
-     type: 'Mobile App',
-     technologies: ['Flutter', 'Dart', 'Java', 'Spring Boot', 'JPA', 'Hibernate', 'MongoDB'],
-     url: 'https://celalaygar.github.io/main/project/lingua-bubble/',
-   },*/
 ];
 
 
@@ -654,7 +626,7 @@ export const contactLinks: ContactLink[] = [
   },
   {
     title: 'TikTok',
-    url: 'https://www.tiktok.com/@wixtory.com',
+    url: 'https://www.tiktok.com/@openick.io',
   },
 ];
 

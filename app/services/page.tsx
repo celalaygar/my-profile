@@ -4,7 +4,7 @@ import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { FAQSection } from '@/components/sections/faq-section';
 import { useI18n } from '@/lib/i18n';
-import { Check, Sparkles, Clock, RefreshCw, ArrowRight, Zap, Building2, Cpu, FileText } from 'lucide-react';
+import { Check, Sparkles, Clock, RefreshCw, ArrowRight, Zap, Building2, Cpu, FileText, MessageSquare, Settings } from 'lucide-react';
 import Link from 'next/link';
 
 // Pricing plans data with i18n keys
@@ -66,9 +66,34 @@ const pricingPlans = [
 // Enterprise solutions data with i18n keys
 const enterpriseSolutions = [
   {
+    id: 'ai-agent',
+    titleKey: 'services.enterpriseSolutions.aiAgent',
+    priceKey: 'services.enterprisePricing.aiAgent',
+    priceNoteKey: 'services.enterprisePricing.aiAgentNote',
+    featureKeys: [
+      'services.enterpriseFeatures.aiAgent1',
+      'services.enterpriseFeatures.aiAgent2',
+      'services.enterpriseFeatures.aiAgent3',
+      'services.enterpriseFeatures.aiAgent4',
+    ],
+  },
+  {
+    id: 'automation',
+    titleKey: 'services.enterpriseSolutions.automation',
+    priceKey: 'services.enterprisePricing.automation',
+    priceNoteKey: 'services.enterprisePricing.automationNote',
+    featureKeys: [
+      'services.enterpriseFeatures.automation1',
+      'services.enterpriseFeatures.automation2',
+      'services.enterpriseFeatures.automation3',
+      'services.enterpriseFeatures.automation4',
+    ],
+  },
+  {
     id: 'ecommerce',
     titleKey: 'services.enterpriseSolutions.ecommerce',
-    price: 50000,
+    priceKey: 'services.enterprisePricing.ecommerce',
+    priceNoteKey: 'services.enterprisePricing.ecommerceNote',
     featureKeys: [
       'services.enterpriseFeatures.ecommerce1',
       'services.enterpriseFeatures.ecommerce2',
@@ -79,8 +104,8 @@ const enterpriseSolutions = [
   {
     id: 'custom-app',
     titleKey: 'services.enterpriseSolutions.customApp',
-    price: 100000,
-    extraKey: 'services.enterpriseFeatures.customAppExtra',
+    priceKey: 'services.enterprisePricing.customApp',
+    priceNoteKey: 'services.enterprisePricing.customAppNote',
     featureKeys: [
       'services.enterpriseFeatures.customApp1',
       'services.enterpriseFeatures.customApp2',
@@ -91,8 +116,8 @@ const enterpriseSolutions = [
   {
     id: 'engineering',
     titleKey: 'services.enterpriseSolutions.engineering',
-    price: 150000,
-    priceType: 'monthly' as const,
+    priceKey: 'services.enterprisePricing.engineering',
+    priceNoteKey: 'services.enterprisePricing.engineeringNote',
     featureKeys: [
       'services.enterpriseFeatures.engineering1',
       'services.enterpriseFeatures.engineering2',
@@ -113,10 +138,13 @@ const processStepKeys = [
 export default function ServicesPage() {
   const { t } = useI18n();
 
-  const formatPrice = (price: number, currency: string, isMonthly?: boolean) => {
+  const formatPrice = (price: number | string, currency?: string) => {
+    if (typeof price === 'string') {
+      return price;
+    }
     const formatted = new Intl.NumberFormat('tr-TR').format(price);
     if (currency === 'TRY') {
-      return `₺${formatted}${isMonthly ? t('services.perMonth') : ''}`;
+      return `₺${formatted}`;
     }
     return `${formatted} ${currency}`;
   };
@@ -233,6 +261,94 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* AI, Automation & Custom Software Section */}
+      <section className="py-20 sm:py-32 border-t border-border/50 bg-gradient-to-b from-background via-[#7cff92]/5 to-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12">
+            {/* Header */}
+            <div className="text-center space-y-4">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#7cff92]/10 rounded-full border border-[#7cff92]/30">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7cff92]">
+                  {t('services.largeScale') ? 'YÜKSEK ETKİLİ · STRATEJİK İŞ ORTAKLIĞI' : 'HIGH IMPACT · STRATEGIC PARTNERSHIP'}
+                </span>
+              </div>
+              
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
+                {t('services.largeScale')}
+              </h2>
+              
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                {t('services.largeScaleSubtitle')}
+              </p>
+            </div>
+
+            {/* Services Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* AI Agent */}
+              <div className="p-6 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Zap className="w-8 h-8 text-[#7cff92] mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {t('services.enterpriseSolutions.aiAgent')}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {t('services.enterpriseFeatures.aiAgent1')}
+                </p>
+              </div>
+
+              {/* WhatsApp Automation */}
+              <div className="p-6 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <MessageSquare className="w-8 h-8 text-[#7cff92] mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {t('services.enterpriseSolutions.automation')}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {t('services.enterpriseFeatures.automation1')}
+                </p>
+              </div>
+
+              {/* Process Automation */}
+              <div className="p-6 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Settings className="w-8 h-8 text-[#7cff92] mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {t('services.enterpriseSolutions.automation')} (n8n)
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {t('services.enterpriseFeatures.automation3')}
+                </p>
+              </div>
+
+              {/* Custom Software */}
+              <div className="p-6 rounded-lg border border-border/50 hover:border-[#7cff92]/50 bg-card hover:bg-[#7cff92]/5 transition-all duration-200">
+                <Cpu className="w-8 h-8 text-[#7cff92] mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {t('services.enterpriseSolutions.customApp')}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {t('services.enterpriseFeatures.customApp1')}
+                </p>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center pt-8">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#7cff92] text-background rounded-lg font-semibold hover:bg-[#7cff92]/90 hover:shadow-lg hover:shadow-[#7cff92]/30 transition-all group"
+              >
+                {t('services.contact')}
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-[#7cff92]/30 text-foreground rounded-lg font-semibold hover:border-[#7cff92]/80 hover:bg-[#7cff92]/5 transition-all"
+              >
+                {t('services.pricing')}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Large Scale Projects Section */}
       <section className="py-16 sm:py-24 border-t border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -247,7 +363,7 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {enterpriseSolutions.map((solution) => (
               <div
                 key={solution.id}
@@ -262,13 +378,13 @@ export default function ServicesPage() {
                     <h3 className="text-xl font-bold text-foreground mb-3">
                       {t(solution.titleKey)}
                     </h3>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-3xl lg:text-4xl font-bold text-[#7cff92]">
-                        {formatPrice(solution.price, 'TRY', solution.priceType === 'monthly')}
+                    <div className="flex flex-col gap-1">
+                      <span className="text-2xl lg:text-3xl font-bold text-[#7cff92]">
+                        {t(solution.priceKey)}
                       </span>
                     </div>
-                    {solution.extraKey && (
-                      <p className="text-sm text-muted-foreground mt-2">{t(solution.extraKey)}</p>
+                    {solution.priceNoteKey && (
+                      <p className="text-xs text-muted-foreground mt-3 leading-relaxed">{t(solution.priceNoteKey)}</p>
                     )}
                   </div>
 
