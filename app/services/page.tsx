@@ -545,14 +545,25 @@ export default function ServicesPage() {
                     ? '30 dakikalık ücretsiz keşif görüşmesinde ihtiyacınızı netleştirelim: yapay zeka ajanı, WhatsApp ve süreç otomasyonu, özel yazılım veya hazır web sitesi — operasyonunuza en uygun teslim planını birlikte çıkaralım. 24 saat içinde yanıtlıyoruz.'
                     : "Let's clarify your needs in a 30-minute free discovery call: AI agent, WhatsApp and process automation, custom software or ready website — let's create the delivery plan that best suits your operation. We respond within 24 hours."}
                 </p>
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground pt-2">
-                  <span>{locale === 'tr' ? 'Açıklama' : 'Description'}</span>
-                  <span className="text-border">•</span>
-                  <span>{locale === 'tr' ? 'Hazır Şablonlar' : 'Ready Templates'}</span>
-                  <span className="text-border">•</span>
-                  <span>{locale === 'tr' ? 'Hizmetler ve Fiyatlar' : 'Services & Pricing'}</span>
-                  <span className="text-border">•</span>
-                  <span>{locale === 'tr' ? 'İletişim Bilgileri' : 'Contact Info'}</span>
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-2 text-xs pt-2">
+                  <Link 
+                    href="/templates" 
+                    className="px-3 py-1.5 rounded-full border border-border/40 text-muted-foreground hover:text-foreground hover:border-[#7cff92]/50 hover:bg-[#7cff92]/10 transition-colors"
+                  >
+                    {locale === 'tr' ? 'Hazır Şablonlar' : 'Ready Templates'}
+                  </Link>
+                  <Link 
+                    href="/services" 
+                    className="px-3 py-1.5 rounded-full border border-border/40 text-muted-foreground hover:text-foreground hover:border-[#7cff92]/50 hover:bg-[#7cff92]/10 transition-colors"
+                  >
+                    {locale === 'tr' ? 'Hizmetler ve Fiyatlar' : 'Services & Pricing'}
+                  </Link>
+                  <Link 
+                    href="/contact" 
+                    className="px-3 py-1.5 rounded-full border border-border/40 text-muted-foreground hover:text-foreground hover:border-[#7cff92]/50 hover:bg-[#7cff92]/10 transition-colors"
+                  >
+                    {locale === 'tr' ? 'İletişim Bilgileri' : 'Contact Info'}
+                  </Link>
                 </div>
               </div>
 
@@ -564,7 +575,7 @@ export default function ServicesPage() {
                   {locale === 'tr' ? 'Ücretsiz Keşif Görüşmesi' : 'Free Discovery Call'}
                 </Link>
                 <Link
-                  href="https://wa.me/905075002302"
+                  href="https://wa.me/905448358401"
                   target="_blank"
                   className="inline-flex items-center justify-center gap-2 px-4 py-3 border border-[#7cff92]/30 rounded-lg text-sm text-foreground hover:bg-[#7cff92]/10 hover:border-[#7cff92]/50 transition-colors whitespace-nowrap"
                 >
@@ -584,7 +595,7 @@ export default function ServicesPage() {
             {/* Contact Info */}
             <div className="mt-6 pt-6 border-t border-border/30 flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-muted-foreground">
               <span>{locale === 'tr' ? 'Telefon' : 'Phone'}: +90 544 835 84 01</span>
-              <span>{locale === 'tr' ? 'E-posta' : 'Email'}: celal.aygar@gmail.com</span>
+              <span>{locale === 'tr' ? 'E-posta' : 'Email'}: wixtorysoft@gmail.com</span>
             </div>
           </div>
         </div>
