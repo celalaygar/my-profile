@@ -4,7 +4,7 @@ import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { InteractiveBackground } from '@/components/interactive-background';
 import { useI18n } from '@/lib/i18n';
-import { Plus, ArrowRight, MessageCircle, Phone, Target, Layers, Sparkles, Rocket } from 'lucide-react';
+import { Plus, ArrowRight, MessageCircle, Phone } from 'lucide-react';
 import Link from 'next/link';
 import {
   Accordion,
@@ -12,9 +12,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-
-// Process steps icons
-const processIcons = [Target, Layers, Sparkles, Rocket];
 
 export default function ServicesPage() {
   const { t, locale } = useI18n();
@@ -426,60 +423,38 @@ export default function ServicesPage() {
       {/* Process & Revision Policy Section */}
       <section className="py-12 sm:py-16 border-t border-border/30 relative z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-            {/* Process - Card Style */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-lg bg-[#7cff92]/10 border border-[#7cff92]/30 flex items-center justify-center">
-                  <Layers className="w-5 h-5 text-[#7cff92]" />
-                </div>
-                <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
-                  {t('services.process')}
-                </h2>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {processSteps.map((step, index) => {
-                  const IconComponent = processIcons[index];
-                  return (
-                    <div
-                      key={step.number}
-                      className="group rounded-lg border border-border/40 bg-card/50 p-4 hover:border-[#7cff92]/30 hover:bg-card/80 transition-all"
-                    >
-                      <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 rounded-md bg-[#7cff92]/10 border border-[#7cff92]/20 flex items-center justify-center shrink-0 group-hover:bg-[#7cff92]/20 transition-colors">
-                          <IconComponent className="w-4 h-4 text-[#7cff92]" />
-                        </div>
-                        <div>
-                          <span className="text-xs font-medium text-[#7cff92] uppercase tracking-wider">
-                            {t('services.step')} {step.number}
-                          </span>
-                          <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                            {step.text}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            {/* Process - Glass Card */}
+            <article className="rounded-xl border border-border/40 bg-card/30 backdrop-blur-sm p-6">
+              <h3 className="text-xl font-semibold text-foreground">
+                {t('services.process')}
+              </h3>
+              <ol className="mt-4 space-y-2 text-sm text-muted-foreground">
+                {processSteps.map((step) => (
+                  <li key={step.number} className="leading-relaxed">
+                    <span className="mr-2 text-muted-foreground/50 font-mono">{step.number}.</span>
+                    {step.text}
+                  </li>
+                ))}
+              </ol>
+            </article>
 
-            {/* Revision Policy - Card Style */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-lg bg-[#7cff92]/10 border border-[#7cff92]/30 flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-[#7cff92]" />
-                </div>
-                <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
-                  {t('services.revisionPolicy')}
-                </h2>
-              </div>
-              <div className="rounded-lg border border-border/40 bg-card/50 p-6 h-[calc(100%-3.5rem)]">
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {t('services.revisionPolicyText')}
-                </p>
-              </div>
-            </div>
+            {/* Revision Policy - Glass Card */}
+            <article className="rounded-xl border border-border/40 bg-card/30 backdrop-blur-sm p-6">
+              <h3 className="text-xl font-semibold text-foreground">
+                {t('services.revisionPolicy')}
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                {locale === 'tr' 
+                  ? 'Paketlerde belirtilen revizyon turu kadar tasarım ve içerik güncellemesi dahildir. Ek revizyon talepleri görüşmede netleştirilir.'
+                  : 'Design and content updates are included up to the revision rounds specified in the packages. Additional revision requests are clarified in the meeting.'}
+              </p>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground/70">
+                {locale === 'tr'
+                  ? 'Özel yazılım ve yapay zeka projelerinde sprint bazlı teslim ve şeffaf değişiklik yönetimi uygulanır.'
+                  : 'Sprint-based delivery and transparent change management is applied in custom software and AI projects.'}
+              </p>
+            </article>
           </div>
         </div>
       </section>
