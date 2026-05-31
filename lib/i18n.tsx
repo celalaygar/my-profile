@@ -10,6 +10,8 @@ type Language = 'en' | 'tr' | 'de';
 interface I18nContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
+  locale: Language;
+  setLocale: (lang: Language) => void;
   t: (key: string) => string;
 }
 
@@ -51,7 +53,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
 
   // Always render the provider to avoid hydration mismatch
   return (
-    <I18nContext.Provider value={{ language, setLanguage, t }}>
+    <I18nContext.Provider value={{ language, setLanguage, locale: language, setLocale: setLanguage, t }}>
       {children}
     </I18nContext.Provider>
   );

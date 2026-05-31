@@ -15,7 +15,7 @@ export default function ArticlesPage() {
       <Navbar />
       
       <section className="flex-1">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           {/* Header */}
           <div className="space-y-4 mb-12 text-center">
             <div className="flex items-center justify-center gap-3 mb-4">

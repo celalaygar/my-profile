@@ -12,7 +12,8 @@
     "interview": "Interview Questions",
     "games": "Web Games",
     "books": "Books & Hobbies",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cookies": "Cookie Policy"
   },
   "cards": {
     "pages": "Pages / Routes",
@@ -318,5 +319,38 @@
       "q8": "Do you provide support and maintenance after launch?",
       "a8": "Yes. We offer monthly support plans for maintenance, updates, and improvements. This includes security patches, content updates, and performance monitoring."
     }
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdate": "Last updated: April 3, 2026",
+    "section1Title": "1. What is a cookie?",
+    "section1Text": "Cookies are small text files that the website you visit saves in your browser. They can be used to make the site work, remember your preferences, and (if you consent) generate usage statistics.",
+    "section2Title": "2. What cookies do we use?",
+    "section2Item1": "Required / technical: Basic functions related to session and security; necessary for the site to work properly. Legal basis: GDPR Art. 6(1)(f) legitimate interest or contract performance.",
+    "section2Item2": "Preference cookie: Your choice in the cookie notice (stored in localStorage) — so we don't ask again.",
+    "section2Item3": "Analytics (optional): Only loaded if you accept analytics in the cookie banner. If Google Analytics is used, IP anonymization is recommended. Legal basis: explicit consent (GDPR Art. 6(1)(a)).",
+    "section3Title": "3. Third parties",
+    "section3Text": "If Google Analytics (Google LLC) is used for optional analytics, Google's privacy practices are subject to their own policies. Contact form submissions may be processed through a service like Web3Forms; this is server-side and independent of your analytics consent.",
+    "section4Title": "4. Duration",
+    "section4Item1": "Preference record (localStorage): Persistent until deleted",
+    "section4Item2": "Analytics cookies: Subject to Google default settings",
+    "section5Title": "5. Managing and disabling",
+    "section5Text": "You can block analytics cookies with the \"Reject\" button in our cookie notice. You can delete or block all cookies from your browser settings.",
+    "section6Title": "6. Contact",
+    "section6Text": "For questions about cookies",
+    "websites": "Websites",
+    "bannerText": "We use cookies to improve your experience and measure site usage. Required cookies are necessary for the site. Analytics cookies are only loaded with your consent. For details, see",
+    "policyLink": "Cookie Policy",
+    "acceptAll": "Accept all",
+    "reject": "Reject",
+    "managePreferences": "Manage preferences",
+    "preferencesTitle": "Cookie Preferences",
+    "essentialTitle": "Essential Cookies",
+    "essentialDesc": "Required for site functionality.",
+    "analyticsTitle": "Analytics Cookies",
+    "analyticsDesc": "Used to measure site usage.",
+    "required": "Required",
+    "savePreferences": "Save Preferences",
+    "back": "Back"
   }
 }

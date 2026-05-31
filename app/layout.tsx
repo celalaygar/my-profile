@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { I18nProvider } from '@/lib/i18n'
 import { InteractiveBackground } from '@/components/interactive-background'
+import { CookieBanner } from '@/components/cookie-banner'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -43,6 +44,7 @@ export default function RootLayout({
         <div className="relative z-10">
           <I18nProvider>
             {children}
+            <CookieBanner />
           </I18nProvider>
         </div>
         {process.env.NODE_ENV === 'production' && <Analytics />}

@@ -12,7 +12,8 @@
     "interview": "Interviewfragen",
     "games": "Webspiele",
     "books": "Bücher & Hobbys",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "cookies": "Cookie-Richtlinie"
   },
   "cards": {
     "pages": "Seiten / Routen",
@@ -302,7 +303,40 @@
     "q7": "Wie funktioniert der Prozess der benutzerdefinierten Softwareentwicklung?",
     "a7": "Wir unterteilen den Umfang in Sprints und liefern funktionierende Funktionen am Ende jedes Sprints. E-Commerce-, Unternehmens- oder benutzerdefinierte Integrationsprojekte folgen diesem Ansatz.",
     "q8": "Bieten Sie nach dem Start Support und Wartung an?",
-    "a8": "Ja. Wir bieten monatliche Support-Pläne für Wartung, Updates und Verbesserungen. Dies umfasst Sicherheitspatches, Inhaltsaktualisierungen und Leistungsüberwachung."
+"a8": "Ja. Wir bieten monatliche Support-Pläne für Wartung, Updates und Verbesserungen. Dies umfasst Sicherheitspatches, Inhaltsaktualisierungen und Leistungsüberwachung."
   }
-}
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie",
+    "lastUpdate": "Letztes Update: 3. April 2026",
+    "section1Title": "1. Was ist ein Cookie?",
+    "section1Text": "Cookies sind kleine Textdateien, die die von Ihnen besuchte Website in Ihrem Browser speichert. Sie können verwendet werden, um die Website zum Laufen zu bringen, Ihre Präferenzen zu speichern und (mit Ihrer Zustimmung) Nutzungsstatistiken zu erstellen.",
+    "section2Title": "2. Welche Cookies verwenden wir?",
+    "section2Item1": "Erforderlich / technisch: Grundlegende Funktionen im Zusammenhang mit Sitzung und Sicherheit; notwendig, damit die Website ordnungsgemäß funktioniert. Rechtsgrundlage: DSGVO Art. 6(1)(f) berechtigtes Interesse oder Vertragserfüllung.",
+    "section2Item2": "Präferenz-Cookie: Ihre Auswahl im Cookie-Hinweis (in localStorage gespeichert) — damit wir nicht erneut fragen.",
+    "section2Item3": "Analyse (optional): Wird nur geladen, wenn Sie der Analyse im Cookie-Banner zustimmen. Wenn Google Analytics verwendet wird, wird IP-Anonymisierung empfohlen. Rechtsgrundlage: ausdrückliche Einwilligung (DSGVO Art. 6(1)(a)).",
+    "section3Title": "3. Dritte Parteien",
+    "section3Text": "Wenn Google Analytics (Google LLC) für optionale Analysen verwendet wird, unterliegen die Datenschutzpraktiken von Google deren eigenen Richtlinien. Kontaktformular-Übermittlungen können über einen Dienst wie Web3Forms verarbeitet werden; dies erfolgt serverseitig und ist unabhängig von Ihrer Analyse-Einwilligung.",
+    "section4Title": "4. Dauer",
+    "section4Item1": "Präferenz-Eintrag (localStorage): Dauerhaft bis gelöscht",
+    "section4Item2": "Analyse-Cookies: Unterliegen den Google-Standardeinstellungen",
+    "section5Title": "5. Verwaltung und Deaktivierung",
+    "section5Text": "Sie können Analyse-Cookies mit der Schaltfläche \"Ablehnen\" in unserem Cookie-Hinweis blockieren. Sie können alle Cookies in Ihren Browsereinstellungen löschen oder blockieren.",
+    "section6Title": "6. Kontakt",
+    "section6Text": "Bei Fragen zu Cookies",
+    "websites": "Webseiten",
+    "bannerText": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und die Nutzung der Website zu messen. Erforderliche Cookies sind für die Website notwendig. Analyse-Cookies werden nur mit Ihrer Zustimmung geladen. Für Details siehe",
+    "policyLink": "Cookie-Richtlinie",
+    "acceptAll": "Alle akzeptieren",
+    "reject": "Ablehnen",
+    "managePreferences": "Präferenzen verwalten",
+    "preferencesTitle": "Cookie-Präferenzen",
+    "essentialTitle": "Wesentliche Cookies",
+    "essentialDesc": "Erforderlich für die Website-Funktionalität.",
+    "analyticsTitle": "Analyse-Cookies",
+    "analyticsDesc": "Wird verwendet, um die Nutzung der Website zu messen.",
+    "required": "Erforderlich",
+    "savePreferences": "Präferenzen speichern",
+    "back": "Zurück"
+  }
 }

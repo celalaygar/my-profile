@@ -1,8 +1,10 @@
 'use client';
 
 import { Game } from '@/types';
+import { useI18n } from '@/lib/i18n';
 import { ExternalLink, Gamepad2, Zap, Cpu, Hourglass, BookOpen, Grid3x3, Pyramid } from 'lucide-react';
 import Link from 'next/link';
+import { useState } from 'react';
 
 interface GameCardProps {
   game: Game;
@@ -25,55 +27,75 @@ function getGameIcon(gameName: string) {
 }
 
 export function GameCard({ game }: GameCardProps) {
+  const [imageError, setImageError] = useState(false);
+  const { t } = useI18n();
   const IconComponent = getGameIcon(game.name);
 
-  return (
-    <Link href={game.url} target="_blank" rel="noopener noreferrer">
-      <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-[#7cff92]/50 hover:shadow-2xl hover:shadow-[#7cff92]/10 cursor-pointer">
-        {/* Background gradient on hover */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#7cff92]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        
-        {/* Shine effect */}
-        <div className="absolute inset-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+  // Generate stats based on game data
+  const stats = [
+    { label: t('games.play'), value: 'Online' },
+    { label: t('common.language'), value: 'TR / EN' },
+    { label: 'Platform', value: 'Web' },
+  ];
 
-        {/* Game Icon/Thumbnail Area */}
-        <div className="relative h-40 bg-gradient-to-br from-[#7cff92]/20 to-[#7cff92]/5 overflow-hidden flex items-center justify-center">
+  return (
+    <article className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.04] flex flex-col h-full">
+      {/* Image Section - Full Width */}
+      <Link href={game.url} target="_blank" rel="noopener noreferrer" aria-label={`${game.name} — ${t('games.play')}`}>
+        <div className="relative w-full h-36 overflow-hidden flex items-center justify-center bg-gradient-to-br from-[#7cff92]/20 to-[#7cff92]/5">
           <div className="absolute inset-0 bg-grid-pattern opacity-10" />
           <IconComponent className="w-16 h-16 text-[#7cff92]/40 group-hover:text-[#7cff92]/80 transition-all duration-300 group-hover:scale-110" />
         </div>
+      </Link>
 
-        <div className="relative p-6 sm:p-8">
-          {/* Icon with hover effect */}
-          <div className="mb-4 flex items-start justify-between">
-            <div className="p-3 bg-[#7cff92]/10 rounded-lg group-hover:bg-[#7cff92]/20 transition-all duration-300 group-hover:scale-110">
-              <IconComponent className="w-6 h-6 text-[#7cff92]" />
-            </div>
-            <ExternalLink 
-              size={20} 
-              className="text-[#7cff92]/60 group-hover:text-[#7cff92] transition-all duration-200 opacity-0 group-hover:opacity-100" 
-            />
-          </div>
-
-          {/* Title */}
-          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-[#7cff92] transition-colors duration-200 line-clamp-2">
+      {/* Content Section */}
+      <div className="space-y-4 p-5 flex flex-col flex-grow">
+        {/* Title and Category Badge Row */}
+        <div className="flex items-start justify-between gap-3">
+          <h3 className="text-lg font-semibold text-zinc-100">
             {game.name}
           </h3>
-
-          {/* Description */}
-          <p className="text-sm text-muted-foreground mb-4 line-clamp-2 group-hover:text-foreground/80 transition-colors duration-200">
-            {game.long_description}
-          </p>
-
-          {/* CTA Link */}
-          <div className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-lg font-semibold bg-[#7cff92]/10 text-[#7cff92] border border-[#7cff92]/30 group-hover:bg-[#7cff92]/20 group-hover:border-[#7cff92]/60 transition-all duration-200">
-            <span>Play Game</span>
-            <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform duration-200" />
+          <div className="inline-flex items-center rounded-full border px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.08em] border-white/20 bg-white/5 text-zinc-200 shrink-0">
+            Game
           </div>
+        </div>
 
-          {/* Bottom accent line */}
-          <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-[#7cff92] to-transparent group-hover:w-full transition-all duration-300" />
+        {/* Description */}
+        <p className="text-sm text-zinc-400 line-clamp-3">
+          {game.long_description}
+        </p>
+
+        {/* Stats Grid - 3 Columns */}
+        <div className="grid grid-cols-3 gap-2">
+          {stats.map((stat, index) => (
+            <div key={index} className="rounded-lg border border-white/10 bg-white/5 p-2">
+              <p className="text-[10px] uppercase tracking-[0.08em] text-zinc-500">{stat.label}</p>
+              <p className="text-xs font-semibold text-zinc-100">{stat.value}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex flex-wrap items-center justify-end gap-2 mt-auto pt-2">
+          <Link
+            href={game.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-[#7cff92] hover:text-[#7cff92]/80 transition-colors duration-200"
+          >
+            {t('games.play')}
+          </Link>
+          <Link
+            href={game.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-md border border-white/20 bg-white/5 px-3 py-1.5 text-sm font-medium text-zinc-200 hover:bg-white/10 hover:border-white/30 transition-all duration-200"
+          >
+            <ExternalLink size={14} />
+            Play Now
+          </Link>
         </div>
       </div>
-    </Link>
+    </article>
   );
 }

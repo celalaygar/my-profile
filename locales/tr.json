@@ -9,10 +9,11 @@
     "certificates": "Sertifikalar",
     "technologies": "Teknolojiler",
     "articles": "Makaleler",
-    "interview": "Röportaj Soruları",
+    "interview": "Mülakat Soruları",
     "games": "Web Oyunları",
     "books": "Kitaplar & Hobiler",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "cookies": "Çerez Politikası"
   },
   "cards": {
     "pages": "Sayfa / Rota",
@@ -132,9 +133,9 @@
     "readTime": "Read time"
   },
   "interview": {
-    "title": "Interview Questions",
-    "question": "Question",
-    "answer": "Answer"
+    "title": "Mülakat Soruları",
+    "question": "Soru",
+    "answer": "Cevap"
   },
   "games": {
     "title": "Web Games",
@@ -320,5 +321,38 @@
       "q8": "Do you provide support and maintenance after launch?",
       "a8": "Yes. We offer monthly support plans for maintenance, updates, and improvements. This includes security patches, content updates, and performance monitoring."
     }
+  },
+  "cookies": {
+    "title": "Çerez Politikası",
+    "lastUpdate": "Son güncelleme: 3 Nisan 2026",
+    "section1Title": "1. Çerez nedir?",
+    "section1Text": "Çerezler, ziyaret ettiğiniz web sitesinin tarayıcınıza kaydettiği küçük metin dosyalarıdır. Siteyi çalıştırmak, tercihlerinizi hatırlamak ve (onay verirseniz) kullanım istatistikleri üretmek için kullanılabilir.",
+    "section2Title": "2. Hangi çerezleri kullanıyoruz?",
+    "section2Item1": "Zorunlu / teknik: Oturum ve güvenlik ile ilgili temel işlevler; site düzgün çalışsın diye gereklidir. Hukuki sebep: KVKK m. 5/2 (f) meşru menfaat veya sözleşmenin ifası.",
+    "section2Item2": "Tercih çerezi: Çerez bildiriminde yaptığınız seçim (localStorage üzerinde saklanır) — tekrar sormamak için.",
+    "section2Item3": "Analitik (isteğe bağlı): Yalnızca çerez banner'ında analitiği kabul etmeniz halinde yüklenir. Google Analytics kullanılıyorsa IP anonimleştirme önerilir. Hukuki sebep: açık rıza (KVKK m. 5/1).",
+    "section3Title": "3. Üçüncü taraflar",
+    "section3Text": "İsteğe bağlı analitik için Google Analytics (Google LLC) kullanılıyorsa, Google'ın gizlilik uygulamaları kendi politikalarına tabidir. İletişim formu gönderimleri Web3Forms gibi bir hizmet üzerinden işlenebilir; bu işlem sunucu tarafında yapılır ve çerez politikasındaki analitik onayınızdan bağımsızdır.",
+    "section4Title": "4. Süre",
+    "section4Item1": "Tercih kaydı (localStorage): Silene kadar kalıcı",
+    "section4Item2": "Analitik çerezler: Google varsayılan ayarlarına tabidir",
+    "section5Title": "5. Yönetme ve devre dışı bırakma",
+    "section5Text": "Çerez bildirimimizdeki \"Reddet\" düğmesi ile analitik çerezlerini engelleyebilirsiniz. Tarayıcı ayarlarınızdan tüm çerezleri silebilir veya engelleyebilirsiniz.",
+    "section6Title": "6. İletişim",
+    "section6Text": "Çerezlerle ilgili sorularınız için",
+    "websites": "Web Siteleri",
+    "bannerText": "Deneyiminizi iyileştirmek ve site kullanımını ölçmek için çerezler kullanıyoruz. Zorunlu çerezler site için gereklidir. Analitik çerezler yalnızca onayınızla yüklenir. Detaylar için",
+    "policyLink": "Çerez Politikası",
+    "acceptAll": "Tümünü kabul et",
+    "reject": "Reddet",
+    "managePreferences": "Tercihleri yönet",
+    "preferencesTitle": "Çerez Tercihleri",
+    "essentialTitle": "Zorunlu Çerezler",
+    "essentialDesc": "Site işlevselliği için gereklidir.",
+    "analyticsTitle": "Analitik Çerezler",
+    "analyticsDesc": "Site kullanımını ölçmek için kullanılır.",
+    "required": "Gerekli",
+    "savePreferences": "Tercihleri Kaydet",
+    "back": "Geri"
   }
 }

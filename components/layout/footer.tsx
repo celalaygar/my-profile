@@ -136,12 +136,9 @@ export function Footer() {
             © {currentYear} Portfolio. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition">
-              Terms of Service
-            </a>
+            <Link href="/cookies" className="text-muted-foreground hover:text-foreground transition">
+              {t('nav.cookies')}
+            </Link>
           </div>
         </div>
       </div>
