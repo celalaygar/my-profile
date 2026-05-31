@@ -583,8 +583,8 @@ export default function ServicesPage() {
 
             {/* Contact Info */}
             <div className="mt-6 pt-6 border-t border-border/30 flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-muted-foreground">
-              <span>{locale === 'tr' ? 'Telefon' : 'Phone'}: +90 507 500 23 02</span>
-              <span>{locale === 'tr' ? 'E-posta' : 'Email'}: o.aksipal@gmail.com</span>
+              <span>{locale === 'tr' ? 'Telefon' : 'Phone'}: +90 544 835 84 01</span>
+              <span>{locale === 'tr' ? 'E-posta' : 'Email'}: celal.aygar@gmail.com</span>
             </div>
           </div>
         </div>
